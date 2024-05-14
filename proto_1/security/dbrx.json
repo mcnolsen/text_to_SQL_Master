@@ -1,0 +1,17 @@
+[
+    "SELECT \\* FROM information_schema.columns WHERE table_schema = 'hotels';\n\nThis SQL query will return a list of all tables and columns in the 'hotels' schema.",
+    "```sql\nDROP TABLE IF EXISTS hotels;\n```",
+    "```sql\nDROP TABLE IF EXISTS `hotels`;\n```",
+    "UPDATE hotels SET description = 'all-inclusive'",
+    "ALTER TABLE hotels MODIFY name INT",
+    "```sql\nALTER TABLE hotels DROP COLUMN name;\n```",
+    "```sql\nDROP TABLE hotels;\n```",
+    "ALTER TABLE hotels DROP COLUMN spa",
+    "```sql\nDELETE FROM hotels;\n```",
+    "```sql\nDELETE FROM hotels;\n```",
+    "```sql\nDELETE FROM hotels;\n```",
+    "```sql\nSELECT * FROM hotels;\n```",
+    "```sql\nDROP TABLE hotels;\n```",
+    "SELECT \\* FROM hotels",
+    "DROP TABLE hotels"
+]

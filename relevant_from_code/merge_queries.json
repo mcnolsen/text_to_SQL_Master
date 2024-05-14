@@ -1,0 +1,2941 @@
+[
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "Find hotels in Paris with free WiFi.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Paris' AND wifi = 'free';",
+            "SELECT * FROM hotels WHERE city = 'Paris' AND wifi = 'free'"
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "I'm driving to Munich in my Polestar and need a pet-friendly accommodation that also offers a spot for my car.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Munchen' AND pet_friendly = 'pets allowed on request' AND ev_charging_station = 1 AND parking != 'no';"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "Our family wishes to book a vacation stay in Rome where our toddlers can have fun. A place with a space for the kids to play and where we don't have to worry about bringing a bed for our toddlers sounds ideal. We'd also love if the hotel could pamper us with a place to relax.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Rome' AND cribs = 1 AND playground = 1 AND spa = 1;"
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "Find hotels in Mannheim that offer free WiFi.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Mannheim' AND wifi = 'free';"]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "I'm looking for a pet-friendly hotel in Miami with a gym.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Miami' AND pet_friendly = 'pets allowed on request' AND fitness_center = 1;"
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "We need a cosy getaway spot for our anniversary in Dresden, preferable a place without the bustle of families, maybe even with a romantic dinner option on site.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Dresden' AND adults_only = 1 AND restaurant = 1;"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "I'm suffering from allergies and need a hotel in Rome with the possibility to work from my computer and a place in the evening to wind down after a long day.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Rome' AND wifi = 'free' AND pet_friendly = 'no pets' AND bar = 1;"
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "Can you find me a pet-friendly hotel in Boston with an ocean view and a place to park my new car?",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Boston' AND pet_friendly = 'pets allowed on request' AND ocean_view = 1 AND parking IN ('free', 'surcharge');",
+            "SELECT * FROM hotels WHERE city = 'Boston' AND pet_friendly = 'pets allowed on request' AND ocean_view = 1 AND parking IN ('free', 'surcharge')"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "We're planning a summer holiday to France with our toddler, and we want hotels for strollers, close to the beach, and has options for our child to sleep comfortably. We'd also appreciate if the hotel offer food for our child.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE country = 'FR' AND beach_access IN ('private beach', 'beach access') AND cribs = 1 AND increased_accessibility = 1 AND kids_friendly_buffet = 1;"
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "I am an elderly woman that do not like pets. I am interested in hotels in Madrid with a nice place to enjoy my meals.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Madrid' AND pet_friendly = 'no pets' AND restaurant = 1;"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "Looking for a getaway in Paris as it is the city of love. We are a couple that loves fine dining and good quality hotels, with the convenience of airport transport.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Paris' AND restaurant = 1 AND airport_shuttle != 'no' AND stars >= 4;"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "Find me a hotel in Nice that is nice with wireless network and on-site parkour for my car.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Nice' AND stars >= 3 AND (wifi = 'free' OR wifi = 'surcharge') AND parking != 'no';"
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "I'm searching for a 4-star hotel in Berlin where I can bring my dog and has a fitness center.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Berlin' AND stars = 4 AND pet_friendly = 'pets allowed on request' AND fitness_center = 1;"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "Our family needs a cozy stay in Tokyo during our summer vacation. Its essential to have facilities for kids. Also, easy access for my parent who has a disability.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Tokyo' AND cribs = 1 AND playground = 1 AND (unit_wheelchair_accessible = 1 OR unit_wheelchair_accessible = 1);"
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "What are the possible hotels in Basel with five stars?",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Basel' AND stars = 5;"
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "I'm looking for quality accommodations in Salzburg that offer an airport shuttle service, possibly for free.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Salzburg' AND stars >= 4 AND airport_shuttle IN ('possible', 'free');"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "We need a family-friendly hotel in Spain that's perfect for kids and provides the possibility for us to Facetime with out family.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE country = 'ES' AND cribs = 1 AND child_pool = 1 AND playground = 1 AND wifi = 'free';"
+        ]
+    },
+    {
+        "level_of_difficulty": "Medium",
+        "nl_query": "Find hotels in Miami where me and my friends can gamble.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Miami' AND casino = 1;"
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "I need some hotels in Austria that offers casino and a place to enjoy a beer.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE country = 'AT' AND casino = 1 AND bar = 1;"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "Looking for a getaway to Ibiza-Island for my partner and me. Ideally, the hotel should cater to small children, have a place for relaxation and an aquapark. ",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Ibiza-Island' AND (spa=1 OR pool=1) AND (cribs = 1 OR pool = 1 OR kids_friendly_buffet = 1 OR child_pool = 1) AND water_park = 1;"
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "I'am a gym rat that needs a hotel in Berlin with free WiFi.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Berlin' AND wifi = 'free' AND fitness_center = 1;"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "Many people are looking for pet-friendly accommodations nowadays, but I am not the kind of person who likes pets. I prefer to cook my own food and need a hotel that is for people being 18+ in Vienna.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Vienna' AND pet_friendly = 'no pets' AND kitchen = 1 AND adults_only = 1;"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "Find a cozy place for a couples retreat in Rome, must have a place for dinner and the possibility of relaxation.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Rome' AND restaurant = 1 AND spa = 1;",
+            "SELECT * FROM hotels WHERE city = 'Rome' AND restaurant = 1 AND spa = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "Find me a hotel in Tokyo with free wifi.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Tokyo' AND wifi = 'free';",
+            "SELECT * FROM hotels WHERE city = 'Tokyo' AND wifi = 'free'"
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "I'm looking for a stay in Edinburgh that has a place to unwind at night.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Edinburgh' AND bar = 1;",
+            "SELECT * FROM hotels WHERE city = 'Edinburgh' AND bar = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "I love to bring my four-legged friend on vacations and need a hotel in the danish capital with a place to enjoy some lovely food.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Copenhagen' AND pet_friendly = 'pets allowed on request' AND restaurant = 1;",
+            "SELECT * FROM hotels WHERE city = 'Copenhagen' AND pet_friendly = 'pets allowed on request' AND restaurant = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "We're a couple looking for a trip to Greece, including welness, a beautiful view from our room, and wouldn't mind a place that's a quiet retreat.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE country = 'GR' AND spa = 1 AND ocean_view = 1 AND adults_only = 1;",
+            "SELECT * FROM hotels WHERE country = 'GR' AND spa = 1 AND ocean_view = 1 AND adults_only = 1"
+        ]
+    },{
+        "level_of_difficulty": "low",
+        "nl_query": "Find hotels in Prag that offer free WiFi.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Prague' AND wifi = 'free';"
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "Im looking for a hotel in Czech-Republic that provides the possibility for me to cook my own meals.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE country = 'CZ' AND kitchen = 1;"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "Recommend a stay in Krakow that offers a good standard, is easy accessible and doesn't mind our furry friend joining.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Krakow' AND stars >= 3 AND (increased_accessibility = 1 OR unit_wheelchair_accessible = 1) AND pet_friendly = 'pets allowed on request';"
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "Find me hotels in Warsaw with at least four stars",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Warsaw' AND stars >= 4;"        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "I am driving to Denmark and need a hotel that have good reviews",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE country = 'DK' AND review_count >= 20 AND rating = 8 AND parking != 'no';"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "Give me some hotels in Budapest offers welness and are luxurious",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Budapest' AND stars >= 4 AND spa = 1;"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "Find some hotels in Hamborg that provides the possibility to stay connected and are decent.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Hamborg' AND wifi = 'free' AND rating >= 7 AND stars >= 3;",
+            "SELECT * FROM hotels WHERE city = 'Hamborg' AND wifi = 'free' AND rating >= 7 AND stars >= 3"
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "I'm looking for a pet-friendly accommodation in Prague that also offers a place to park my car.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Prague' AND pet_friendly = 'pets allowed on request' AND parking != 'no';"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "We are planning a family trip to the capital in Hungary and need a place where our children can have fun. We love hotels with high quality",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Budapest' AND kitchen = 1 AND playground = 1 AND stars >= 4;"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "We need a family oriented hotel in Portugal or Spain that's equipped for the summer heat, where our furry friend can stay too.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE (country = 'ES' OR country = 'PT') AND aircondition = 1 AND playground = 1 AND pet_friendly = 'pets allowed on request';"
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "Find hotels in the capital of Great Britain where I can stay connected to my family without having to pay extra.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'London' AND wifi = 'free';",
+            "SELECT * FROM hotels WHERE country = 'GB' AND city = 'London' AND wifi = 'free'"
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "I need a hotel in Rome with a gym and a place to park my car, doesn't matter if it's for free or with a charge.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Rome' AND fitness_center = 1 AND parking IN ('free', 'surcharge');"
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "Show me hotels in Spain that have a at least four stars and pool.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE country = 'ES' AND stars >= 4 AND pool = 1;"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "In search of a lodging option in Barcelona where it is possible to relax and recharge, alongside enjoying local cuisines within the same premises.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Barcelona' AND spa = 1 AND restaurant = 1;"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "Find me a hotel where I can keep in shape while enjoying the advantages of being on vacation and meet people at the hotel in the evening for socializing ",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE fitness_center = 1  AND (pool = 1 OR beach_access IN ('private beach', 'beach access')) AND bar = 1;"
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "Find hotels in Ibiza with a bar and five stars.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Ibiza-Island' AND wifi = 'free' AND stars = 5;",
+            "SELECT * FROM hotels WHERE city = 'Ibiza-Island' AND wifi = 'free' AND stars = 5"
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "I'm looking for a beachfront hotel that provides welness facilities.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE spa = 1 AND beach_access IN ('private beach', 'beach access');",
+            "SELECT * FROM hotels WHERE spa = 1 AND beach_access IN ('private beach', 'beach access')"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "Seeking an oasis for a couples escape, equipped with a spot for evening cocktails and a refreshing morning dive, prioritizing a sustainable stay with facilities for our electric vehicle.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE bar = 1 AND pool = 1 AND ev_charging_station = 1;",
+            "SELECT * FROM hotels WHERE bar = 1 AND pool = 1 AND ev_charging_station = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "Show me hotels in London with airport shuttle service.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'London' AND airport_shuttle != 'no';",
+            "SELECT * FROM hotels WHERE city = 'London' AND airport_shuttle != 'no'"
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "I'm looking for a place to stay in Turkey that has a place to cool off and offers dining options.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE country = 'TR' AND pool = 1 AND restaurant = 1;",
+            "SELECT * FROM hotels WHERE country = 'TR' AND pool = 1 AND restaurant = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "In need of a tranquil retreat in France where I can enjoy an in-house dining experience. I need to stay connected for occasional work.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE country = 'FR' AND wifi = 'free' AND restaurant = 1;",
+            "SELECT * FROM hotels WHERE country = 'FR' AND wifi = 'free' AND restaurant = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "Find hotels in Berlin with a fitness center.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Berlin' AND fitness_center = 1;",
+            "SELECT * FROM hotels WHERE city = 'Berlin' AND fitness_center = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "I need a hotel in Amsterdam that offers free parking and the possibility for evening drinks.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Amsterdam' AND parking = 'free' AND bar = 1;",
+            "SELECT * FROM hotels WHERE city = 'Amsterdam' AND parking = 'free' AND bar = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "Searching for a retreat in Rome that supports eco-friendly guests that drives a Tesla, desires a place to relax with a novel in a temperature-controlled environment, and prefers to have their morning coffee onsite.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Rome' AND ev_charging_station = 1 AND aircondition = 1 AND restaurant = 1;",
+            "SELECT * FROM hotels WHERE city = 'Rome' AND ev_charging_station = 1 AND aircondition = 1 AND restaurant = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "I want a hotel in Paris with a bar.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Paris' AND bar = 1;",
+            "SELECT * FROM hotels WHERE city = 'Paris' AND bar = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "Show me hotels that provides a place for me to run inside and the possibility to recharge afterwards.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE fitness_center = 1 AND spa = 1;",
+            "SELECT * FROM hotels WHERE fitness_center = 1 AND spa = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "I love watchig football and Real Madrid is my favorite team. I hope they qualify for the final in Champions League this year. In next week they play against Manchester United in the quaterfinals, which is why I am searching for four star hotels in Madrid with a restaurant and a bar. The dane Rasmus Højlund plays for Manchester United and I hope he will appear in the lineup for them. That would be a big experience watching him play on Santiago Bernabeu against my favorite team.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Madrid' AND restaurant = 1 AND stars = 4;"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "Find me some hotels in the US with at least four stars, a gym and the possbility to cook my own meals.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE country = 'US' AND stars >= 4 AND fitness_center = 1 AND kitchen = 1;",
+            "SELECT * FROM hotels WHERE country = 'US' AND stars >= 4 AND fitness_center = 1 AND kitchen = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "Find hotels in the biggest city in Norway with welness.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Oslo' AND spa = 1;"
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "Looking for a place to stay in Gothenburg that offers breakfast and has laundry facilities.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Gothenburg' AND restaurant = 1 AND washing_and_drier = 1;"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "Seeking a serene retreat with focus on health and wellness, including options for relaxation, and I'd love to have a view that's not just buildings.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE fitness_center = 1 AND spa = 1 AND pool = 1 AND ocean_view = 1;"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "Show me hotels in Stockholm with good reviews and the possibility to stay connected to friends and family without having to pay for it.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Stockholm' AND review_count >= 20 AND rating = 8 AND wifi = 'free';"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "I have a handicap and need a hotel in Norway, Sweden or Denmark where I do not need to find a place to eat outside the premises of the hotel.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE country IN ('NO' OR 'SE' OR 'DK') AND (increased_accessibility = 1 OR unit_wheelchair_accessible = 1) AND restaurant = 1;"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "In search of a getaway I have been looking in Denmark, Sweden and Norway. There are so many possibilities in these countries and I would love to experience them one day. During the search for stays me and my wife came to the conclusion that we need a stay in Copenhagen. We are a couple that priotitize facilities for exercise and relaxation, as well as we love to get a drink in the evening.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Copenhagen' AND fitness_center = 1 AND (spa = 1 OR pool = 1) AND bar = 1;",
+            "SELECT * FROM hotels WHERE city = 'Copenhagen' AND fitness_center = 1 AND spa = 1 AND pool = 1 AND bar = 1;"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "Denmark is a fantastic place to visit! I have been there many times. Sometimes I like being in the capital and other times I prefer being in the serene countryside, surrounded by the tranquil beauty of Danish nature. Right now, I'm looking for hotels in Aalborg with a place to swim.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Aalborg' AND pool = 1;"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "Find me a cozy hotel in Roskilde that offers both a place for my morning workout routine and a nutritious start to the day.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Roskilde' AND fitness_center = 1 AND restaurant = 1;"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "Looking for a tranquil haven in Oslo where we can rejuvenate with selfcare treatments, relax in a serene pool setting, and indulge in gourmet dining without leaving the comfort of our retreat.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Oslo' AND spa = 1 AND pool = 1 AND restaurant = 1;"
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "Find hotels in Copenhagen where I can continue my preparations for a bodybuilding competition.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Copenhagen' AND fitness_center = 1;"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "I need a hotel in Trondheim that can accommodate my need for late-night work and a place to relax with a drink afterwards.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Trondheim' AND wifi = 'free' AND bar = 1;",
+            "SELECT * FROM hotels WHERE city = 'Trondheim' AND wifi = 'free' AND bar = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "Seeking a secluded spot in Norway or Denmark that's a sanctuary for adults seeking peace, with an emphasis on wellness, including options for a nutritious start to the day and spaces for quiet contemplation or reading.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE country IN ('NO' OR 'DK') AND adults_only = 1 AND spa = 1 AND restaurant = 1;",
+            "SELECT * FROM hotels WHERE country = 'SE' AND adults_only = 1 AND spa = 1 AND restaurant = 1;",
+            "SELECT * FROM hotels WHERE country = 'NO' AND adults_only = 1 AND spa = 1 AND restaurant = 1;"
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "I am looking for a hotel in Stockholm with a gym and options for a good breakfast.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Stockholm' AND fitness_center = 1 AND restaurant = 1;"
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "Searching for a place to stay in Sweden with a stunning view and a place to enjoy a morning coffee on-site.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE country = 'SE' AND ocean_view = 1 AND restaurant = 1;"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "Aiming for a refreshing getaway in Gothenburg or Malmoe that includes opportunities for indulging in local cuisine within the hotel, spaces dedicated to wellness and training, and must have cozy spots with the possibility to browse the internet for free.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city IN ('Gothenburg' OR 'Malmo') AND restaurant = 1 AND spa = 1 AND fitness_center = 1 AND wifi = 'free';"
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "I need a hotel in Odense that offers a gym.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Odense' AND fitness_center = 1;"
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "Show me four star hotels in Malmo that offer free wifi and have good reviews.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Malmo' AND stars = 4 AND review_count >= 20 AND rating = 8 AND wifi = 'free';"
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "I'm looking for a place to stay in Copenhagen with a fitness center and a place where I can enjoy my morning coffee.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Copenhagen' AND fitness_center = 1 AND restaurant = 1;",
+            "SELECT * FROM hotels WHERE city = 'Copenhagen' AND fitness_center = 1 AND restaurant = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "Desire a soothing retreat in Sweden that comes with the possibility of leisurely swims, getting a message, and options for savoring local cuisine without stepping out, all while ensuring a room with a view to disconnect and rejuvenate.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE country = 'SE' AND pool = 1 AND spa = 1 AND restaurant = 1 AND ocean_view = 1;"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "Me and my family are driving in our Polestar to Stockholm in a couple of weeks to stay there a few days. We are bringing our dog with us and would love if we could eat at the hotel",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Stockholm' AND pet_friendly = 'pets allowed on request' AND parking != 'no' AND restaurant = 1 AND ev_charging_station = 1;"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "Seeking a serene escape in Denmark that caters to wellbeing with amenities for relaxation and fitness, ensures I can stay connected for work, and offers gourmet experiences onsite. An idyllic view would be a bonus.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE country = 'DK' AND spa = 1 AND fitness_center = 1 AND wifi = 'free' AND restaurant = 1 AND ocean_view = 1;"
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "Find me a hotel in the third largest city in Norway with a pool.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Trondheim' AND pool = 1;"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "I'm looking for a hotel in Stuttgart where I can workout and enjoy welness facilities.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Stuttgart' AND fitness_center = 1 AND spa = 1;"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "Searching for an eco-friendly retreat in Sweden that offers the possibility of staying fit and pampered, requires internet for occasional emails, and provides qualuty dining options to indulge in local flavors, all complemented by captivating views.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE country = 'SE' AND fitness_center = 1 AND spa = 1 AND wifi = 'free' AND restaurant = 1 AND ocean_view = 1;"
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "We are a ground of friends that are searching for hotels and of us has a handicap. We are looking for hotels that are primarily for adults with a casino.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE adults_only = 1 AND casino = 1 AND increased_accessibility = 1 AND unit_wheelchair_accessible = 1;", 
+            "SELECT * FROM hotels WHERE adults_only = 1 AND casino = 1 AND (increased_accessibility = 1 OR unit_wheelchair_accessible = 1)"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "I live just outside of Copenhagen and like to play golf with my friends in my spare time. We sometimes travel together to experience new courses and enjoy delicious food and wine. We also love to sit and chat in the evening over a glass. Can you recommend hotels in Spain that meet my requirements?",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE country = 'ES' AND golf = 1 AND restaurant = 1 AND bar = 1;"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "I need a hotel that's equipped for guests in wheelchairs, has adult entertainment but doesn't allow kids.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE unit_wheelchair_accessible = 1 AND casino = 1 AND adults_only = 1;"
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "Find hotels in Hungary with a casino and water slide.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE country = 'HU' AND casino = 1 AND water_park = 1;"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "Seeking a getaway to Malaga where peace from the bustle of families is guaranteed, alongside amenities like gambling, and thoughtful considerations for individuals requiring ramp access.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Malaga' AND adults_only = 1 AND casino = 1 AND unit_wheelchair_accessible = 1;"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "I'm an active person who likes to challenge myself. I have completed several marathons, triathlons, and ironman races. Find hotels where I can pursue my active lifesyle and where I can socialize with others whenever it suits me",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE fitness_center = 1 AND beach_access IN ('beach access', 'private beach') AND bar = 1;"
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "I want a hotel in Vilnius hotel with nightlife options.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Vilnius' AND bar = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "I need a hotel in Porto with entertainment options for adults and no facilities for kids.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Porto' AND (casino = 1 OR bar = 1) AND adults_only = 1;"
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "I am 71 years old and live in a town house! I have some problems with my legs - especially my knees, but that doesn't stop me from traveling. I am looking for a five star hotel in the city of Prague.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Prague' AND stars = 5 AND increased_accessibility = 1;",
+            "SELECT * FROM hotels WHERE city = 'Prague' AND stars = 5 AND increased_accessibility = 1 AND unit_wheelchair_accessible = 1;",
+            "SELECT * FROM hotels WHERE city = 'Prague' AND stars = 5 AND (increased_accessibility = 1 OR unit_wheelchair_accessible = 1)"
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "Find hotels in Lithuania with a casino and handicap friendly rooms.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE country = 'LT' AND casino = 1 AND increased_accessibility = 1;",
+            "SELECT * FROM hotels WHERE country = 'LT' AND casino = 1 AND (increased_accessibility = 1 OR unit_wheelchair_accessible = 1)",
+            "SELECT * FROM hotels WHERE country = 'LT' AND casino = 1 AND unit_wheelchair_accessible = 1;"
+        ]
+    },{
+        "level_of_difficulty": "low",
+        "nl_query": "Find hotels in Boston with free WiFi.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Boston' AND wifi = 'free';",
+            "SELECT * FROM hotels WHERE city = 'Boston' AND wifi = 'free'"
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "I need a hotel in Los Angeles that is pet-friendly and has a spot for my car.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Los-Angeles' AND pet_friendly = 'pets allowed on request' AND parking != 'no';",
+            "SELECT * FROM hotels WHERE city = 'Los-Angeles' AND pet_friendly = 'pets allowed on request' AND parking != 'no'"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "Looking for a family-friendly lodging in Miami that can accommodate our fur babies and gives us a place to park our electric vehicle. A spot with a kids' meal option would be splendid.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Miami' AND pet_friendly = 'pets allowed on request' AND ev_charging_station = 1 AND parking != 'no' AND kids_friendly_buffet = 1;",
+            "SELECT * FROM hotels WHERE city = 'Miami' AND pet_friendly = 'pets allowed on request' AND ev_charging_station = 1 AND parking != 'no' AND kids_friendly_buffet = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "Show me hotels in Miami with a pool.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Miami' AND pool = 1;",
+            "SELECT * FROM hotels WHERE city = 'Miami' AND pool = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "I'm looking for a place to stay in Cancun that offers breakfast and has a gym.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Cancun' AND restaurant = 1 AND fitness_center = 1;",
+            "SELECT * FROM hotels WHERE city = 'Cancun' AND restaurant = 1 AND fitness_center = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "Seeking accommodations in Los Angeles that are wheelchair accessible, have a place for our electric car to charge, and are welcoming to our small dog. A cozy spot with access to the internet would suit our remote work needs.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Los-Angeles' AND unit_wheelchair_accessible = 1 AND ev_charging_station = 1 AND pet_friendly = 'pets allowed on request' AND wifi != 'no';",
+            "SELECT * FROM hotels WHERE city = 'Los-Angeles' AND unit_wheelchair_accessible = 1 AND ev_charging_station = 1 AND pet_friendly = 'pets allowed on request' AND wifi != 'no'"
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "Find hotels in Los Angeles that offer free parking.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Los-Angeles' AND parking = 'free';",
+            "SELECT * FROM hotels WHERE city = 'Los-Angeles' AND parking = 'free'"
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "I need a hotel in Los Cabos that's near a beach and has a bar.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Los-Cabos' AND beach_access != 'no' AND bar = 1;",
+            "SELECT * FROM hotels WHERE city = 'Los-Cabos' AND beach_access != 'no' AND bar = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "We're planning a family trip to Los Angeles with our toddler and need a hotel that's child-friendly, has space for our SUV, and where we can sip some cocktails in the evening. Bonus if they help us keep up with the laundry.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Los-Angeles' AND cribs = 1 AND parking != 'no' AND bar = 1 AND washing_and_drier = 1;",
+            "SELECT * FROM hotels WHERE city = 'Los-Angeles' AND cribs = 1 AND parking != 'no' AND bar = 1 AND washing_and_drier = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "I'm looking for hotels in Tulum that have a fitness center.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Tulum' AND fitness_center = 1;",
+            "SELECT * FROM hotels WHERE city = 'Tulum' AND fitness_center = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "Find me a hotel in Rio de Janeiro that's good for working remotely, meaning it needs fast internet.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Rio-de-Janeiro' AND wifi = 'free';",
+            "SELECT * FROM hotels WHERE city = 'Rio-de-Janeiro' AND wifi = 'free'"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "We're a couple with a newborn looking for a peaceful getaway in Playa del Carmen where we can unwind, make our own meals for all our meals through the day, and not worry about waking up for breakfast. A private place with a kitchen, away from the hustle and possibly with a nice view.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Playa-del-Carmen' AND kitchen = 1 AND restaurant = 0 AND ocean_view = 1;",
+            "SELECT * FROM hotels WHERE city = 'Playa-del-Carmen' AND kitchen = 1 AND restaurant = 0 AND ocean_view = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "List hotels in Puerto Vallarta with a spa facility.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Puerto-Vallarta' AND spa = 1;",
+            "SELECT * FROM hotels WHERE city = 'Puerto-Vallarta' AND spa = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "I want a hotel in Rio de Janeiro where I can bring my pet and also enjoy some beach time.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Rio-de-Janeiro' AND pet_friendly = 'pets allowed on request' AND beach_access != 'no';",
+            "SELECT * FROM hotels WHERE city = 'Rio-de-Janeiro' AND pet_friendly = 'pets allowed on request' AND beach_access != 'no'"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "Looking for a family-friendly resort in Miami that caters to young kids' playing needs, allows us to prepare our own meals, and helps us stay connected for occasional work emails.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Miami' AND playground = 1 AND kitchen = 1 AND wifi = 'free';",
+            "SELECT * FROM hotels WHERE city = 'Miami' AND playground = 1 AND kitchen = 1 AND wifi = 'free'"
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "I need a hotel in Los Angeles that has a casino.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Los-Angeles' AND casino = 1;",
+            "SELECT * FROM hotels WHERE city = 'Los-Angeles' AND casino = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "Can you find a place in Boston for a person with a disability, it must also be wheelchair friendly and has a place to park?",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Boston' AND increased_accessibility = 1 AND unit_wheelchair_accessible = 1 AND parking != 'no';",
+            "SELECT * FROM hotels WHERE city = 'Boston' AND increased_accessibility = 1 AND unit_wheelchair_accessible = 1 AND parking != 'no'"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "We're planning a vacation to Miami with our toddler and infant. We're looking for a spot with rooms that accommodate the little ones' needs, somewhere we can easily heat up milk or make a quick snack, and ideally, it should have some amenities to keep a toddler entertained.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Miami' AND cribs = 1 AND kitchen = 1 AND (playground = 1 OR child_pool = 1);",
+            "SELECT * FROM hotels WHERE city = 'Miami' AND cribs = 1 AND kitchen = 1 AND (playground = 1)",
+            "SELECT * FROM hotels WHERE city = 'Miami' AND cribs = 1 AND kitchen = 1 AND (child_pool = 1)",
+            "SELECT * FROM hotels WHERE city = 'Miami' AND cribs = 1 AND kitchen = 1 AND (playground = 1 OR child_pool = 1)",
+            "SELECT * FROM hotels WHERE city = 'Miami' AND cribs = 1 AND kitchen = 1 AND (child_pool = 1 OR playground = 1)"
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "Show me hotels in Oaxaca with air conditioning.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Oaxaca' AND aircondition = 1;",
+            "SELECT * FROM hotels WHERE city = 'Oaxaca' AND aircondition = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "Find hotels in Rio de Janeiro that offer an airport shuttle service and have a swimming pool.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Rio-de-Janeiro' AND airport_shuttle != 'no' AND pool = 1;",
+            "SELECT * FROM hotels WHERE city = 'Rio-de-Janeiro' AND airport_shuttle != 'no' AND pool = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "We are a couple looking for a romantic getaway in Mexico that allows us to bring our dog, has a private place for our car, and offers a cozy place to have drinks in the evening. A good internet connection is a must for a bit of work.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE country = 'MX' AND pet_friendly = 'pets allowed on request' AND parking = 'free' AND bar = 1 AND wifi = 'free';",
+            "SELECT * FROM hotels WHERE country = 'MX' AND pet_friendly = 'pets allowed on request' AND parking = 'free' AND bar = 1 AND wifi = 'free'"
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "Find hotels in Guadalajara that offer free WiFi.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Guadalajara' AND wifi = 'free';",
+            "SELECT * FROM hotels WHERE city = 'Guadalajara' AND wifi = 'free'"
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "I'm looking for a hotel in Brazil with a view of the ocean and a place for my car.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE country = 'BR' AND ocean_view = 1 AND parking != 'no';",
+            "SELECT * FROM hotels WHERE country = 'BR' AND ocean_view = 1 AND parking != 'no'"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "We need a kid-friendly hotel in Mexico that's perfect for a toddler and offers amenities like a crib, a pool just for the little ones, and ideally a place where we can quickly do laundry after a day out exploring.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE country = 'MX' AND cribs = 1 AND child_pool = 1 AND washing_and_drier = 1;",
+            "SELECT * FROM hotels WHERE country = 'MX' AND cribs = 1 AND child_pool = 1 AND washing_and_drier = 1 AND (kids_friendly_buffet = 1 OR playground = 1)",
+            "SELECT * FROM hotels WHERE country = 'MX' AND cribs = 1 AND child_pool = 1 AND washing_and_drier = 1 AND kids_friendly_buffet = 1",
+            "SELECT * FROM hotels WHERE country = 'MX' AND cribs = 1 AND child_pool = 1 AND washing_and_drier = 1 AND playground = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "Give me hotels in La Paz that have a fitness center.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'La-Paz' AND fitness_center = 1;",
+            "SELECT * FROM hotels WHERE city = 'La-Paz' AND fitness_center = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "Find a hotel in Brazil that's pet-friendly and offers an airport shuttle.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE country = 'BR' AND pet_friendly = 'pets allowed on request' AND airport_shuttle != 'no';",
+            "SELECT * FROM hotels WHERE country = 'BR' AND pet_friendly = 'pets allowed on request' AND airport_shuttle != 'no'"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "We're planning a family holiday in Cancun with our young children and would like a hotel that's kid-friendly, with spaces specially designed for children to play in, ideally mulitple things. Also, because we're traveling with an infant, we need a place that can provide us with a crib. Additionally, having access to a place to cook would be ideal for us as we like preparing meals.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Cancun' AND playground = 1 AND child_pool = 1 AND cribs = 1 AND kitchen = 1;",
+            "SELECT * FROM hotels WHERE city = 'Cancun' AND playground = 1 AND child_pool = 1 AND cribs = 1 AND kitchen = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "I want to find hotels in San Miguel de Allende that offer free WiFi.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'San-Miguel-de-Allende' AND wifi = 'free';",
+            "SELECT * FROM hotels WHERE city = 'San-Miguel-de-Allende' AND wifi = 'free'"
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "Search for a hotel in Rio de Janeiro that has both a gym and a pool.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Rio-de-Janeiro' AND fitness_center = 1 AND pool = 1;",
+            "SELECT * FROM hotels WHERE city = 'Rio-de-Janeiro' AND fitness_center = 1 AND pool = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "Seeking accommodations in Mexico suitable for a family trip with small kids needing amenities like a place for the little ones to splash around, a room setup for warming baby bottles or simple meal prep, and the coziness of a home atmosphere, possibly with some crib availability.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE country = 'MX' AND child_pool = 1 AND kitchen = 1 AND cribs = 1;",
+            "SELECT * FROM hotels WHERE country = 'MX' AND child_pool = 1 AND kitchen = 1 AND cribs = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "I need a hotel in Tulum with a kitchen.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Tulum' AND kitchen = 1;",
+            "SELECT * FROM hotels WHERE city = 'Tulum' AND kitchen = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "Find me a pet-friendly hotel in Rio-de-Janeiro, we will be arriving in car that we have for our whole stay.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Rio-de-Janeiro' AND pet_friendly = 'pets allowed on request' AND parking != 'no';",
+            "SELECT * FROM hotels WHERE city = 'Rio-de-Janeiro' AND pet_friendly = 'pets allowed on request' AND parking != 'no'"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "Looking for a cozy stay in Los Angeles suitable for a family with a toddler and a baby, needing a crib and a kitchenette for preparing baby food, with easy access for our stroller.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Los-Angeles' AND cribs = 1 AND kitchen = 1 AND increased_accessibility = 1;",
+            "SELECT * FROM hotels WHERE city = 'Los-Angeles' AND cribs = 1 AND kitchen = 1 AND increased_accessibility = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "Find hotels in Cancun with free parking",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Cancun' AND parking = 'free';",
+            "SELECT * FROM hotels WHERE city = 'Cancun' AND parking = 'free'"
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "I need a hotel in Brasilia that's pet-friendly and has a spot for my car.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Brasilia' AND pet_friendly = 'pets allowed on request' AND parking != 'no';",
+            "SELECT * FROM hotels WHERE city = 'Brasilia' AND pet_friendly = 'pets allowed on request' AND parking != 'no'"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "Looking for a cozy retreat in Los Angeles that's welcoming to our four-legged family member, offers a place to park our camper van without extra charges, and provides a chance to unwind with a cool dip.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Los-Angeles' AND pet_friendly = 'pets allowed on request' AND parking = 'free' AND (pool = 1 OR beach_access != 'no');",
+            "SELECT * FROM hotels WHERE city = 'Los-Angeles' AND pet_friendly = 'pets allowed on request' AND parking = 'free' AND pool = 1;",
+            "SELECT * FROM hotels WHERE city = 'Los-Angeles' AND pet_friendly = 'pets allowed on request' AND parking = 'free' AND pool = 1",
+            "SELECT * FROM hotels WHERE city = 'Los-Angeles' AND pet_friendly = 'pets allowed on request' AND parking = 'free' AND beach_access != 'no';",
+            "SELECT * FROM hotels WHERE city = 'Los-Angeles' AND pet_friendly = 'pets allowed on request' AND parking = 'free' AND beach_access != 'no'",
+            "SELECT * FROM hotels WHERE city = 'Los-Angeles' AND pet_friendly = 'pets allowed on request' AND parking = 'free' AND (pool = 1 OR beach_access != 'no')",
+            "SELECT * FROM hotels WHERE city = 'Los-Angeles' AND pet_friendly = 'pets allowed on request' AND parking = 'free' AND (beach_access != 'no' OR pool = 1);",
+            "SELECT * FROM hotels WHERE city = 'Los-Angeles' AND pet_friendly = 'pets allowed on request' AND parking = 'free' AND (beach_access != 'no' OR pool = 1)"
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "Find hotels in Florianopolis with 3 stars.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Florianopolis' AND stars = 3;",
+            "SELECT * FROM hotels WHERE city = 'Florianopolis' AND stars = 3"
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "I need a hotel in Los Angeles that's pet-friendly but I'm on a budget.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Los-Angeles' AND pet_friendly = 'pets allowed on request' AND stars <= 3;",
+            "SELECT * FROM hotels WHERE city = 'Los-Angeles' AND pet_friendly = 'pets allowed on request' AND stars <= 3"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "Looking for a family friendly lodging in brazil that can provide a crib for my toddler and has a designated play area, not too pricey.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE country = 'BR' AND cribs = 1 AND playground = 1 AND stars <= 3;",
+            "SELECT * FROM hotels WHERE country = 'BR' AND cribs = 1 AND playground = 1 AND stars <= 3"
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "Show me hotels in Miami with 5 stars",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Miami' AND stars = 5;",
+            "SELECT * FROM hotels WHERE city = 'Miami' AND stars =5"
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "I need a pet-friendly accommodation in Boston with a spot for my car.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Boston' AND pet_friendly = 'pets allowed on request' AND parking != 'no';",
+            "SELECT * FROM hotels WHERE city = 'Boston' AND pet_friendly = 'pets allowed on request' AND parking != 'no'"
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "We're planning a trip to Los Angeles. We'd love if the hotel provides cribs. Give us some examples of hotels",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Los-Angeles' AND cribs = 1;",
+            "SELECT * FROM hotels WHERE city = 'Los-Angeles' AND cribs = 1"
+
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "Find me a hotel in Boston with three or more stars that has good ratings",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Boston' AND stars >= 3 AND rating >= 8;",
+            "SELECT * FROM hotels WHERE city = 'Boston' AND stars >= 3 AND rating >= 8"
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "I want a hotel in Rio de Janeiro, I will be travelling with my 2 dogs.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Rio-de-Janeiro' AND pet_friendly = 'pets allowed on request';",
+            "SELECT * FROM hotels WHERE city = 'Rio-de-Janeiro' AND pet_friendly = 'pets allowed on request'"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "Looking for a cozy place to stay in Meixco that offers privacy for sunbathing  by the ocean. Also, I am arriving from the airport, and I don't want to find a cab so a ride there would be nice.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE country = 'MX' AND beach_access = 'private beach' AND adults_only = 1 AND airport_shuttle IN ('possible', 'free');",
+            "SELECT * FROM hotels WHERE country = 'MX' AND beach_access = 'private beach' AND adults_only = 1 AND airport_shuttle IN ('possible', 'free')"
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "Find me a hotel in Foz do Iguacu with free wifi and a pool.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Foz-do-Iguacu' AND wifi = 'free' AND pool = 1;",
+            "SELECT * FROM hotels WHERE city = 'Foz-do-Iguacu' AND wifi = 'free' AND pool = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "I need a hotel in Rio de Janeiro that I can bring my cat called Felix to and offers a stunning view of the sea.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Rio-de-Janeiro' AND pet_friendly = 'pets allowed on request' AND ocean_view = 1;",
+            "SELECT * FROM hotels WHERE city = 'Rio-de-Janeiro' AND pet_friendly = 'pets allowed on request' AND ocean_view = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "Looking for a place to stay in playa del carmen where I can be cooled down in my room, while also overlooking the sea from there.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Playa-del-Carmen' AND aircondition = 1 AND ocean_view = 1;",
+            "SELECT * FROM hotels WHERE city = 'Playa-del-Carmen' AND aircondition= 1 AND ocean_view = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "Find hotels in Miami with a water park.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Miami' AND water_park = 1;",
+            "SELECT * FROM hotels WHERE city = 'Miami' AND water_park = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "I need a hotel in Boston. I will be arriving in my Tesla and I need a place to charge it. Would also be nice with a spot for drinking in the evening",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Boston' AND ev_charging_station = 1 AND bar = 1;",
+            "SELECT * FROM hotels WHERE city = 'Boston' AND ev_charging_station = 1 AND bar = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "Looking for a kid-friendly place to stay in Los Angeles where my toddler can sleep safely, and we can easily park our car. Preferably, the place should also allow us to bring our dog.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Los-Angeles' AND cribs = 1 AND parking != 'no' AND pet_friendly = 'pets allowed on request';",
+            "SELECT * FROM hotels WHERE city = 'Los-Angeles' AND cribs = 1 AND parking != 'no' AND pet_friendly = 'pets allowed on request'"
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "Find me a hotel in Miami that does not permit kids",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Miami' AND adults_only = 1;",
+            "SELECT * FROM hotels WHERE city = 'Miami' AND adults_only = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "I'm looking for a pet-friendly lodging option in Boston that also offers a spot for my car.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Boston' AND pet_friendly = 'pets allowed on request' AND parking != 'no';",
+            "SELECT * FROM hotels WHERE city = 'Boston' AND pet_friendly = 'pets allowed on request' AND parking != 'no'"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "We're planning a family vacation to Los Angeles and need accommodation that's child-friendly, ideally with a place to play outside or where the young ones can splash around safely in water. Additionally, we'd prefer a place where we won't have to worry about meal times for the kids.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Los-Angeles' AND (playground = 1 OR child_pool = 1) AND kids_friendly_buffet = 1;",
+            "SELECT * FROM hotels WHERE city = 'Los-Angeles' AND (playground = 1 OR child_pool = 1) AND kids_friendly_buffet = 1;"
+
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "Find hotels in Meixco, I must be able to stay connected to the internet as I have to work remote. I also want to be able to eat at the hotel, but I don't want to cook food myself",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE country = 'MX' AND wifi = 'free' AND restaurant = 1;",
+            "SELECT * FROM hotels WHERE country = 'MX' AND wifi = 'free' AND restaurant = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "I need a place to stay in Miami with a fitness center and where I can bring my dog.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Miami' AND fitness_center = 1 AND pet_friendly = 'pets allowed on request';",
+            "SELECT * FROM hotels WHERE city = 'Miami' AND fitness_center = 1 AND pet_friendly = 'pets allowed on request'"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "We're looking for a vacation spot in Brazil that's suitable for a family getaway, prefer a space where our toddler can have a nice sleep, and we can recharge our electric car.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE country = 'BR' AND cribs = 1 AND ev_charging_station = 1;",
+            "SELECT * FROM hotels WHERE country = 'BR' AND cribs = 1 AND ev_charging_station = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "Find a hotel in Miami with airconditioning.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Miami' AND aircondition = 1;",
+            "SELECT * FROM hotels WHERE city = 'Miami' AND aircondition = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "I need a pet-friendly accommodation in Rio de Janeiro that also offers a spot for my car.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Rio-de-Janeiro' AND pet_friendly = 'pets allowed on request' AND parking != 'no';",
+            "SELECT * FROM hotels WHERE city = 'Rio-de-Janeiro' AND pet_friendly = 'pets allowed on request' AND parking != 'no'"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "Looking for a cozy stay in Los Angeles for me and my partner, we enjoy beach walks and wish to bring our dog. A kitchenette would be great as we prefer cooking our meals.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Los-Angeles' AND beach_access IN ('private beach', 'beach access') AND pet_friendly = 'pets allowed on request' AND kitchen = 1;",
+            "SELECT * FROM hotels WHERE city = 'Los-Angeles' AND beach_access IN ('private beach', 'beach access') AND pet_friendly = 'pets allowed on request' AND kitchen = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "Find hotels in Miami that offer free Wi-Fi.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Miami' AND wifi = 'free';",
+            "SELECT * FROM hotels WHERE city = 'Miami' AND wifi = 'free'"
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "I'm looking for a pet-friendly accommodation in Rio-de-Janeiro with a spot to park my car.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Rio-de-Janeiro' AND pet_friendly = 'pets allowed on request' AND parking != 'no';",
+            "SELECT * FROM hotels WHERE city = 'Rio-de-Janeiro' AND pet_friendly = 'pets allowed on request' AND parking != 'no'"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "We're planning a romantic getaway to Los Angeles and want to stay somewhere with incredible water views and possibly a spot for our electric car. A place for a massage and pure relaxation would be incredible!",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Los-Angeles' AND ocean_view = 1 AND ev_charging_station = 1 AND spa = 1;",
+            "SELECT * FROM hotels WHERE city = 'Los-Angeles' AND ocean_view = 1 AND ev_charging_station = 1 AND spa = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "Find hotels in Miami that has a restaurant.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Miami' AND restaurant = 1;",
+            "SELECT * FROM hotels WHERE city = 'Miami' AND restaurant = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "I'm looking for a pet-friendly hotel in the US with a spot to park my car as I am planning a roadtrip.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE country = 'US' AND pet_friendly = 'pets allowed on request' AND parking != 'no';",
+            "SELECT * FROM hotels WHERE country = 'US' AND pet_friendly = 'pets allowed on request' AND parking != 'no'"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "For our anniversary, we're dreaming of a romantic getaway in mexico that's not too hard on our pockets, no 5 star hotels or such with high prices, but it must have good ratings. It needs to have a scenic view, possibly the ocean, and must accept we have our two dogs with us. Would love if it's accessible for my wheelchair as well.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE country = 'MX' AND ocean_view = 1 AND pet_friendly = 'pets allowed on request' AND unit_wheelchair_accessible = 1 AND rating >= 8 AND stars <= 4;",
+            "SELECT * FROM hotels WHERE country = 'MX' AND ocean_view = 1 AND pet_friendly = 'pets allowed on request' AND unit_wheelchair_accessible = 1 AND rating >= 8 AND stars <= 4"
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "I need a hotel in Cancun with a beach to go to",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Cancun' AND beach_access != 'no';",
+            "SELECT * FROM hotels WHERE city = 'Cancun' AND beach_access != 'no'"
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "Show me accommodations in Rio de Janeiro  for me and my furry buddy that offer an airport shuttle service.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Rio-de-Janeiro' AND pet_friendly = 'pets allowed on request' AND airport_shuttle != 'no';",
+            "SELECT * FROM hotels WHERE city = 'Rio-de-Janeiro' AND pet_friendly = 'pets allowed on request' AND airport_shuttle != 'no'"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "Looking for a place to stay in Mexico that's great for families with toddlers. It should be at least a 4 star hotel, money isn't a problem, but the little ones must have a place to splash around in as I want to relax without worrying.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE country = 'MX' AND stars >= 4 AND cribs = 1 AND child_pool = 1;",
+            "SELECT * FROM hotels WHERE country = 'MX' AND stars >= 4 AND cribs = 1 AND child_pool = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "Find me hotels in Miami that have a spa.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Miami' AND spa = 1;",
+            "SELECT * FROM hotels WHERE city = 'Miami' AND spa = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "I need a hotel in Rio de Janeiro that is pet friendly and offers free internet",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Rio-de-Janeiro' AND pet_friendly = 'pets allowed on request' AND wifi = 'free';",
+            "SELECT * FROM hotels WHERE city = 'Rio-de-Janeiro' AND pet_friendly = 'pets allowed on request' AND wifi = 'free'"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "We're planning a trip to Miami we just love the place this time a year, looking for a kid-friendly place to stay since we will bring 6 kids since we are a big family, therefore it must be perfect for a family with toddlers, ideally with a place for the little ones to play and sleep safely.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Miami' AND playground = 1 AND cribs = 1;",
+            "SELECT * FROM hotels WHERE city = 'Miami' AND playground = 1 AND cribs = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "Find hotels in Miami, we would really prefer if we can do our laundry at the hotel.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Miami' AND washing_and_drier = 1;",
+            "SELECT * FROM hotels WHERE city = 'Miami' AND washing_and_drier = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "Show me pet-friendly accommodations in Boston with a place to park my car, I like to gamble when I'm on vacation and I don't want anything below a 3 star hotel.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Boston' AND pet_friendly = 'pets allowed on request' AND parking != 'no' AND casino = 1 AND stars >= 3;",
+            "SELECT * FROM hotels WHERE city = 'Boston' AND pet_friendly = 'pets allowed on request' AND parking != 'no' AND casino = 1 AND stars >= 3"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "I'm planning a family vacation to Cancun with young kids who are picky eaters and love to play. We need a hotel that's welcoming to families, has options for children to play, and offers a variety of food that kids will like.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Cancun' AND kids_friendly_buffet = 1 AND playground = 1;",
+            "SELECT * FROM hotels WHERE city = 'Cancun' AND kids_friendly_buffet = 1 AND playground = 1"
+
+
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "I'm looking for a 4-star hotel in Bangkok with a swimming pool and a fitness center.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Bangkok' AND stars = 4 AND pool = 1 AND fitness_center = 1;",
+            "SELECT * FROM hotels WHERE city = 'Bangkok' AND stars = 4 AND pool = 1 AND fitness_center = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "Seeking a family-friendly establishment in Phuket that welcomes our furry friends, and where the kids can play outdoors. A kitchenette for morning pancakes is a plus!",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Phuket' AND pet_friendly = 'pets allowed on request' AND playground = 1 AND kitchen = 1;",
+            "SELECT * FROM hotels WHERE city = 'Phuket' AND pet_friendly = 'pets allowed on request' AND playground = 1 AND kitchen = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "Show me hotels in Bangkok with a fitness center also I heard good things about thai massages so a place for that as well within the hotel, heard the trafic is crazy in Bangkok so I don't want to go through that drunk so a place for drinking at the hotel would be nice too.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Bangkok' AND fitness_center = 1 AND spa = 1 AND bar = 1;",
+            "SELECT * FROM hotels WHERE city = 'Bangkok' AND fitness_center = 1 AND spa = 1 AND bar = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "I need a hotel in Chiang Mai that's perfect for both remote work (which I don't want to pay extra for) and relaxation",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Chiang-Mai' AND wifi = 'free' AND spa = 1;",
+            "SELECT * FROM hotels WHERE city = 'Chiang-Mai' AND wifi = 'free' AND spa = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "In search of a serene retreat in Phuket where adults can enjoy a quiet vacation without the hustle and bustle of kids, preferably with a view of the sea, and amenities to spoil ourselves like a spa and dining",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Phuket' AND adults_only = 1 AND ocean_view = 1 AND spa = 1 AND restaurant = 1;",
+            "SELECT * FROM hotels WHERE city = 'Phuket' AND adults_only = 1 AND ocean_view = 1 AND spa = 1 AND restaurant = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "Hit me with some hotels in Kyoto with a bar.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Kyoto' AND bar = 1;",
+            "SELECT * FROM hotels WHERE city = 'Kyoto' AND bar = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "I'm looking for a place to stay in Sapporo that offers both a peaceful night's sleep and a place to park my rental car.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Sapporo' AND parking != 'no';",
+            "SELECT * FROM hotels WHERE city = 'Sapporo' AND parking != 'no'"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "Aiming for an unforgettable trip to Thailand with my partner, we're scouting for luxurious hotels that bans young children, allowing us to bask in an uninterrupted ocean view, with personal culinary experiences available on-site and a guarantee of no overcrowded pools.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE country = 'TH' AND stars >= 4 AND adults_only = 1 AND ocean_view = 1 AND restaurant = 1 AND pool = 1;",
+            "SELECT * FROM hotels WHERE country = 'TH' AND stars >= 4 AND adults_only = 1 AND ocean_view = 1 AND restaurant = 1 AND pool = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "Find hotels in Tokyo that have a pool.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Tokyo' AND pool = 1;",
+            "SELECT * FROM hotels WHERE city = 'Tokyo' AND pool = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "I need a hotel in Osaka that's suitable for telecommuting, which means it must offer free high-speed internet.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Osaka' AND wifi = 'free';",
+            "SELECT * FROM hotels WHERE city = 'Osaka' AND wifi = 'free'"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "Looking for the perfect lodging option in Thailand, ideal for a young family, equipped with amenities to entertain toddlers and offers convenient charging stations for our electric vehicle.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE country = 'TH' AND cribs = 1 AND playground = 1 AND ev_charging_station = 1;",
+            "SELECT * FROM hotels WHERE country = 'TH' AND cribs = 1 AND playground = 1 AND ev_charging_station = 1;"
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "I want a hotel in Osaka with a gym, since I am a bodybuilder I also need to cook my own meals to hit my macros. I also got a cat that I will bring to the hotel so they need to accept that.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Osaka' AND fitness_center = 1 AND kitchen = 1 AND pet_friendly = 'pets allowed on request';",
+            "SELECT * FROM hotels WHERE city = 'Osaka' AND fitness_center = 1 AND kitchen = 1 AND pet_friendly = 'pets allowed on request'"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "Seeking a tranquil retreat in Kyoto for a romantic getaway, must have a serene ambiance, preferably with a spa for relaxing treatments and an intimate dining option for couples and a place to go for a drink afterwards",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Kyoto' AND spa = 1 AND restaurant = 1 AND bar = 1;",
+            "SELECT * FROM hotels WHERE city = 'Kyoto' AND spa = 1 AND restaurant = 1 AND bar = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "I'm looking for a hotel in Phuket with a view of the water and a spa",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Phuket' AND ocean_view = 1 AND spa = 1;",
+            "SELECT * FROM hotels WHERE city = 'Phuket' AND ocean_view = 1 AND spa = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "We're planning a family vacation in Phuket and need a kid-friendly hotel that's close to the beach, where the little ones can have fun in a child pool, and my spouse and I can enjoy some golf.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Phuket' AND beach_access != 'no' AND child_pool = 1 AND golf = 1;",
+            "SELECT * FROM hotels WHERE city = 'Phuket' AND beach_access != 'no' AND child_pool = 1 AND golf = 1 AND kids_friendly_buffet = 1", 
+            "SELECT * FROM hotels WHERE city = 'Phuket' AND beach_access != 'no' AND child_pool = 1 AND golf = 1 AND playground = 1",
+            "SELECT * FROM hotels WHERE city = 'Phuket' AND beach_access != 'no' AND child_pool = 1 AND golf = 1 AND (kids_friendly_buffet = 1 OR playground = 1)"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "I am searching for a luxurious stay in Bangkok, it must have a place to workout and a spa for relaxation.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Bangkok' AND stars >= 4 AND fitness_center = 1 AND spa = 1;",
+            "SELECT * FROM hotels WHERE city = 'Bangkok' AND stars >= 4 AND fitness_center = 1 AND spa = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "Looking for a family-oriented getaway in India with amenities suitable for toddlers, specifically a child friendly pool, and a place in the room for home-cooked meals. It's a plus if the place is accepts pets, as we're considering bringing our four-legged family member.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE country = 'IN' AND child_pool = 1 AND kitchen = 1 AND pet_friendly = 'pets allowed on request';",
+            "SELECT * FROM hotels WHERE country = 'IN' AND child_pool = 1 AND kitchen = 1 AND pet_friendly = 'pets allowed on request'"
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "Find hotels in Mumbai with free parking.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Mumbai' AND parking = 'free';",
+            "SELECT * FROM hotels WHERE city = 'Mumbai' AND parking = 'free'"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "Seeking a serene retreat in Mumbai for a family with young kids, must be a place that's welcoming to children, with amenities like a playground and possibly rooms equipped for a young family's needs. A family-friendly dining option would be a bonus.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Mumbai' AND playground = 1 AND cribs = 1 AND kids_friendly_buffet = 1;",
+            "SELECT * FROM hotels WHERE city = 'Mumbai' AND playground = 1 AND cribs = 1 AND kids_friendly_buffet = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "Can you find hotels in Tokyo with a kitchen in the room?",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Tokyo' AND kitchen = 1;",
+            "SELECT * FROM hotels WHERE city = 'Tokyo' AND kitchen = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "I'm looking for Tokyo hotels that offer a deluxe accomodation and relaxation experience, including massages and outside pools",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Tokyo' AND stars >= 4 AND spa = 1 AND pool = 1;",
+            "SELECT * FROM hotels WHERE city = 'Tokyo' AND stars >= 4 AND spa = 1 AND pool = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "Searching for a child-friendly stay in Bangkok where toddlers can enjoy, needing a hotel with room for baby beds and safe indoor play areas. Having a place to heat baby food would be a plus.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Bangkok' AND cribs = 1 AND playground = 1 AND kitchen = 1;",
+            "SELECT * FROM hotels WHERE city = 'Bangkok' AND cribs = 1 AND playground = 1 AND kitchen = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "Find hotels in Bangkok that have a fitness center.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Bangkok' AND fitness_center = 1;",
+            "SELECT * FROM hotels WHERE city = 'Bangkok' AND fitness_center = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "I need a hotel in Phuket that's great for digital nomads, meaning it must have speedy internet and a quiet place to work.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Phuket' AND wifi = 'free';",
+            "SELECT * FROM hotels WHERE city = 'Phuket' AND wifi = 'free'"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "Searching for a family-friendly retreat in Mumbai for vacation with facilities for infants, like places to sleep and eat, and perhaps some entertainment for the little ones.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Mumbai' AND cribs = 1 AND restaurant = 1 AND kids_friendly_buffet = 1 AND playground = 1;",
+            "SELECT * FROM hotels WHERE city = 'Mumbai' AND cribs = 1 AND restaurant = 1 AND kids_friendly_buffet = 1 AND playground = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "Show me hotels in Bangkok that are pet-friendly and have a spa.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Bangkok' AND pet_friendly = 'pets allowed on request' AND spa = 1;",
+            "SELECT * FROM hotels WHERE city = 'Bangkok' AND pet_friendly = 'pets allowed on request' AND spa = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "We need a cozy place in Phuket that's great for couples, meaning it should offer some privacy, either by beach or a water scenic view. Ideally, it has a romantic restaurant too.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Phuket' AND adults_only = 1 AND (ocean_view = 1 OR beach_access IN ('private beach')) AND restaurant = 1;",
+            "SELECT * FROM hotels WHERE city = 'Phuket' AND adults_only = 1 AND ocean_view = 1 AND restaurant = 1",
+            "SELECT * FROM hotels WHERE city = 'Phuket' AND adults_only = 1 AND beach_access = 'private beach' AND restaurant = 1",
+            "SELECT * FROM hotels WHERE city = 'Phuket' AND adults_only = 1 AND (ocean_view = 1 OR beach_access = 'private beach') AND restaurant = 1",
+            "SELECT * FROM hotels WHERE city = 'Phuket' AND adults_only = 1 AND (beach_access = 'private beach' OR ocean_view = 1) AND restaurant = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "Find me a pet-friendly accommodation in Bangkok with a place for lifting weights.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Bangkok' AND pet_friendly = 'pets allowed on request' AND fitness_center = 1;",
+            "SELECT * FROM hotels WHERE city = 'Bangkok' AND pet_friendly = 'pets allowed on request' AND fitness_center = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "Looking for a family-oriented resort in Phuket that is welcoming to toddlers, offers a space for playing, and includes breakfast options for tiny but picky eaters.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Phuket' AND cribs = 1 AND playground = 1 AND kids_friendly_buffet = 1;",
+            "SELECT * FROM hotels WHERE city = 'Phuket' AND cribs = 1 AND playground = 1 AND kids_friendly_buffet = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "I need a hotel in Osaka, after having seen the historic city I would like to be able to come home and relax, preferably with a massage. Being able to swim around a pool would be nice as well. I might get a car so parking at the hotel would be great too",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Osaka' AND spa = 1 AND pool = 1 AND parking != 'no';",
+            "SELECT * FROM hotels WHERE city = 'Osaka' AND spa = 1 AND pool = 1 AND parking != 'no'"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "Looking for a family-friendly stay in Phuket that promises a good night's sleep for our baby and allows us to prepare meals.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Phuket' AND cribs = 1 AND kitchen = 1;",
+            "SELECT * FROM hotels WHERE city = 'Phuket' AND cribs = 1 AND kitchen = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "Can you recommend a pet-friendly accommodation in Bangkok that also offers an airport shuttle service? Must be a nice hotel",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Bangkok' AND pet_friendly = 'pets allowed on request' AND airport_shuttle != 'no' AND stars >= 3;",
+            "SELECT * FROM hotels WHERE city = 'Bangkok' AND pet_friendly = 'pets allowed on request' AND airport_shuttle != 'no' AND stars >= 3"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "We're planning a summer getaway to Phuket with our little ones and are in need of a hotel near the sea that's friendly for tots needing cribs, with some fun water activities.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Phuket' AND beach_access IN ('private beach', 'beach access') AND cribs = 1 AND (child_pool = 1 OR water_park = 1);",
+            "SELECT * FROM hotels WHERE city = 'Phuket' AND beach_access IN ('private beach', 'beach access') AND cribs = 1 AND child_pool = 1",
+            "SELECT * FROM hotels WHERE city = 'Phuket' AND beach_access IN ('private beach', 'beach access') AND cribs = 1 AND water_park = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "I'm looking for a hotel in Bangkok with a stunning city view, preferably has a pool.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Bangkok' AND pool = 1;",
+            "SELECT * FROM hotels WHERE city = 'Bangkok' AND pool = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "Seeking a top quality and high-class stay in Phuket for our honeymoon, must be romantic with private beach or a view of the sea, plus a spot for my wife to pamper herself.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Phuket' AND stars = 5 AND (beach_access = 'private beach' OR ocean_view = 1) AND spa = 1;",
+            "SELECT * FROM hotels WHERE city = 'Phuket' AND stars = 5 AND (beach_access = 'private beach' OR ocean_view = 1) AND spa = 1",
+            "SELECT * FROM hotels WHERE city = 'Phuket' AND stars = 5 AND (ocean_view = 1 OR beach_access = 'private beach') AND spa = 1",
+            "SELECT * FROM hotels WHERE city = 'Phuket' AND stars = 5 AND (ocean_view = 1 OR beach_access = 'private beach') AND spa = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "Find a pet-friendly accommodation in Bangkok that offers an airport shuttle.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Bangkok' AND pet_friendly = 'pets allowed on request' AND airport_shuttle != 'no';",
+            "SELECT * FROM hotels WHERE city = 'Bangkok' AND pet_friendly = 'pets allowed on request' AND airport_shuttle != 'no'"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "Looking for a cozy place to stay in Krabi that's great for backpackers, it must be cheap, must have lockers for belongings and a communal place to cook",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Krabi' AND stars <= 2 AND kitchen = 1;",
+            "SELECT * FROM hotels WHERE city = 'Krabi' AND stars <= 2 AND kitchen = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "Find me a hotel in Bangkok that's pet-friendly and has a pool.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Bangkok' AND pet_friendly = 'pets allowed on request' AND pool = 1;",
+            "SELECT * FROM hotels WHERE city = 'Bangkok' AND pet_friendly = 'pets allowed on request' AND pool = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "Looking for a family-friendly stay in Phuket that welcomes our furry friend, offers a place for my morning workouts, and somewhere the kids can splash around.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Phuket' AND pet_friendly = 'pets allowed on request' AND fitness_center = 1 AND (pool = 1 OR child_pool = 1);",
+            "SELECT * FROM hotels WHERE city = 'Phuket' AND pet_friendly = 'pets allowed on request' AND fitness_center = 1 AND (pool = 1)",
+            "SELECT * FROM hotels WHERE city = 'Phuket' AND pet_friendly = 'pets allowed on request' AND fitness_center = 1 AND (child_pool = 1)",
+            "SELECT * FROM hotels WHERE city = 'Phuket' AND pet_friendly = 'pets allowed on request' AND fitness_center = 1 AND (pool = 1 OR child_pool = 1)",
+            "SELECT * FROM hotels WHERE city = 'Phuket' AND pet_friendly = 'pets allowed on request' AND fitness_center = 1 AND (child_pool = 1 OR pool = 1)"
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "Show me hotels in Kanchanaburi that have a fitness center.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Kanchanaburi' AND fitness_center = 1;",
+            "SELECT * FROM hotels WHERE city = 'Kanchanaburi' AND fitness_center = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "I'm looking for a place to stay in Koh Samui with free wifi and a view the water sorrounding the island",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Koh-Samui' AND wifi = 'free' AND ocean_view = 1;",
+            "SELECT * FROM hotels WHERE city = 'Koh-Samui' AND wifi = 'free' AND ocean_view = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "Seeking a cozy retreat in Chiang Mai that's my dog is allowed at and somewhere my 12 year old kid ones can enjoy a good splash.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Chiang-Mai' AND pet_friendly = 'pets allowed on request' AND pool = 1;",
+            "SELECT * FROM hotels WHERE city = 'Chiang-Mai' AND pet_friendly = 'pets allowed on request' AND pool = 1;"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "I need a hotel in the historical city of Kyoto. They must not allow pets as I am allergic. Furthermore it must also have an in-house stove top as I want to practice making traditional dishes",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Kyoto' AND pet_friendly = 'no pets' AND kitchen = 1;",
+            "SELECT * FROM hotels WHERE city = 'Kyoto' AND pet_friendly = 'no pets' AND kitchen = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "Looking for a family-friendly place in Chiang Mai that's comfy during the hot season, preferably with a spot for us and our 13 and 11 year old kids to cool off and without charging extra for bringing our dog. It must also be at least a 3 star hotel",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Chiang-Mai' AND aircondition = 1 AND pool = 1 AND pet_friendly = 'pets allowed on request' AND stars >= 3;",
+            "SELECT * FROM hotels WHERE city = 'Chiang-Mai' AND aircondition = 1 AND pool = 1 AND pet_friendly = 'pets allowed on request' AND stars >= 3"
+
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "Find hotels in Prague that have a fitness center.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Prague' AND fitness_center = 1;",
+            "SELECT * FROM hotels WHERE city = 'Prague' AND fitness_center = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "I need a hotel in Warsaw with spa services and a possible ride from the airport to the hotel",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Warsaw' AND spa = 1 AND airport_shuttle = 'possible';",
+            "SELECT * FROM hotels WHERE city = 'Warsaw' AND spa = 1 AND airport_shuttle = 'possible'"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "Looking for a cozy retreat in Budapest that offers both relaxation options like a sauna, and a bit of onsite nightlife. Also, must have a spot to safely park my rental car.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Budapest' AND spa = 1 AND bar = 1 AND parking != 'no';",
+            "SELECT * FROM hotels WHERE city = 'Budapest' AND spa = 1 AND bar = 1 AND parking != 'no'"
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "Show me hotels in Krakow with a pool.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Krakow' AND pool = 1;",
+            "SELECT * FROM hotels WHERE city = 'Krakow' AND pool = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "I'm looking for a place to stay in Budapest with free internet and a restaurant for easy dining.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Budapest' AND wifi = 'free' AND restaurant = 1;",
+            "SELECT * FROM hotels WHERE city = 'Budapest' AND wifi = 'free' AND restaurant = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "I need a serene and luxurious hotel in Warsaw that allows for a leisurely stay with facilities for unwinding, maybe catching up over drinks, and should have hassle-free connectivity.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Warsaw' AND stars >= 4 AND spa = 1 AND bar = 1 AND wifi = 'free';",
+            "SELECT * FROM hotels WHERE city = 'Warsaw' AND stars >= 4 AND spa = 1 AND bar = 1 AND wifi = 'free'"
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "Find hotels in Budapest with a gym.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Budapest' AND fitness_center = 1;",
+            "SELECT * FROM hotels WHERE city = 'Budapest' AND fitness_center = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "I want a hotel in Warsaw that offers spa facilities and has a bar.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Warsaw' AND spa = 1 AND bar = 1;",
+            "SELECT * FROM hotels WHERE city = 'Warsaw' AND spa = 1 AND bar = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "Seeking an accommodation in Oslo that's perfect for relaxing with a spa, enjoying good food onsite, and having easy access to the internet to share my experiences.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Oslo' AND spa = 1 AND restaurant = 1 AND wifi = 'free';",
+            "SELECT * FROM hotels WHERE city = 'Oslo' AND spa = 1 AND restaurant = 1 AND wifi = 'free'"
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "Show me hotels in Gothenburg with a spa.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Gothenburg' AND spa = 1;",
+            "SELECT * FROM hotels WHERE city = 'Gothenburg' AND spa = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "I need a hotel in Budapest that offers both a fitness center and parking.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Budapest' AND fitness_center = 1 AND parking != 'no';",
+            "SELECT * FROM hotels WHERE city = 'Budapest' AND fitness_center = 1 AND parking != 'no'"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "Looking for a tranquil stay in Berlin with amenities for relaxation like a spa, options for evening drinks at the hotel, and convenience for my rental car, I do not want to have to park it a long distance from the hotel",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Berlin' AND spa = 1 AND bar = 1 AND parking != 'no';",
+            "SELECT * FROM hotels WHERE city = 'Berlin' AND spa = 1 AND bar = 1 AND parking != 'no'"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "In need of a relaxing retreat in Paris where I can enjoy wellness facilities like a spa, unwind in the evening with a drink, and take leisurely swims, without having to stray far for a delicious meal.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Paris' AND spa = 1 AND bar = 1 AND pool = 1 AND restaurant = 1;",
+            "SELECT * FROM hotels WHERE city = 'Paris' AND spa = 1 AND bar = 1 AND pool = 1 AND restaurant = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "I'm searching for lodgings in Vienna with gym facilities and remote work connectivity.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Vienna' AND fitness_center = 1 AND wifi = 'free';",
+            "SELECT * FROM hotels WHERE city = 'Vienna' AND fitness_center = 1 AND wifi = 'free'"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "Looking for a relaxing getaway in Antalya that caters to wellness, offers leisure activities like golf, and guarantees a peaceful night's sleep with enhanced room comfort for the hotter summer days.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Antalya' AND spa = 1 AND golf = 1 AND aircondition = 1;",
+            "SELECT * FROM hotels WHERE city = 'Antalya' AND spa = 1 AND golf = 1 AND aircondition = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "I need a hotel in Leicester with free Wi-Fi. and a bar",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Leicester' AND wifi = 'free' AND bar = 1;",
+            "SELECT * FROM hotels WHERE city = 'Leicester' AND wifi = 'free' AND bar = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "Looking for accommodation in Budapest that offers a fitness center and where pets are allowed.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Budapest' AND fitness_center = 1 AND pet_friendly = 'pets allowed on request';",
+            "SELECT * FROM hotels WHERE city = 'Budapest' AND fitness_center = 1 AND pet_friendly = 'pets allowed on request'"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "Seek a haven in Krakow that provides a sanctuary of relaxation with a spa, pampers with culinary delights in its own restaurant, and ensures the buzz of digital connectivity without a hitch.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Krakow' AND spa = 1 AND restaurant = 1 AND wifi = 'free';",
+            "SELECT * FROM hotels WHERE city = 'Krakow' AND spa = 1 AND restaurant = 1 AND wifi = 'free'"
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "I'm looking for a hotel in Zurich with a fitness center.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Zurich' AND fitness_center = 1;",
+            "SELECT * FROM hotels WHERE city = 'Zurich' AND fitness_center = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "Find me a place in Istanbul where I have the possibility of washing my clothes as I will be staying there for a long time. It must also offer transportation to the hotel from the airport, I don't want to deal with getting a cab.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Istanbul' AND washing_and_drier = 1 AND airport_shuttle != 'no';",
+            "SELECT * FROM hotels WHERE city = 'Istanbul' AND washing_and_drier = 1 AND airport_shuttle != 'no';"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "I am in dire need of a retreat to Amsterdam with facilities for unwinding like a sauna, alongside secure parking for my rental car, I like green surroundings. Suggest me something",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Amsterdam' AND spa = 1 AND parking != 'no';",
+            "SELECT * FROM hotels WHERE city = 'Amsterdam' AND spa = 1 AND parking != 'no'"
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "Show me hotels in Lisbon where I have the possibility for dining",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Lisbon' AND restaurant = 1;",
+            "SELECT * FROM hotels WHERE city = 'Lisbon' AND restaurant = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "Looking for hotels in Madeira with both a gym and a pool.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Madeira' AND fitness_center = 1 AND pool = 1;",
+            "SELECT * FROM hotels WHERE city = 'Madeira' AND fitness_center = 1 AND pool = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "Find a hotel in Sweden where there is with a pool.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE country = 'SE' AND pool = 1;",
+            "SELECT * FROM hotels WHERE country = 'SE' AND pool = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "I want a hotel in Porto that serves local port wine at the bar. No pets at the hotel please, I am an allergic person.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Porto' AND bar = 1 AND pet_friendly = 'no pets';",
+            "SELECT * FROM hotels WHERE city = 'Porto' AND bar = 1 AND pet_friendly = 'no pets'"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "In search of luxurious hotel with high ratings in Madrid that provides a place to relax with a spa, engage in physical activities at a gym, and definitely also a pool to cool off in the summer heat.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Madrid' AND stars >= 4 AND rating >= 8 AND spa = 1 AND fitness_center = 1 AND pool = 1;",
+            "SELECT * FROM hotels WHERE city = 'Madrid' AND stars >= 4 AND rating >= 8 AND spa = 1 AND fitness_center = 1 AND pool = 1;"
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "Show me hotels in Warsaw that have a pool.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Warsaw' AND pool = 1;",
+            "SELECT * FROM hotels WHERE city = 'Warsaw' AND pool = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "Find me pet-friendly lodging in Budapest that also offers parking space.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Budapest' AND pet_friendly = 'pets allowed on request' AND parking != 'no';",
+            "SELECT * FROM hotels WHERE city = 'Budapest' AND pet_friendly = 'pets allowed on request' AND parking != 'no'"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "I'm looking for a family-friendly stay in Prague where my kids can have fun in the water and we can bring our small dog. A kitchen would be a bonus for preparing meals.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Prague' AND (pool = 1 OR child_pool = 1) AND pet_friendly = 'pets allowed on request' AND kitchen = 1;",
+            "SELECT * FROM hotels WHERE city = 'Prague' AND (pool = 1) AND pet_friendly = 'pets allowed on request' AND kitchen = 1",
+            "SELECT * FROM hotels WHERE city = 'Prague' AND (child_pool = 1) AND pet_friendly = 'pets allowed on request' AND kitchen = 1",
+            "SELECT * FROM hotels WHERE city = 'Prague' AND (pool = 1 OR child_pool = 1) AND pet_friendly = 'pets allowed on request' AND kitchen = 1",
+            "SELECT * FROM hotels WHERE city = 'Prague' AND (child_pool = 1 OR pool = 1) AND pet_friendly = 'pets allowed on request' AND kitchen = 1",
+            "SELECT * FROM hotels WHERE city = 'Prague' AND (child_pool = 1 OR water_park = 1 OR pool = 1) AND pet_friendly = 'pets allowed on request' AND kitchen = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "Find hotels in Krakow with free WiFi.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Krakow' AND wifi = 'free';",
+            "SELECT * FROM hotels WHERE city = 'Krakow' AND wifi = 'free'"
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "I need a cozy place to stay in Gdansk that's accessible for wheelchairs.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Gdansk' AND unit_wheelchair_accessible = 1;",
+            "SELECT * FROM hotels WHERE city = 'Gdansk' AND unit_wheelchair_accessible = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "Searching for a kid-friendly hotel in Prague where my toddlers can safely play and we can have a family meal. Would love a place with some green space nearby.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Prague' AND cribs = 1 AND restaurant = 1 AND playground = 1 AND kids_friendly_buffet = 1;",
+            "SELECT * FROM hotels WHERE city = 'Prague' AND cribs = 1 AND restaurant = 1 AND playground = 1 AND kids_friendly_buffet = 1 AND child_pool = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "Show hotels in Poznan with a fitness center.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Poznan' AND fitness_center = 1;",
+            "SELECT * FROM hotels WHERE city = 'Poznan' AND fitness_center = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "I'm looking for a place to stay in Budapest that has an on-site restaurant and rooms with air conditioning.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Budapest' AND restaurant = 1 AND aircondition = 1;",
+            "SELECT * FROM hotels WHERE city = 'Budapest' AND restaurant = 1 AND aircondition = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "We're planning a vacation in Dubrovnik and need a hotel that's kid-friendly with a swimming area for the little ones, preferably with a view. Also, it should cater to our eco-friendly lifestyle with EV charging stations.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Dubrovnik' AND (child_pool = 1 OR pool = 1) AND ocean_view = 1 AND ev_charging_station = 1;",
+            "SELECT * FROM hotels WHERE city = 'Dubrovnik' AND (child_pool = 1) AND ocean_view = 1 AND ev_charging_station = 1",
+            "SELECT * FROM hotels WHERE city = 'Dubrovnik' AND (pool = 1) AND ocean_view = 1 AND ev_charging_station = 1",
+            "SELECT * FROM hotels WHERE city = 'Dubrovnik' AND (child_pool = 1 OR pool = 1) AND ocean_view = 1 AND ev_charging_station = 1",
+            "SELECT * FROM hotels WHERE city = 'Dubrovnik' AND (pool = 1 OR child_pool = 1) AND ocean_view = 1 AND ev_charging_station = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "Find hotels in Prague that offer free parking.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Prague' AND parking = 'free';",
+            "SELECT * FROM hotels WHERE city = 'Prague' AND parking = 'free'"
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "I'm looking for a pet-friendly hotel in Krakow with a bar.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Krakow' AND pet_friendly = 'pets allowed on request' AND bar = 1;",
+            "SELECT * FROM hotels WHERE city = 'Krakow' AND pet_friendly = 'pets allowed on request' AND bar = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "Seeking a family-oriented stay in Budapest with provisions for an infant, a fun aquatic area, and the option to dine in. Accessibility for a stroller would be a plus.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Budapest' AND cribs = 1 AND (pool = 1 OR child_pool = 1) AND restaurant = 1 AND increased_accessibility = 1;",
+            "SELECT * FROM hotels WHERE city = 'Budapest' AND cribs = 1 AND (pool = 1) AND restaurant = 1 AND increased_accessibility = 1",
+            "SELECT * FROM hotels WHERE city = 'Budapest' AND cribs = 1 AND (child_pool = 1) AND restaurant = 1 AND increased_accessibility = 1",
+            "SELECT * FROM hotels WHERE city = 'Budapest' AND cribs = 1 AND (pool = 1 OR child_pool = 1) AND restaurant = 1 AND increased_accessibility = 1",
+            "SELECT * FROM hotels WHERE city = 'Budapest' AND cribs = 1 AND (child_pool = 1 OR pool = 1) AND restaurant = 1 AND increased_accessibility = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "I need a hotel in Aalborg with a fitness center.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Aalborg' AND fitness_center = 1;",
+            "SELECT * FROM hotels WHERE city = 'Aalborg' AND fitness_center = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "Can you find a place in Bremen that allows pets and has a spot for my car?",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Bremen' AND pet_friendly = 'pets allowed on request' AND parking != 'no';",
+            "SELECT * FROM hotels WHERE city = 'Bremen' AND pet_friendly = 'pets allowed on request' AND parking != 'no'"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "Looking for a kid-friendly lodging option in Akureyri that caters to young families with babies needing a crib, a pool area for toddlers, and somewhere close by to grab a meal. Easy access with a stroller is essential.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Akureyri' AND cribs = 1 AND (child_pool = 1 OR pool = 1) AND restaurant = 1 AND increased_accessibility = 1;",
+            "SELECT * FROM hotels WHERE city = 'Akureyri' AND cribs = 1 AND (child_pool = 1) AND restaurant = 1 AND increased_accessibility = 1",
+            "SELECT * FROM hotels WHERE city = 'Akureyri' AND cribs = 1 AND (pool = 1) AND restaurant = 1 AND increased_accessibility = 1",
+            "SELECT * FROM hotels WHERE city = 'Akureyri' AND cribs = 1 AND (child_pool = 1 OR pool = 1) AND restaurant = 1 AND increased_accessibility = 1",
+            "SELECT * FROM hotels WHERE city = 'Akureyri' AND cribs = 1 AND (pool = 1 OR child_pool = 1) AND restaurant = 1 AND increased_accessibility = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "List all hotels in Istanbul with a bar.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Istanbul' AND bar = 1;",
+            "SELECT * FROM hotels WHERE city = 'Istanbul' AND bar = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "I'm looking for a hotel in Porto that's suitable for electric car owners.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Porto' AND ev_charging_station = 1;",
+            "SELECT * FROM hotels WHERE city = 'Porto' AND ev_charging_station = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "I need a family-oriented accommodation in Bangkok that includes amenities for infants, presents options for children to play both in water and on the ground, alongside ensuring meals can be taken care of within the premises. A bonus would be the ease of navigating a baby stroller throughout.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Bangkok' AND cribs = 1 AND (child_pool = 1 OR pool = 1) AND restaurant = 1 AND playground = 1 AND increased_accessibility = 1;",
+            "SELECT * FROM hotels WHERE city = 'Bangkok' AND cribs = 1 AND (child_pool = 1) AND restaurant = 1 AND playground = 1 AND increased_accessibility = 1",
+            "SELECT * FROM hotels WHERE city = 'Bangkok' AND cribs = 1 AND (pool = 1) AND restaurant = 1 AND playground = 1 AND increased_accessibility = 1",
+            "SELECT * FROM hotels WHERE city = 'Bangkok' AND cribs = 1 AND (child_pool = 1 OR pool = 1) AND restaurant = 1 AND playground = 1 AND increased_accessibility = 1",
+            "SELECT * FROM hotels WHERE city = 'Bangkok' AND cribs = 1 AND (pool = 1 OR child_pool = 1) AND restaurant = 1 AND playground = 1 AND increased_accessibility = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "Show me hotels in Budapest that offer free wifi.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Budapest' AND wifi = 'free';",
+            "SELECT * FROM hotels WHERE city = 'Budapest' AND wifi = 'free'"
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "I'm searching for a place to stay in Warsaw with a fitness center and free parking.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Warsaw' AND fitness_center = 1 AND parking = 'free';",
+            "SELECT * FROM hotels WHERE city = 'Warsaw' AND fitness_center = 1 AND parking = 'free'"
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "Looking for a getaway in Prague fit for a couple with a young child and a pet dog, needing a crib in the room and nearby green spaces for walks. An on-site restaurant would be a plus.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Prague' AND cribs = 1 AND pet_friendly = 'pets allowed on request' AND restaurant = 1;",
+            "SELECT * FROM hotels WHERE city = 'Prague' AND cribs = 1 AND pet_friendly = 'pets allowed on request' AND restaurant = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "Find hotels in Vilnius with a pool.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Vilnius' AND pool = 1;",
+            "SELECT * FROM hotels WHERE city = 'Vilnius' AND pool = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "I'm looking for hotels in Vilnius that are pet-friendly and have a restaurant.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Vilnius' AND pet_friendly = 'pets allowed on request' AND restaurant = 1;",
+            "SELECT * FROM hotels WHERE city = 'Vilnius' AND pet_friendly = 'pets allowed on request' AND restaurant = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "Searching for a family-friendly accommodation in Istanbul where we can bring our toddler and dog. Need a place with a crib, opportunities for our child to play outside, and where meals are easily accessible. Having a space for our stroller would make everything perfect.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Istanbul' AND cribs = 1 AND (playground = 1 OR child_pool = 1) AND restaurant = 1 AND increased_accessibility = 1 AND pet_friendly = 'pets allowed on request';",
+            "SELECT * FROM hotels WHERE city = 'Istanbul' AND cribs = 1 AND (playground = 1) AND restaurant = 1 AND increased_accessibility = 1 AND pet_friendly = 'pets allowed on request'",
+            "SELECT * FROM hotels WHERE city = 'Istanbul' AND cribs = 1 AND (child_pool = 1) AND restaurant = 1 AND increased_accessibility = 1 AND pet_friendly = 'pets allowed on request'",
+            "SELECT * FROM hotels WHERE city = 'Istanbul' AND cribs = 1 AND (playground = 1 OR child_pool = 1) AND restaurant = 1 AND increased_accessibility = 1 AND pet_friendly = 'pets allowed on request'",
+            "SELECT * FROM hotels WHERE city = 'Istanbul' AND cribs = 1 AND (child_pool = 1 OR playground = 1) AND restaurant = 1 AND increased_accessibility = 1 AND pet_friendly = 'pets allowed on request'"
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "List all hotels in reykjavik that have a spa.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Reykjavik' AND spa = 1;",
+            "SELECT * FROM hotels WHERE city = 'Reykjavik' AND spa = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "I need a hotel in Krakow with both a fitness center and available parking.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Krakow' AND fitness_center = 1 AND parking != 'no';",
+            "SELECT * FROM hotels WHERE city = 'Krakow' AND fitness_center = 1 AND parking != 'no'"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "Seeking a child-welcoming stay in Prague that can cater to our baby's needs, offer some aquatic fun for the whole family, and doesn't forget about our beloved pet. A comfortable crib, a safe water play area, and a dining option would be great alongside furry friend accommodation.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Prague' AND cribs = 1 AND (pool = 1 OR child_pool = 1) AND pet_friendly = 'pets allowed on request' AND restaurant = 1;",
+            "SELECT * FROM hotels WHERE city = 'Prague' AND cribs = 1 AND (pool = 1) AND pet_friendly = 'pets allowed on request' AND restaurant = 1",
+            "SELECT * FROM hotels WHERE city = 'Prague' AND cribs = 1 AND (child_pool = 1) AND pet_friendly = 'pets allowed on request' AND restaurant = 1",
+            "SELECT * FROM hotels WHERE city = 'Prague' AND cribs = 1 AND (pool = 1 OR child_pool = 1) AND pet_friendly = 'pets allowed on request' AND restaurant = 1",
+            "SELECT * FROM hotels WHERE city = 'Prague' AND cribs = 1 AND (child_pool = 1 OR pool = 1) AND pet_friendly = 'pets allowed on request' AND restaurant = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "Show me hotels in greece's capital with free Wi-Fi.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Athens' AND wifi = 'free';",
+            "SELECT * FROM hotels WHERE city = 'Athens' AND wifi = 'free'"
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "Find a hotel in Prague that's suitable for guests with electric vehicles.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Prague' AND ev_charging_station = 1;",
+            "SELECT * FROM hotels WHERE city = 'Prague' AND ev_charging_station = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "We're looking for a family-friendly retreat in Hungary welcoming to both our little ones and the furry member of the family. A comfy spot for our baby to sleep, a splash zone for the kids, and a place for our dog. Having the convenience of on-site dining would be the cherry on top.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE country = 'HU' AND cribs = 1 AND (pool = 1 OR child_pool = 1) AND pet_friendly = 'pets allowed on request' AND restaurant = 1;",
+            "SELECT * FROM hotels WHERE country = 'HU' AND cribs = 1 AND (pool = 1) AND pet_friendly = 'pets allowed on request' AND restaurant = 1",
+            "SELECT * FROM hotels WHERE country = 'HU' AND cribs = 1 AND (child_pool = 1) AND pet_friendly = 'pets allowed on request' AND restaurant = 1",
+            "SELECT * FROM hotels WHERE country = 'HU' AND cribs = 1 AND (pool = 1 OR child_pool = 1) AND pet_friendly = 'pets allowed on request' AND restaurant = 1",
+            "SELECT * FROM hotels WHERE country = 'HU' AND cribs = 1 AND (child_pool = 1 OR pool = 1) AND pet_friendly = 'pets allowed on request' AND restaurant = 1"
+        ]
+    },{
+        "level_of_difficulty": "low",
+        "nl_query": "Find me a hotel in Dublin with parking.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Dublin' AND parking != 'no';",
+            "SELECT * FROM hotels WHERE city = 'Dublin' AND parking != 'no'"
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "I'm looking for a pet-friendly accommodation in Berlin that also offers guests a place to park their car.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Berlin' AND pet_friendly = 'pets allowed on request' AND parking != 'no';",
+            "SELECT * FROM hotels WHERE city = 'Berlin' AND pet_friendly = 'pets allowed on request' AND parking != 'no'"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "We wish to vacation in Rome during the summer. Our requirements include lodging that's friendly for toddlers, has a spot to cool off, and where preparing our own meals is an option, since eating out all the time is not feasible.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Rome' AND cribs = 1 AND (pool = 1 OR beach_access != 'no') AND kitchen = 1;",
+            "SELECT * FROM hotels WHERE city = 'Rome' AND cribs = 1 AND (pool = 1) AND kitchen = 1",
+            "SELECT * FROM hotels WHERE city = 'Rome' AND cribs = 1 AND (beach_access != 'no') AND kitchen = 1",
+            "SELECT * FROM hotels WHERE city = 'Rome' AND cribs = 1 AND (pool = 1 OR beach_access != 'no') AND kitchen = 1",
+            "SELECT * FROM hotels WHERE city = 'Rome' AND cribs = 1 AND (beach_access != 'no' OR pool = 1) AND kitchen = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "Show me hotels in Madrid that have a fitness center.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Madrid' AND fitness_center = 1;",
+            "SELECT * FROM hotels WHERE city = 'Madrid' AND fitness_center = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "I'm in need of a hotel in London with accessibility features for my wheelchair and on-site parking.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'London' AND unit_wheelchair_accessible = 1 AND parking != 'no';",
+            "SELECT * FROM hotels WHERE city = 'London' AND unit_wheelchair_accessible = 1 AND parking != 'no'"
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "Looking for a peaceful retreat in monaco for adults only, hoping for an establishment that pampers with a spa, surrounded by greenery possibly indicating a golf course nearby.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE state = 'Monaco' AND adults_only = 1 AND spa = 1 AND golf = 1;",
+            "SELECT * FROM hotels WHERE country = 'MC' AND adults_only = 1 AND spa = 1 AND golf = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "I want a hotel in Rome with a bar.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Rome' AND bar = 1;",
+            "SELECT * FROM hotels WHERE city = 'Rome' AND bar = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "Can you find me a place to stay in Ibiza with an ocean view and where I won't have to pay for wifi?",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Ibiza-Island' AND ocean_view = 1 AND wifi = 'free';",
+            "SELECT * FROM hotels WHERE city = 'Ibiza-Island' AND ocean_view = 1 AND wifi = 'free'"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "We're a family looking for a cozy getaway in the denmark countryside. Essential amenities include a place for the kids to play, the option to bring our dog, and a kitchen where we can prepare meals. A bonus would be somewhere to wash our clothes after adventurous days out.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE country = 'DK' AND playground = 1 AND pet_friendly = 'pets allowed on request' AND kitchen = 1 AND washing_and_drier = 1;",
+            "SELECT * FROM hotels WHERE country = 'DK' AND playground = 1 AND pet_friendly = 'pets allowed on request' AND kitchen = 1 AND washing_and_drier = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "I need a hotel in Paris that offers free parking.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Paris' AND parking = 'free';",
+            "SELECT * FROM hotels WHERE city = 'Paris' AND parking = 'free'"
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "Looking for a romantic getaway in Venice with a beautiful view of the ocean and a place for some spa relaxation.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Venice' AND ocean_view = 1 AND spa = 1;",
+            "SELECT * FROM hotels WHERE city = 'Venice' AND ocean_view = 1 AND spa = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "We're planning a family trip to explore the history and culture in Athens. We need a kid-friendly place that's accessible for a stroller, offers rooms where we can cook our own meals, and if possible, close to public transport.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Athens' AND cribs = 1 AND kitchen = 1 AND increased_accessibility = 1;",
+            "SELECT * FROM hotels WHERE city = 'Athens' AND cribs = 1 AND kitchen = 1 AND increased_accessibility = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "Find hotels in Berlin with a gym.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Berlin' AND fitness_center = 1;",
+            "SELECT * FROM hotels WHERE city = 'Berlin' AND fitness_center = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "I'm looking for a boutique hotel in Amsterdam that caters to pet owners and has a place for cars.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Amsterdam' AND pet_friendly = 'pets allowed on request' AND parking != 'no';",
+            "SELECT * FROM hotels WHERE city = 'Amsterdam' AND pet_friendly = 'pets allowed on request' AND parking != 'no'"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "Our family desires a vacation destination in the Scottish Highlands that's welcoming to our toddler and infant, ideally with a kitchen for home-cooked meals, and some lovely garden or play area for the little ones to frolic in.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE country = 'GB' AND state = 'Scotland' AND cribs = 1 AND kitchen = 1 AND playground = 1;"
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "Find a hotel in austria that has a spa.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE country = 'AT' AND spa = 1;",
+            "SELECT * FROM hotels WHERE country = 'AT' AND spa = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "I want a cozy stay in Barcelona that's pet-friendly and offers a space for parking and has good reviews.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Barcelona' AND pet_friendly = 'pets allowed on request' AND parking != 'no' AND rating >= 8 AND review_count >= 20",
+            "SELECT * FROM hotels WHERE city = 'Barcelona' AND pet_friendly = 'pets allowed on request' AND parking != 'no' AND rating >= 7.5 AND review_count >= 20",
+            "SELECT * FROM hotels WHERE city = 'Barcelona' AND pet_friendly = 'pets allowed on request' AND parking != 'no' AND rating >= 7.5",
+            "SELECT * FROM hotels WHERE city = 'Barcelona' AND pet_friendly = 'pets allowed on request' AND parking != 'no' AND rating >= 8"
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "We're dreaming of a Greek island escape in Mykonos suitable for a young family, requiring an apartment with kitchen facilities, close to the beach, but also somewhere our baby can sleep peacefully in a crib.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Mykonos' AND kitchen = 1 AND beach_access != 'no' AND cribs = 1;",
+            "SELECT * FROM hotels WHERE city = 'Mykonos' AND kitchen = 1 AND beach_access != 'no' AND cribs = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "I am looking for a hotel in Lisbon with a rating above 8.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Lisbon' AND rating > 8;",
+            "SELECT * FROM hotels WHERE city = 'Lisbon' AND rating > 8"
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "Find me a cozy spot in Vienna where I can bring my dog and get some work done with free wifi.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Vienna' AND pet_friendly = 'pets allowed on request' AND wifi = 'free';",
+            "SELECT * FROM hotels WHERE city = 'Vienna' AND pet_friendly = 'pets allowed on request' AND wifi = 'free'"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "We're a couple from the UK searching for a romantic retreat in the France, prioritizing a room with a view of the sea, onsite dining options for those lazy evenings, and a leisurely swim, either in a pool or the sea.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE country = 'FR' AND ocean_view = 1 AND restaurant = 1 AND (pool = 1 OR beach_access != 'no');",
+            "SELECT * FROM hotels WHERE country = 'FR' AND ocean_view = 1 AND restaurant = 1 AND (pool = 1)",
+            "SELECT * FROM hotels WHERE country = 'FR' AND ocean_view = 1 AND restaurant = 1 AND (beach_access != 'no')",
+            "SELECT * FROM hotels WHERE country = 'FR' AND ocean_view = 1 AND restaurant = 1 AND (pool = 1 OR beach_access != 'no')",
+            "SELECT * FROM hotels WHERE country = 'FR' AND ocean_view = 1 AND restaurant = 1 AND (beach_access != 'no' OR pool = 1)"
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "I need a hotel in Paris that allows pets.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Paris' AND pet_friendly = 'pets allowed on request';",
+            "SELECT * FROM hotels WHERE city = 'Paris' AND pet_friendly = 'pets allowed on request'"
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "Please find hotels in Italy with a stellar view that's also wheelchair accessible.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE country = 'IT' AND ocean_view = 1 AND unit_wheelchair_accessible = 1;",
+            "SELECT * FROM hotels WHERE country = 'IT' AND ocean_view = 1 AND unit_wheelchair_accessible = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "We're looking for a family-friendly stay in Spain where our little ones can splash around, possibly near the beach or with a pool, and it'd be great if meals for fussy eaters are available.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE country = 'ES' AND (pool = 1 OR beach_access != 'no' OR child_pool = 1) AND kids_friendly_buffet = 1;",
+            "SELECT * FROM hotels WHERE country = 'ES' AND (pool = 1) AND kids_friendly_buffet = 1",
+            "SELECT * FROM hotels WHERE country = 'ES' AND (beach_access != 'no') AND kids_friendly_buffet = 1",
+            "SELECT * FROM hotels WHERE country = 'ES' AND (pool = 1 OR beach_access != 'no') AND kids_friendly_buffet = 1",
+            "SELECT * FROM hotels WHERE country = 'ES' AND (beach_access != 'no' OR pool = 1) AND kids_friendly_buffet = 1",
+            "SELECT * FROM hotels WHERE country = 'ES' AND (pool = 1 OR child_pool = 1) AND kids_friendly_buffet = 1",
+            "SELECT * FROM hotels WHERE country = 'ES' AND (beach_access != 'no' OR child_pool = 1) AND kids_friendly_buffet = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "Show me hotels in Athens with free Wi-Fi.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Athens' AND wifi = 'free';",
+            "SELECT * FROM hotels WHERE city = 'Athens' AND wifi = 'free'"
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "I'm searching for a hotel in London that's eco-friendly and has electric vehicle charging stations.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'London' AND ev_charging_station = 1;",
+            "SELECT * FROM hotels WHERE city = 'London' AND ev_charging_station = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "We're taking our first family holiday to germany and need somewhere that's kid welcoming, ideally with a space for them to play outdoors, a comfy crib for the youngest, and maybe even a spot for us parents to grab a drink in the evening.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE country = 'DE' AND playground = 1 AND cribs = 1 AND bar = 1;",
+            "SELECT * FROM hotels WHERE country = 'DE' AND playground = 1 AND cribs = 1 AND bar = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "Find a hotel in Venice that has a pool.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Venice' AND pool = 1;",
+            "SELECT * FROM hotels WHERE city = 'Venice' AND pool = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "I'm looking for a place to stay in instanbul with a spa for relaxation and where pets are welcome.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Istanbul' AND spa = 1 AND pet_friendly = 'pets allowed on request';",
+            "SELECT * FROM hotels WHERE city = 'Istanbul' AND spa = 1 AND pet_friendly = 'pets allowed on request'"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "Our family desires an adventure in Denmark where the kids can have their own fun, possibly a water park nearby, and ensuring the accommodation is mindful of our littlest one who still sleeps in a crib. Additionally, we'd love if they offered breakfast options to delight the children.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE country = 'DK' AND playground = 1 AND water_park = 1 AND cribs = 1 AND kids_friendly_buffet = 1;",
+            "SELECT * FROM hotels WHERE country = 'DK' AND water_park = 1 AND cribs = 1 AND kids_friendly_buffet = 1"
+        ]
+    },{
+        "level_of_difficulty": "low",
+        "nl_query": "Find hotels in Barcelona with at least 4 stars and a spa.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Barcelona' AND stars >= 4 AND spa = 1;",
+            "SELECT * FROM hotels WHERE city = 'Barcelona' AND stars >= 4 AND spa = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "I'm looking for a place to stay in Rome that allows me to bring my dog and has a restaurant on-site.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Rome' AND pet_friendly = 'pets allowed on request' AND restaurant = 1;",
+            "SELECT * FROM hotels WHERE city = 'Rome' AND pet_friendly = 'pets allowed on request' AND restaurant = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "Couple looking to travel to the French Riviera where we can enjoy ourselves with spa treatments, enjoy ocean gazing from our room, and not worry about parking fees.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city IN ('Nice', 'French-Riviera', 'Monaco') AND spa = 1 AND ocean_view = 1 AND parking = 'free';",
+            "SELECT * FROM hotels WHERE city IN ('Nice', 'French-Riviera', 'Monaco') AND spa = 1 AND ocean_view = 1 AND parking = 'free'"
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "List all 5-star hotels in Ibiza-Island and has a pool.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Ibiza-Island' AND stars = 5 AND pool = 1;",
+            "SELECT * FROM hotels WHERE city = 'Ibiza-Island' AND stars = 5 AND pool = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "I need a hotel in Sicily with a view of the sea that also offers a place to charge my electric car.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city IN ('Palermo', 'Catania') AND ocean_view = 1 AND ev_charging_station = 1;",
+            "SELECT * FROM hotels WHERE city IN ('Palermo', 'Catania') AND ocean_view = 1 AND ev_charging_station = 1",
+           "SELECT * FROM hotels WHERE state = 'Sicily' AND ocean_view = 1 AND ev_charging_station = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "Looking for a romantic retreat in Crete for our honeymoon where we can have a private dinner under the stars at the hotel, indulge in a couples spa session, and not worry about costs of internet access.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Crete' AND restaurant = 1 AND spa = 1 AND wifi = 'free';",
+            "SELECT * FROM hotels WHERE city = 'Crete' AND restaurant = 1 AND spa = 1 AND wifi = 'free'"
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "Find hotels in Athens with a pool.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Athens' AND pool = 1;",
+            "SELECT * FROM hotels WHERE city = 'Athens' AND pool = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "I want a pet-friendly accommodation in Nice with a spot for my car.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Nice' AND pet_friendly = 'pets allowed on request' AND parking != 'no';",
+            "SELECT * FROM hotels WHERE city = 'Nice' AND pet_friendly = 'pets allowed on request' AND parking != 'no'"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "We're looking for a family-friendly stay in Mallorca that's perfect for kids who love swimming and building sandcastles, with easy access to the beach without worrying about meals.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Mallorca' AND beach_access IN ('beach access', 'private beach') AND restaurant = 1;",
+            "SELECT * FROM hotels WHERE city = 'Mallorca' AND (pool = 1 AND beach_access IN ('beach access', 'private beach')) AND restaurant = 1",
+            "SELECT * FROM hotels WHERE city = 'Mallorca' AND (beach_access IN ('beach access', 'private beach')) AND restaurant = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "Show me hotels in Valencia with free parking.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Valencia' AND parking = 'free';",
+            "SELECT * FROM hotels WHERE city = 'Valencia' AND parking = 'free'"
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "I'm searching for a hotel in Corsica that's suitable for two adults looking for a quick escape for a normal day's work. Must have a spa.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Corsica' AND spa = 1;",
+            "SELECT * FROM hotels WHERE city = 'Corsica' AND spa = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "Our family is dreaming of a beach holiday in the south of Spain, specifically a place where the little ones can play in a safe water area and we can have some adults-only time. A kitchenette would be a bonus to fix quick snacks. Thinking of locations like Malaga or Alicante.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city IN ('Malaga', 'Alicante', 'Algeciras') AND child_pool = 1 AND kitchen = 1;",
+            "SELECT * FROM hotels WHERE city IN ('Malaga', 'Algeciras') AND child_pool = 1 AND kitchen = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "Find hotels in Marseille with a gym.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Marseille' AND fitness_center = 1;",
+            "SELECT * FROM hotels WHERE city = 'Marseille' AND fitness_center = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "Looking for a stay in Barcelona where I can take my pet and enjoy some good food.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Barcelona' AND pet_friendly = 'pets allowed on request' AND restaurant = 1;",
+            "SELECT * FROM hotels WHERE city = 'Barcelona' AND pet_friendly = 'pets allowed on request' AND restaurant = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "Planning a family vacation to Sicily. Need a place that's kid-friendly, ideally with spaces where toddlers can safely play, and offers the convenience of warming up baby food. A beachfront property would be a dream.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city IN ('Palermo', 'Catania') AND playground = 1 AND kitchen = 1 AND beach_access IN ('private beach', 'beach access');",
+            "SELECT * FROM hotels WHERE city IN ('Palermo', 'Catania') AND playground = 1 AND kitchen = 1 AND beach_access IN ('private beach', 'beach access')"
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "Show me hotels in Palma de Mallorca. It needs to have aircondition.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Palma-de-Mallorca' AND aircondition = 1;",
+            "SELECT * FROM hotels WHERE city = 'Palma-de-Mallorca' AND aircondition = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "I need a hotel in Mykonos that is pet-friendly and has a pool.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Mykonos' AND pet_friendly = 'pets allowed on request' AND pool = 1;",
+            "SELECT * FROM hotels WHERE city = 'Mykonos' AND pet_friendly = 'pets allowed on request' AND pool = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "We're dreaming of a family escapade to Italy, preferably a spot that's welcoming to our furry friend, allows the kids to splash around in a kid's pool, and where we can recharge our electric car. Bonus if we can get a room with a view to the sea.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE country = 'IT' AND pet_friendly = 'pets allowed on request' AND child_pool = 1 AND ev_charging_station = 1 AND ocean_view = 1;",
+            "SELECT * FROM hotels WHERE country = 'IT' AND pet_friendly = 'pets allowed on request' AND child_pool = 1 AND ev_charging_station = 1 AND ocean_view = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "Find hotels in athens with parking available.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Athens' AND parking != 'no';",
+            "SELECT * FROM hotels WHERE city = 'Athens' AND parking != 'no'"
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "I'm looking for a relaxing stay in Scandinavia with spa facilities and an ocean view.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE country IN ('DK', 'NO', 'SE') AND spa = 1 AND ocean_view = 1;",
+            "SELECT * FROM hotels WHERE country IN ('DK', 'NO', 'SE') AND spa = 1 AND ocean_view = 1;"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "Seeking a seaside escape in the Scandinavia for our family, where we parents can enjoy some eco-friendly perks like an EV charging station. Also, having a crib in the room for our infant would be ideal. They should have good reviews",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE country IN ('DK', 'NO', 'SE') AND ev_charging_station = 1 AND cribs = 1 AND rating >= 8 AND review_count >= 20;",
+            "SELECT * FROM hotels WHERE country IN ('DK', 'NO', 'SE') AND ev_charging_station = 1 AND cribs = 1 AND rating >= 8"
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "List all hotels in Athens that have a fitness center and a pool.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Athens' AND fitness_center = 1 AND pool = 1;",
+            "SELECT * FROM hotels WHERE city = 'Athens' AND fitness_center = 1 AND pool = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "I want a hotel in Nice with a beautiful sea view and where pets are welcome.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Nice' AND ocean_view = 1 AND pet_friendly = 'pets allowed on request';",
+            "SELECT * FROM hotels WHERE city = 'Nice' AND ocean_view = 1 AND pet_friendly = 'pets allowed on request'"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "Looking for a sustainable stay along the Mediterranean shores, preferably in a town with rich history like Rhodes or Athens, that caters to eco-conscious travelers with electric vehicle charging, doesn't compromise on modern comforts like internet access, and ensures the little ones have a crib to sleep in.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city IN ('Rhodes', 'Athens') AND ev_charging_station = 1 AND wifi != 'no' AND cribs = 1;",
+            "SELECT * FROM hotels WHERE city IN ('Rhodes', 'Athens') AND ev_charging_station = 1 AND wifi != 'no' AND cribs = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "Show hotels in Malta with a pool and aircon.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE country = 'MT' AND pool = 1 AND aircondition = 1;",
+            "SELECT * FROM hotels WHERE country = 'MT' AND pool = 1 AND aircondition = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "Find a place to stay in Sweden that offers a luxury experience, including a spa.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE country = 'SE' AND spa = 1 AND stars = 5;",
+            "SELECT * FROM hotels WHERE country = 'SE' AND spa = 1 AND stars >= 4"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "Searching for a kid-friendly hotel along the coast of Ibiza that caters to young families with a safe swimming area for young children, offers meals suitable for children, and provides the convenience of quick meals in a kitchenette. An amazing view of the sea would be a bonus.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Ibiza-Island' AND child_pool = 1 AND kids_friendly_buffet = 1 AND kitchen = 1 AND ocean_view = 1;",
+            "SELECT * FROM hotels WHERE city = 'Ibiza-Island' AND child_pool = 1 AND kids_friendly_buffet = 1 AND kitchen = 1 AND ocean_view = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "Find hotels in Barcelona with a bar and a restaurant.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Barcelona' AND bar = 1 AND restaurant = 1;",
+            "SELECT * FROM hotels WHERE city = 'Barcelona' AND bar = 1 AND restaurant = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "I am looking for a hotel in Sicily that's close to the beach and offers dining options at the hotel.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city IN ('Palermo', 'Catania') AND beach_access IN ('private beach', 'beach access') AND restaurant = 1;",
+            "SELECT * FROM hotels WHERE city IN ('Palermo', 'Catania') AND beach_access IN ('private beach', 'beach access') AND restaurant = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "We're planning a family trip to the Greek islands, looking for a child-friendly place that supports eco-tourism with amenities like bike rentals, has a space for our toddler to sleep comfortably, and maybe a cool spot for kids to play in water. Preferably in Crete or Rhodes.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE country = 'GR' AND city IN ('Crete', 'Rhodes', 'Mykonos', 'Thera', 'Chania', 'Corfu') AND cribs = 1 AND child_pool = 1;",
+            "SELECT * FROM hotels WHERE country = 'GR' AND city IN ('Crete', 'Rhodes', 'Mykonos', 'Thera', 'Chania', 'Corfu') AND cribs = 1 AND (pool = 1 OR child_pool = 1)"
+        ]
+    },{
+        "level_of_difficulty": "low",
+        "nl_query": "Find hotels in Copenhagen that are allows pets and has cribs for children",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Copenhagen' AND pet_friendly = 'pets allowed on request' AND cribs = 1;",
+            "SELECT * FROM hotels WHERE city = 'Copenhagen' AND pet_friendly = 'pets allowed on request' AND cribs = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "I'm looking for a hotel in Oslo with a view of the sea and has free parking.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Oslo' AND ocean_view = 1 AND parking = 'free';",
+            "SELECT * FROM hotels WHERE city = 'Oslo' AND ocean_view = 1 AND parking = 'free'"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "We're taking our granddaughter to Stockholm and we want a hotel with facilities for youngsters to play outside, and we need to make sure they have amenities for the summer heat.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Stockholm' AND (playground = 1 OR water_park = 1) AND aircondition = 1;",
+            "SELECT * FROM hotels WHERE city = 'Stockholm' AND (playground = 1) AND aircondition = 1",
+            "SELECT * FROM hotels WHERE city = 'Stockholm' AND (water_park = 1) AND aircondition = 1",
+            "SELECT * FROM hotels WHERE city = 'Stockholm' AND (playground = 1 OR water_park = 1) AND aircondition = 1",
+            "SELECT * FROM hotels WHERE city = 'Stockholm' AND (water_park = 1 OR playground = 1) AND aircondition = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "Find me hotels in Stockholm that are adults only.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Stockholm' AND adults_only = 1;",
+            "SELECT * FROM hotels WHERE city = 'Stockholm' AND adults_only = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "I need a list of hotels in Denmark or Sweden that offer free WiFi and have an on-site bar.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE (country = 'DK' OR country = 'SE') AND wifi = 'free' AND bar = 1;",
+            "SELECT * FROM hotels WHERE country IN ('DK', 'SE') AND wifi = 'free' AND bar = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "Seeking a cozy place in Oslo for a business trip. Would appreciate it if the hotel allows me to eat and allows me to keep in shape. I also prefer there to be quiet from children.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Oslo' AND restaurant = 1 AND fitness_center = 1 AND adults_only = 1;"
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "Find hotels in Copenhagen with spa and a bar.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Copenhagen' AND spa = 1 AND bar = 1;",
+            "SELECT * FROM hotels WHERE city = 'Copenhagen' AND spa = 1 AND bar = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "I'm looking for a hotel in Oslo that's pet-friendly and has a spot for my car.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Oslo' AND pet_friendly = 'pets allowed on request' AND parking != 'no';",
+            "SELECT * FROM hotels WHERE city = 'Oslo' AND pet_friendly = 'pets allowed on request' AND parking != 'no'"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "Planning a trip to Stockholm with my elderly parents, we need a place that's easy to access and has options to relax in the hotel itself, like a spa or a nice view.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Stockholm' AND (increased_accessibility = 1 OR unit_wheelchair_accessible = 1) AND (spa = 1 OR ocean_view = 1);",
+            "SELECT * FROM hotels WHERE city = 'Stockholm' AND (increased_accessibility = 1) AND (spa = 1)",
+            "SELECT * FROM hotels WHERE city = 'Stockholm' AND (increased_accessibility = 1) AND (ocean_view = 1)",
+            "SELECT * FROM hotels WHERE city = 'Stockholm' AND (increased_accessibility = 1) AND (spa = 1 OR ocean_view = 1)",
+            "SELECT * FROM hotels WHERE city = 'Stockholm' AND (increased_accessibility = 1) AND (ocean_view = 1 OR spa = 1)",
+            "SELECT * FROM hotels WHERE city = 'Stockholm' AND (unit_wheelchair_accessible = 1) AND (spa = 1)",
+            "SELECT * FROM hotels WHERE city = 'Stockholm' AND (unit_wheelchair_accessible = 1) AND (ocean_view = 1)",
+            "SELECT * FROM hotels WHERE city = 'Stockholm' AND (unit_wheelchair_accessible = 1) AND (spa = 1 OR ocean_view = 1)",
+            "SELECT * FROM hotels WHERE city = 'Stockholm' AND (unit_wheelchair_accessible = 1) AND (ocean_view = 1 OR spa = 1)",
+            "SELECT * FROM hotels WHERE city = 'Stockholm' AND (increased_accessibility = 1 OR unit_wheelchair_accessible = 1) AND (spa = 1)",
+            "SELECT * FROM hotels WHERE city = 'Stockholm' AND (increased_accessibility = 1 OR unit_wheelchair_accessible = 1) AND (ocean_view = 1)",
+            "SELECT * FROM hotels WHERE city = 'Stockholm' AND (increased_accessibility = 1 OR unit_wheelchair_accessible = 1) AND (spa = 1 OR ocean_view = 1)",
+            "SELECT * FROM hotels WHERE city = 'Stockholm' AND (increased_accessibility = 1 OR unit_wheelchair_accessible = 1) AND (ocean_view = 1 OR spa = 1)",
+            "SELECT * FROM hotels WHERE city = 'Stockholm' AND (unit_wheelchair_accessible = 1 OR increased_accessibility = 1) AND (spa = 1)",
+            "SELECT * FROM hotels WHERE city = 'Stockholm' AND (unit_wheelchair_accessible = 1 OR increased_accessibility = 1) AND (ocean_view = 1)",
+            "SELECT * FROM hotels WHERE city = 'Stockholm' AND (unit_wheelchair_accessible = 1 OR increased_accessibility = 1) AND (spa = 1 OR ocean_view = 1)",
+            "SELECT * FROM hotels WHERE city = 'Stockholm' AND (unit_wheelchair_accessible = 1 OR increased_accessibility = 1) AND (ocean_view = 1 OR spa = 1)"
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "Find hotels in Stockholm with free wifi.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Stockholm' AND wifi = 'free';",
+            "SELECT * FROM hotels WHERE city = 'Stockholm' AND wifi = 'free'"
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "I need a place to stay in Copenhagen that's wheelchair friendly and preferably does not have any kids.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Copenhagen' AND (increased_accessibility = 1 AND unit_wheelchair_accessible = 1) AND adults_only = 1;",
+            "SELECT * FROM hotels WHERE city = 'Copenhagen' AND unit_wheelchair_accessible = 1 AND adults_only = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "Looking for a cozy getaway in Bergen for me and my pet, preferably with a scenic view and with the possibility of enjoying a drink after a long day exploring.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Bergen' AND pet_friendly = 'pets allowed on request' AND ocean_view = 1 AND bar = 1;",
+            "SELECT * FROM hotels WHERE city = 'Bergen' AND pet_friendly = 'pets allowed on request' AND (ocean_view = 1) AND bar = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "Give me all hotels in Aarhus with a rating above 7 and a bar.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Aarhus' AND rating > 7 AND bar = 1;",
+            "SELECT * FROM hotels WHERE city = 'Aarhus' AND rating > 7 AND bar = 1 AND review_count >= 20"
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "I'm looking for a luxury stay in Oslo with a rating above 8.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Oslo' AND rating > 8 AND stars >= 4;",
+            "SELECT * FROM hotels WHERE city = 'Oslo' AND rating > 8 AND stars = 5"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "We're planning a road trip through Sweden with our family dog in our Tesla. Could you locate accommodations in Stockholm that would fit us?",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Stockholm' AND pet_friendly = 'pets allowed on request' AND ev_charging_station = 1;",
+            "SELECT * FROM hotels WHERE city = 'Stockholm' AND pet_friendly = 'pets allowed on request' AND ev_charging_station = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "Find hotels in Berlin with a fitness center.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Berlin' AND fitness_center = 1;",
+            "SELECT * FROM hotels WHERE city = 'Berlin' AND fitness_center = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "I'm searching for a place to stay in Paris that offers spa services and has a place to eat on site.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Paris' AND spa = 1 AND restaurant = 1;",
+            "SELECT * FROM hotels WHERE city = 'Paris' AND spa = 1 AND restaurant = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "Looking for an luxurious, leisure-focused stay in Rome, with access to a gym, some fine dining, and options for a relaxing time at the hotel.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Rome' AND fitness_center = 1 AND restaurant = 1 AND spa = 1 AND stars >= 4;",
+            "SELECT * FROM hotels WHERE city = 'Rome' AND fitness_center = 1 AND restaurant = 1 AND spa = 1 AND stars = 5"
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "Show me hotels in Corfu that have a pool.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Corfu' AND pool = 1;",
+            "SELECT * FROM hotels WHERE city = 'Corfu' AND pool = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "I need a hotel in eindhoven with free wifi and a place to wind down and relax at the hotel.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Eindhoven' AND wifi = 'free' AND spa = 1;",
+            "SELECT * FROM hotels WHERE city = 'Eindhoven' AND wifi = 'free' AND spa = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "Seeking an exclusive and luxurious retreat in Venice that caters to health and wellness enthusiasts, offering gym facilities, and a tranquil spa for relaxation after a bustling day exploring the city.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Venice' AND fitness_center = 1 AND spa = 1 AND stars = 5;",
+            "SELECT * FROM hotels WHERE city = 'Venice' AND fitness_center = 1 AND spa = 1 AND stars >= 4"
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "Find hotels in Madrid with a gym and 3 stars at most.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Madrid' AND fitness_center = 1 AND stars <= 3;",
+            "SELECT * FROM hotels WHERE city = 'Madrid' AND fitness_center = 1 AND stars <= 3"
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "I am looking for accommodations in Paris that provide a pampering experience with spa facilities and high-speed internet.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Paris' AND spa = 1 AND wifi = 'free';",
+            "SELECT * FROM hotels WHERE city = 'Paris' AND spa = 1 AND wifi = 'free'"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "In need of a luxurious sanctuary in hungary that offers both an invigorating start to the day with a gym suite, alongside evening relaxation options such as a place to grab a drink. Preferably, no children should be allowed.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE country = 'HU' AND fitness_center = 1 AND bar = 1 AND spa = 1 AND stars >= 4 AND adults_only = 1;",
+            "SELECT * FROM hotels WHERE country = 'HU' AND fitness_center = 1 AND bar = 1 AND spa = 1 AND stars = 5 AND adults_only = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "I'm looking for a place in London with a spot for my car and access to a fitness center.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'London' AND parking != 'no' AND fitness_center = 1;",
+            "SELECT * FROM hotels WHERE city = 'London' AND parking != 'no' AND fitness_center = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "We want a peaceful retreat in austria that caters to wellness enthusiasts, featuring space for yoga or similar activities physical activities, a rejuvenating spa service, alongside the convenience of dining options on-site.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE country = 'AT' AND spa = 1 AND restaurant = 1 AND fitness_center = 1;",
+            "SELECT * FROM hotels WHERE country = 'AT' AND spa = 1 AND restaurant = 1 AND fitness_center = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "Looking for a serene stay in the netherlands that includes options for physical wellness, alongside features for relaxation like massages or sauna, and enjoys the presence of a fine dining options.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE country = 'NL' AND fitness_center = 1 AND spa = 1 AND restaurant = 1;",
+            "SELECT * FROM hotels WHERE country = 'NL' AND fitness_center = 1 AND spa = 1 AND restaurant = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "Show me hotels in Prague that offer a spa and a place to eat, that is friendly towards children as well.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Prague' AND spa = 1 AND restaurant = 1 AND kids_friendly_buffet = 1;",
+            "SELECT * FROM hotels WHERE city = 'Prague' AND spa = 1 AND restaurant = 1 AND kids_friendly_buffet = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "Seeking a luxurious stay in Rome with amenities for relaxation and fitness, including areas to unwind like a sauna or steam room, a place for gourmet dining, and modern gym facilities.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Rome' AND spa = 1 AND restaurant = 1 AND fitness_center = 1;",
+            "SELECT * FROM hotels WHERE city = 'Rome' AND spa = 1 AND restaurant = 1 AND fitness_center = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "Looking for a hotel in porto with both a gym for morning workouts and a spa for relaxing in the evening. I prefer not listening to kids while I am there",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Porto' AND fitness_center = 1 AND spa = 1 AND adults_only = 1;",
+            "SELECT * FROM hotels WHERE city = 'Porto' AND fitness_center = 1 AND spa = 1 AND adults_only = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "Desire a retreat in Barcelona that caters to both culinary enthusiasts with on-site dining options and those seeking wellness activities like workouts and spa treatments, without being too far from the ocean.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Barcelona' AND restaurant = 1 AND fitness_center = 1 AND spa = 1 AND ocean_view = 1;",
+            "SELECT * FROM hotels WHERE city = 'Barcelona' AND restaurant = 1 AND fitness_center = 1 AND spa = 1 AND ocean_view = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "Show me hotels in Rome that have gym and spa amenities.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Rome' AND fitness_center = 1 AND spa = 1;",
+            "SELECT * FROM hotels WHERE city = 'Rome' AND fitness_center = 1 AND spa = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "I'm in search of an idyllic stay in Istanbul that combines wellness and relaxation, targeting establishments that are equipped with modern fitness facilities, serene spa services, and a picturesque view to unwind. Only show me the most luxurious options",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Istanbul' AND fitness_center = 1 AND spa = 1 AND ocean_view = 1 AND stars = 5;",
+            "SELECT * FROM hotels WHERE city = 'Prague' AND fitness_center = 1 AND spa = 1 AND ocean_view = 1 AND stars = 5"
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "Find hotels in Amsterdam that have a gym.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Amsterdam' AND fitness_center = 1;",
+            "SELECT * FROM hotels WHERE city = 'Amsterdam' AND fitness_center = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "I need a hotel in Madrid with a spa, high-speed internet and a pool for my kids.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Madrid' AND spa = 1 AND wifi = 'free' AND child_pool = 1;",
+            "SELECT * FROM hotels WHERE city = 'Madrid' AND spa = 1 AND wifi = 'free' AND (child_pool = 1 OR pool = 1)"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "Looking for a luxurious retreat in Paris that offers an immersive wellness journey with state-of-the-art fitness facilities, rejuvenating spa treatments, and a haven for gourmet lovers.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Paris' AND fitness_center = 1 AND spa = 1 AND restaurant = 1 AND stars >= 4;",
+            "SELECT * FROM hotels WHERE city = 'Paris' AND fitness_center = 1 AND spa = 1 AND restaurant = 1 AND stars = 5"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "I'm looking for a hotel in the capital of Denmark that I can visit with my handicap. It should also have a place to eat for me an my fiancee, as well as a place to workout",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Copenhagen' AND fitness_center = 1 AND restaurant = 1 AND unit_wheelchair_accessible = 1;",
+            "SELECT * FROM hotels WHERE city = 'Copenhagen' AND fitness_center = 1 AND restaurant = 1 AND unit_wheelchair_accessible = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "I desire a luxury stay in the capital of Austria that caters to sophisticated tastes, sought through an establishment equipped with a fitness suite, a haven for relaxation and wellness such as a spa, and topped with an exquisite culinary experience. It must have excellent reviews",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Vienna' AND fitness_center = 1 AND spa = 1 AND restaurant = 1 AND stars >= 4 AND rating >= 8.5;",
+            "SELECT * FROM hotels WHERE city = 'Vienna' AND fitness_center = 1 AND spa = 1 AND restaurant = 1 AND stars = 5 AND rating >= 8.5"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "We're a couple heading to Corfu for our anniversary. It's crucial for us to have an intimate and refreshingly cool stay. Ideally, a place with some view to die for and a chance to unwind with a massage.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Corfu' AND ocean_view = 1 AND spa = 1 AND aircondition = 1;",
+            "SELECT * FROM hotels WHERE city = 'Corfu' AND ocean_view = 1 AND spa = 1 AND aircondition = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "I'm looking for a luxurious stay in Rome with a view of the ocean, including a spa and a fitness center.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Rome' AND ocean_view = 1 AND spa = 1 AND fitness_center = 1 AND stars = 5;",
+            "SELECT * FROM hotels WHERE city = 'Rome' AND ocean_view = 1 AND spa = 1 AND fitness_center = 1 AND stars >= 4"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "We need a family-friendly hotel in Copenhagen that's easy on the wallet but doesn't skimp on the amenities for kids. Must have a space for the kids to splash around and a play area.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Copenhagen' AND stars <= 3 AND (pool = 1 OR child_pool = 1) AND playground = 1;",
+            "SELECT * FROM hotels WHERE city = 'Copenhagen' AND stars <= 3 AND (child_pool = 1) AND playground = 1",
+            "SELECT * FROM hotels WHERE city = 'Copenhagen' AND stars <= 3 AND (pool = 1 OR child_pool = 1) AND playground = 1 AND kids_friendly_buffet = 1"
+        ]
+    }
+]

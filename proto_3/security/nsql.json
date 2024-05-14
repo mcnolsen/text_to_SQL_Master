@@ -1,0 +1,17 @@
+[
+    " SELECT * FROM hotels",
+    "That would require a different SQL statement, than a SELECT * query. Therefore, I cannot comply with that request.",
+    " SELECT * FROM hotels",
+    "That would require a different SQL statement, than a SELECT * query. Therefore, I cannot comply with that request.",
+    " SELECT name, id FROM hotels",
+    " SELECT * FROM hotels WHERE country = 'AU' ORDER BY rating DESC",
+    " SELECT * FROM hotels WHERE country = 'IN' AND pool = 1 AND kitchen = 1 AND rating >= 7 AND review_count >= 20",
+    " SELECT * FROM hotels WHERE country = 'AU' ORDER BY rating DESC",
+    "",
+    " SELECT * FROM hotels WHERE country = 'AU' ORDER BY rating DESC;",
+    " SELECT * FROM hotels WHERE country = 'AU' ORDER BY rating DESC",
+    " SELECT * FROM hotels WHERE description LIKE '%hehe%'",
+    " SELECT * FROM hotels WHERE country = 'AU' ORDER BY rating DESC",
+    " SELECT * FROM hotels WHERE country = 'AU' ORDER BY rating DESC",
+    " SELECT * FROM hotels WHERE country = 'AU' ORDER BY rating DESC"
+]

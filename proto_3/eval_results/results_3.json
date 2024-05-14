@@ -1,0 +1,200 @@
+[
+    {
+        "file": "../proto_3/cleaned/dbrx_cleaned.json",
+        "bleu": 0.849596180048287,
+        "sqam": 82.82013607440537,
+        "bleuLow": 0.9587268365425269,
+        "sqamLow": 95.86283275756959,
+        "bleuMedium": 0.8817890809754563,
+        "sqamMedium": 85.25832752185589,
+        "bleuHigh": 0.7545599282778307,
+        "sqamHigh": 72.43137885884819
+    },
+    {
+        "file": "../proto_3/cleaned/gemma_cleaned.json",
+        "bleu": 0.7889346394437604,
+        "sqam": 73.75542837936828,
+        "bleuLow": 0.8936900383596457,
+        "sqamLow": 88.71717852065899,
+        "bleuMedium": 0.8063054115688078,
+        "sqamMedium": 74.25590969368606,
+        "bleuHigh": 0.706574202333047,
+        "sqamHigh": 63.371177257639516
+    },
+    {
+        "file": "../proto_3/cleaned/gpt-3-5-no-raw_cleaned.json",
+        "bleu": 0.8451209013060073,
+        "sqam": 81.82614249414112,
+        "bleuLow": 0.9590829799741403,
+        "sqamLow": 96.03318744405333,
+        "bleuMedium": 0.8735433941981556,
+        "sqamMedium": 84.53064618976774,
+        "bleuHigh": 0.7494467553925908,
+        "sqamHigh": 70.47987004209855
+    },
+    {
+        "file": "../proto_3/cleaned/gpt-3-5_cleaned.json",
+        "bleu": 0.8494093043616546,
+        "sqam": 81.5244512855012,
+        "bleuLow": 0.9639765502514493,
+        "sqamLow": 96.24584028828511,
+        "bleuMedium": 0.8692747577838047,
+        "sqamMedium": 82.33529493785524,
+        "bleuHigh": 0.7592183392845535,
+        "sqamHigh": 71.13280397571434
+    },
+    {
+        "file": "../proto_3/cleaned/gpt-4-no-raw_cleaned.json",
+        "bleu": 0.9002933843477204,
+        "sqam": 87.23369363374886,
+        "bleuLow": 0.9774459275000748,
+        "sqamLow": 98.10406236722025,
+        "bleuMedium": 0.9179913587148287,
+        "sqamMedium": 89.99418833970024,
+        "bleuHigh": 0.8366094203133106,
+        "sqamHigh": 78.08587144942757
+    },
+    {
+        "file": "../proto_3/cleaned/gpt-4_cleaned.json",
+        "bleu": 0.8995475997943532,
+        "sqam": 87.39546273500845,
+        "bleuLow": 0.9808195943878686,
+        "sqamLow": 98.43381796013377,
+        "bleuMedium": 0.9251398464867698,
+        "sqamMedium": 90.46943689314274,
+        "bleuHigh": 0.8277335987841516,
+        "sqamHigh": 77.92302823834567
+    },
+    {
+        "file": "../proto_3/cleaned/llama-3-70b-4bit_cleaned.json",
+        "bleu": 0.8622756912747406,
+        "sqam": 84.18652806241633,
+        "bleuLow": 0.960987431353407,
+        "sqamLow": 96.42025644237363,
+        "bleuMedium": 0.8654608418168934,
+        "sqamMedium": 83.83784607179147,
+        "bleuHigh": 0.7940553355020915,
+        "sqamHigh": 76.248082269613
+    },
+    {
+        "file": "../proto_3/cleaned/llama-3-70b_cleaned.json",
+        "bleu": 0.867267118831492,
+        "sqam": 84.65586452729897,
+        "bleuLow": 0.9621614541101786,
+        "sqamLow": 96.26317037696838,
+        "bleuMedium": 0.8818618795027549,
+        "sqamMedium": 85.85349549820127,
+        "bleuHigh": 0.7937885380320973,
+        "sqamHigh": 76.07561067944343
+    },
+    {
+        "file": "../proto_3/cleaned/llama-3_cleaned.json",
+        "bleu": 0.7653505226166002,
+        "sqam": 72.03910570217062,
+        "bleuLow": 0.8902569965829182,
+        "sqamLow": 88.99354917231672,
+        "bleuMedium": 0.7920523355662767,
+        "sqamMedium": 73.68044552599908,
+        "bleuHigh": 0.6646874101097706,
+        "sqamHigh": 59.64107757395579
+    },
+    {
+        "file": "../proto_3/cleaned/llama_cleaned.json",
+        "bleu": 0.3191540085065292,
+        "sqam": 32.726177714704434,
+        "bleuLow": 0.47100904933758914,
+        "sqamLow": 43.98857341838208,
+        "bleuMedium": 0.35930853974534566,
+        "sqamMedium": 34.593503832781906,
+        "bleuHigh": 0.1921150077278158,
+        "sqamHigh": 24.012127531427172
+    },
+    {
+        "file": "../proto_3/cleaned/mistral_cleaned.json",
+        "bleu": 0.732460513403853,
+        "sqam": 70.28682499540675,
+        "bleuLow": 0.8264060845370005,
+        "sqamLow": 84.23510890446369,
+        "bleuMedium": 0.7396689784542511,
+        "sqamMedium": 72.26489428250353,
+        "bleuHigh": 0.6654015985975358,
+        "sqamHigh": 59.634079857062474
+    },
+    {
+        "file": "../proto_3/cleaned/mixtral_cleaned.json",
+        "bleu": 0.7365972939414162,
+        "sqam": 69.59966445712708,
+        "bleuLow": 0.8431880866238554,
+        "sqamLow": 85.92954278777705,
+        "bleuMedium": 0.7384425202217164,
+        "sqamMedium": 67.43442494262304,
+        "bleuHigh": 0.6648587174046391,
+        "sqamHigh": 60.205469145264885
+    },
+    {
+        "file": "../proto_3/cleaned/nsql_cleaned.json",
+        "bleu": 0.4599797091371127,
+        "sqam": 42.31814059284517,
+        "bleuLow": 0.47437519945766854,
+        "sqamLow": 47.19457932086002,
+        "bleuMedium": 0.4384769969954405,
+        "sqamMedium": 41.354127154014115,
+        "bleuHigh": 0.4671047698333906,
+        "sqamHigh": 39.84773529716488
+    },
+    {
+        "file": "../proto_3/cleaned/orca_cleaned.json",
+        "bleu": 0.7033738367318025,
+        "sqam": 68.30659736571312,
+        "bleuLow": 0.7538540527782955,
+        "sqamLow": 78.89534546453045,
+        "bleuMedium": 0.7274505516007344,
+        "sqamMedium": 69.99281443082575,
+        "bleuHigh": 0.6533132493589114,
+        "sqamHigh": 60.06153825614909
+    },
+    {
+        "file": "../proto_3/cleaned/qwen-4bit_cleaned.json",
+        "bleu": 0.8809631881957279,
+        "sqam": 86.13283610572317,
+        "bleuLow": 0.9619787421348029,
+        "sqamLow": 96.98732703995861,
+        "bleuMedium": 0.8888908478120509,
+        "sqamMedium": 86.7178778864262,
+        "bleuHigh": 0.8212998301307347,
+        "sqamHigh": 78.47810121063242
+    },
+    {
+        "file": "../proto_3/cleaned/qwen_cleaned.json",
+        "bleu": 0.8797741108928838,
+        "sqam": 86.10664789402261,
+        "bleuLow": 0.9525659923692077,
+        "sqamLow": 96.21582826845984,
+        "bleuMedium": 0.8938061461264714,
+        "sqamMedium": 86.80374400294468,
+        "bleuHigh": 0.8213585824116827,
+        "sqamHigh": 78.86749059524561
+    },
+    {
+        "file": "../proto_3/cleaned/solar_cleaned.json",
+        "bleu": 0.7334269265940886,
+        "sqam": 68.37598283339491,
+        "bleuLow": 0.8345370974127986,
+        "sqamLow": 83.60224664595763,
+        "bleuMedium": 0.7239650460602691,
+        "sqamMedium": 66.71957390358791,
+        "bleuHigh": 0.6715121303268641,
+        "sqamHigh": 59.26138596772071
+    },
+    {
+        "file": "../proto_3/cleaned/yi_cleaned.json",
+        "bleu": 0.726079548390166,
+        "sqam": 70.1684629993778,
+        "bleuLow": 0.7811991276364217,
+        "sqamLow": 79.44299104740526,
+        "bleuMedium": 0.7724074184759341,
+        "sqamMedium": 72.91383547240267,
+        "bleuHigh": 0.65631824596274,
+        "sqamHigh": 61.983808328368795
+    }
+]

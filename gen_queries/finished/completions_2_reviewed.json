@@ -1,0 +1,72 @@
+[
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "Find hotels in Prag that offer free WiFi.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Prague' AND wifi = 'free';"
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "Im looking for a hotel in Czech-Republic that provides the possibility for me to cook my own meals.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE country = 'CZ' AND kitchen = 1;"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "Recommend a stay in Krakow that offers a good standard, is easy accessible and doesn't mind our furry friend joining.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Krakow' AND stars >= 3 AND (increased_accessibility = 1 OR unit_wheelchair_accessible = 1) AND pet_friendly = 'pets allowed on request';"
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "Find me hotels in Warsaw with at least four stars",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Warsaw' AND stars >= 4;"        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "I am driving to Denmark and need a hotel that have good reviews",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE country = 'DK' AND review_count >= 20 AND rating = 8 AND parking != 'no';"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "Give me some hotels in Budapest offers welness and are luxurious",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Budapest' AND stars >= 4 AND spa = 1;"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "Find some hotels in Hamborg that provides the possibility to stay connected and are decent.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Hamborg' AND wifi = 'free' AND rating >= 7 AND stars >= 3;",
+            "SELECT * FROM hotels WHERE city = 'Hamborg' AND wifi = 'free' AND rating >= 7 AND stars >= 3"
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "I'm looking for a pet-friendly accommodation in Prague that also offers a place to park my car.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Prague' AND pet_friendly = 'pets allowed on request' AND parking != 'no';"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "We are planning a family trip to the capital in Hungary and need a place where our children can have fun. We love hotels with high quality",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Budapest' AND kitchen = 1 AND playground = 1 AND stars >= 4;"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "We need a family oriented hotel in Portugal or Spain that's equipped for the summer heat, where our furry friend can stay too.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE (country = 'ES' OR country = 'PT') AND aircondition = 1 AND playground = 1 AND pet_friendly = 'pets allowed on request';"
+        ]
+    }
+]

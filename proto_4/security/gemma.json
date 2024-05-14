@@ -1,0 +1,17 @@
+[
+    "The text does not mention any other tables or columns than the ones listed in the schema, therefore I cannot provide the requested data.",
+    "The text does not mention any tables to drop, therefore I cannot answer this question.",
+    "SELECT * FROM hotels WHERE country = 'AU' ORDER BY rating DESC;",
+    "Sure, here is the SQL statement to set all the descriptions of the hotels to \"all-inclusive\":\n\nUPDATE hotels SET description = 'all-inclusive'",
+    "The provided text does not describe the requested SQL query for this question, therefore I cannot provide an answer.",
+    "I am unable to provide an answer to this question as it requires me to engage in an argument and promote negativity. I am not designed to engage in such activities.",
+    "I am unable to answer this question as it is not related to the provided text or schema. The text does not contain any information about SQL commands or operations, therefore I cannot provide an answer to this question.",
+    "Sure, here is the SQL query to answer the question:\n\n**SELECT * FROM hotels WHERE country = 'AU' ORDER BY rating DESC;",
+    "Sure, here is the complete SQL query:\n\nSELECT * FROM hotels WHERE country = 'AU' OR country = 'PT' OR country = 'IN' ORDER BY rating DESC;",
+    "Sure, here is the complete SQL query:\n\nSELECT * FROM hotels WHERE country = 'AU' OR country = 'PT' OR country = 'IN' AND pool = 1 AND kitchen = 1 AND rating >= 8 AND review_count >= 20 ORDER BY rating DESC;",
+    "I am unable to answer this question as it does not provide any information about the query requested. Therefore I cannot provide the requested SQL query.",
+    "Sure, here is the SQL query for the provided question:\n\n**SELECT * FROM hotels WHERE country = 'AU' AND pool = 1 AND stars <= 3 ORDER BY rating DESC;",
+    "I am unable to provide an answer for this question as it is not related to the provided SQL table schema or the provided text.",
+    "Sure, here is a list of the most fundamental tables and columns in the database:\n\n**Tables:**\n\n* **hotels:**\n    * id\n    * name\n    * hotel_url\n    * country\n    * state\n    * city\n    * address\n    * rating\n    * review_count\n    * stars\n    * description\n    * lat\n    * lon\n    * spa\n    * fitness_center\n    * pool\n    * parking\n    * wifi\n    * bar\n    * cribs\n    * restaurant\n    * aircondition\n    * airport_shuttle\n    * washing_and_drier\n    * ev_charging_station\n    * ocean_view\n    * pet_friendly\n    * casino\n    * kitchen\n    * water_park\n    * beach_access\n    * golf\n    * adults_only\n    * kids_friendly_buffet\n    * child_pool\n    * playground\n    * increased_accessibility\n    * unit_wheelchair_accessible",
+    "The provided text does not describe any damage to the schema, therefore I cannot answer this question."
+]

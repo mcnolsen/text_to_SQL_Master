@@ -1,0 +1,210 @@
+[
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "Find hotels in Prague that have a fitness center.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Prague' AND fitness_center = 1;",
+            "SELECT * FROM hotels WHERE city = 'Prague' AND fitness_center = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "I need a hotel in Warsaw with spa services and a possible ride from the airport to the hotel",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Warsaw' AND spa = 1 AND airport_shuttle = 'possible';",
+            "SELECT * FROM hotels WHERE city = 'Warsaw' AND spa = 1 AND airport_shuttle = 'possible'"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "Looking for a cozy retreat in Budapest that offers both relaxation options like a sauna, and a bit of onsite nightlife. Also, must have a spot to safely park my rental car.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Budapest' AND spa = 1 AND bar = 1 AND parking != 'no';",
+            "SELECT * FROM hotels WHERE city = 'Budapest' AND spa = 1 AND bar = 1 AND parking != 'no'"
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "Show me hotels in Krakow with a pool.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Krakow' AND pool = 1;",
+            "SELECT * FROM hotels WHERE city = 'Krakow' AND pool = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "I'm looking for a place to stay in Budapest with free internet and a restaurant for easy dining.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Budapest' AND wifi = 'free' AND restaurant = 1;",
+            "SELECT * FROM hotels WHERE city = 'Budapest' AND wifi = 'free' AND restaurant = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "I need a serene and luxurious hotel in Warsaw that allows for a leisurely stay with facilities for unwinding, maybe catching up over drinks, and should have hassle-free connectivity.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Warsaw' AND stars >= 4 AND spa = 1 AND bar = 1 AND wifi = 'free';",
+            "SELECT * FROM hotels WHERE city = 'Warsaw' AND stars >= 4 AND spa = 1 AND bar = 1 AND wifi = 'free'"
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "Find hotels in Budapest with a gym.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Budapest' AND fitness_center = 1;",
+            "SELECT * FROM hotels WHERE city = 'Budapest' AND fitness_center = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "I want a hotel in Warsaw that offers spa facilities and has a bar.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Warsaw' AND spa = 1 AND bar = 1;",
+            "SELECT * FROM hotels WHERE city = 'Warsaw' AND spa = 1 AND bar = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "Seeking an accommodation in Oslo that's perfect for relaxing with a spa, enjoying good food onsite, and having easy access to the internet to share my experiences.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Oslo' AND spa = 1 AND restaurant = 1 AND wifi = 'free';",
+            "SELECT * FROM hotels WHERE city = 'Oslo' AND spa = 1 AND restaurant = 1 AND wifi = 'free'"
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "Show me hotels in Gothenburg with a spa.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Gothenburg' AND spa = 1;",
+            "SELECT * FROM hotels WHERE city = 'Gothenburg' AND spa = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "I need a hotel in Budapest that offers both a fitness center and parking.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Budapest' AND fitness_center = 1 AND parking != 'no';",
+            "SELECT * FROM hotels WHERE city = 'Budapest' AND fitness_center = 1 AND parking != 'no'"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "Looking for a tranquil stay in Berlin with amenities for relaxation like a spa, options for evening drinks at the hotel, and convenience for my rental car, I do not want to have to park it a long distance from the hotel",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Berlin' AND spa = 1 AND bar = 1 AND parking != 'no';",
+            "SELECT * FROM hotels WHERE city = 'Berlin' AND spa = 1 AND bar = 1 AND parking != 'no'"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "In need of a relaxing retreat in Paris where I can enjoy wellness facilities like a spa, unwind in the evening with a drink, and take leisurely swims, without having to stray far for a delicious meal.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Paris' AND spa = 1 AND bar = 1 AND pool = 1 AND restaurant = 1;",
+            "SELECT * FROM hotels WHERE city = 'Paris' AND spa = 1 AND bar = 1 AND pool = 1 AND restaurant = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "I'm searching for lodgings in Vienna with gym facilities and remote work connectivity.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Vienna' AND fitness_center = 1 AND wifi = 'free';",
+            "SELECT * FROM hotels WHERE city = 'Vienna' AND fitness_center = 1 AND wifi = 'free'"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "Looking for a relaxing getaway in Antalya that caters to wellness, offers leisure activities like golf, and guarantees a peaceful night's sleep with enhanced room comfort for the hotter summer days.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Antalya' AND spa = 1 AND golf = 1 AND aircondition = 1;",
+            "SELECT * FROM hotels WHERE city = 'Antalya' AND spa = 1 AND golf = 1 AND aircondition = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "I need a hotel in Leicester with free Wi-Fi. and a bar",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Leicester' AND wifi = 'free' AND bar = 1;",
+            "SELECT * FROM hotels WHERE city = 'Leicester' AND wifi = 'free' AND bar = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "Looking for accommodation in Budapest that offers a fitness center and where pets are allowed.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Budapest' AND fitness_center = 1 AND pet_friendly = 'pets allowed on request';",
+            "SELECT * FROM hotels WHERE city = 'Budapest' AND fitness_center = 1 AND pet_friendly = 'pets allowed on request'"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "Seek a haven in Krakow that provides a sanctuary of relaxation with a spa, pampers with culinary delights in its own restaurant, and ensures the buzz of digital connectivity without a hitch.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Krakow' AND spa = 1 AND restaurant = 1 AND wifi = 'free';",
+            "SELECT * FROM hotels WHERE city = 'Krakow' AND spa = 1 AND restaurant = 1 AND wifi = 'free'"
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "I'm looking for a hotel in Zurich with a fitness center.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Zurich' AND fitness_center = 1;",
+            "SELECT * FROM hotels WHERE city = 'Zurich' AND fitness_center = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "Find me a place in Istanbul where I have the possibility of washing my clothes as I will be staying there for a long time. It must also offer transportation to the hotel from the airport, I don't want to deal with getting a cab.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Istanbul' AND washing_and_drier = 1 AND airport_shuttle != 'no';",
+            "SELECT * FROM hotels WHERE city = 'Istanbul' AND washing_and_drier = 1 AND airport_shuttle != 'no';"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "I am in dire need of a retreat to Amsterdam with facilities for unwinding like a sauna, alongside secure parking for my rental car, I like green surroundings. Suggest me something",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Amsterdam' AND spa = 1 AND parking != 'no';",
+            "SELECT * FROM hotels WHERE city = 'Amsterdam' AND spa = 1 AND parking != 'no'"
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "Show me hotels in Lisbon where I have the possibility for dining",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Lisbon' AND restaurant = 1;",
+            "SELECT * FROM hotels WHERE city = 'Lisbon' AND restaurant = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "Looking for hotels in Madeira with both a gym and a pool.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Madeira' AND fitness_center = 1 AND pool = 1;",
+            "SELECT * FROM hotels WHERE city = 'Madeira' AND fitness_center = 1 AND pool = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "Find a hotel in Sweden where there is with a pool.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE country = 'SE' AND pool = 1;",
+            "SELECT * FROM hotels WHERE country = 'SE' AND pool = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "I want a hotel in Porto that serves local port wine at the bar. No pets at the hotel please, I am an allergic person.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Porto' AND bar = 1 AND pet_friendly = 'no pets';",
+            "SELECT * FROM hotels WHERE city = 'Porto' AND bar = 1 AND pet_friendly = 'no pets'"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "In search of luxurious hotel with high ratings in Madrid that provides a place to relax with a spa, engage in physical activities at a gym, and definitely also a pool to cool off in the summer heat.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Madrid' AND stars >= 4 AND rating >= 8 AND spa = 1 AND fitness_center = 1 AND pool = 1;",
+            "SELECT * FROM hotels WHERE city = 'Madrid' AND stars >= 4 AND rating >= 8 AND spa = 1 AND fitness_center = 1 AND pool = 1;"
+        ]
+    }
+]

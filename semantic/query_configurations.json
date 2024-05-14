@@ -1,0 +1,46 @@
+{
+    "0": {"general_rules": {"remove_limit_and_after": true}},
+    "1": {"general_rules": {"remove_limit_and_after": true}},
+    "2": {"general_rules": {"remove_limit_and_after": true}},
+    "3": {
+      "column_rules": {
+        "review_count": {"range": [10, 10000], "target": 20},
+        "rating": {"range": [7, 9], "target": 8}
+      },
+      "general_rules": {
+        "remove_limit_and_after": false,
+        "remove_order_by_rand": true
+      }
+    },
+    "4": {"general_rules": {"remove_limit_and_after": true}},
+    "5": {"column_rules": {"review_count": {"range": [800, 20000], "target": 2000}},
+        "general_rules": {"remove_limit_and_after": true}},
+    "6": {
+      "general_rules": {
+        "remove_limit_and_after": true
+      }
+    },
+    "7": {"general_rules": {"remove_limit_and_after": true}},
+    "8": {"general_rules": {"remove_limit_and_after": true}},
+    "9": {"column_rules": {"rating": {"range": [7, 9], "target": 8}, "review_count": {"range": [10, 10000], "target": 20}}, "general_rules": {"remove_limit_and_after": true}},
+    "10": {"general_rules": {"remove_limit_and_after": true}},
+    "11": {"general_rules": {"remove_limit_and_after": true}},
+    "12": {"general_rules": {"remove_limit_and_after": true}},
+    "13": {"general_rules": {"remove_limit_and_after": true}},
+    "14": {"general_rules": {"remove_limit_and_after": true}},
+    "15": {"general_rules": {"remove_limit_and_after": false, "remove_order_by_rand": true}},
+    "16": {"general_rules": {"remove_limit_and_after": false, "remove_order_by_rand": true}},
+    "17": {"column_rules": {"rating": {"range": [6, 8], "target": 7}, "review_count": {"range": [10, 10000], "target": 20}} ,"general_rules": {"remove_limit_and_after": true}},
+    "18": {"general_rules": {"remove_limit_and_after": false, "remove_order_by_rand": true}},
+    "19": {"general_rules": {"remove_limit_and_after": false, "remove_order_by_rand": true}},
+    "20": {"general_rules": {"remove_limit_and_after": false}},
+    "21": {"general_rules": {"remove_limit_and_after": true}},
+    "22": {"column_rules": {"rating": {"range": [7, 9], "target": 7.5}, "review_count": {"range": [10, 10000], "target": 20}}, "general_rules": {"remove_limit_and_after": true}},
+    "23": {"general_rules": {"remove_limit_and_after": true}},
+    "24": {"general_rules": {"remove_limit_and_after": true}},
+    "25": {"general_rules": {"remove_limit_and_after": true}},
+    "26": {"general_rules": {"remove_limit_and_after": true}},
+    "27": {"general_rules": {"remove_limit_and_after": true}},
+    "28": {"general_rules": {"remove_limit_and_after": true}},
+    "29": {"general_rules": {"remove_limit_and_after": true}}
+  }

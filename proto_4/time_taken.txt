@@ -1,0 +1,13 @@
+DBRX: Time taken: 228.86393451690674 seconds, compute: 8 x RTX A6000, VRAM usage: 85% on all
+Mixtral: Time taken: 161.4105749130249 seconds, compute: 1 x A100 80gb, VRAM usage: 62%
+Mistral: Time taken: 108.75856828689575 seconds, compute: 1 x A100 80gb, VRAM usage: 13%
+NSQL: Time taken: 28.66086721420288 seconds, compute: 1 x A100 80gb, VRAM usage: 15%
+Gemma: Time taken: 65.18560981750488 seconds, compute: 1 x A100 80gb, VRAM usage: 18%
+Solar: Time taken: 115.48245763778687 seconds, compute: 1 x A100 80gb, VRAM usage: 18%
+Yi: Time taken: 307.6035945415497 seconds, compute: 1 x A100 80gb, VRAM usage: 47%
+Orca-mini-v3: Time taken: 177.48469305038452 seconds, compute: 1 x A100 80gb, VRAM usage: 24%
+Llama: Time taken: 174.63848161697388 seconds, compute: 1 x A100 80gb, VRAM usage: 24%
+Qwen: Time taken: 591.4808340072632 seconds, compute: 2 x RTX A6000, VRAM usage: 90%
+GPT-3.5_0125: Time taken: 46.048160552978516 seconds
+GPT-3.5_1106: Time taken: 47.258949279785156 seconds
+GPT4: Time taken: 108.5900285243988 seconds 

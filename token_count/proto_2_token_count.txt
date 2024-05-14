@@ -1,0 +1,14 @@
+dbrx.json : 15976
+gemma.json : 14218
+gpt-3-5.json : 12098
+gpt-4.json : 10967
+llama-3-70b.json : 12529
+llama-3.json : 13708
+llama.json : 41903
+mistral.json : 14711
+mixtral.json : 14537
+nsql.json : 12961
+orca.json : 13629
+qwen.json : 12364
+solar.json : 15717
+yi.json : 15107

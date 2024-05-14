@@ -1,0 +1,17 @@
+[
+    "SELECT * FROM hotels",
+    "SELECT * FROM hotels",
+    "SELECT * FROM hotels",
+    "SELECT * FROM hotels WHERE description = 'all-inclusive'",
+    "SELECT * FROM hotels",
+    "SELECT * FROM hotels",
+    "SELECT * FROM hotels WHERE 1=0",
+    "SELECT * FROM hotels WHERE country='DK' AND city='Copenhagen'",
+    "SELECT * FROM hotels WHERE country IN ('DK', 'ES', 'IT', 'FR', 'MC', 'SE', 'NO', 'DE', 'GR', 'GB', 'TR', 'CZ', 'CH', 'AT', 'NL', 'MX', 'PL', 'IE', 'IS', 'AU', 'TH', 'JP', 'US', 'IN', 'MT', 'PT', 'HU', 'LT', 'BR') AND city IN ('Copenhagen', 'Aarhus', 'Roskilde', 'Odense', 'Aalborg', 'Skagen', 'Bornholm', 'Sonderborg', 'Ibiza-Island', 'Palma-de-Mallorca', 'Mallorca', 'Barcelona', 'Madrid', 'Malaga', 'Canary-Islands', 'Bilbao', 'Tenerife', 'Valencia', 'Algeciras', 'Alicante', 'Rome', 'Milan', 'Genoa', 'Venice', 'Palermo', 'Catania', 'Cagliari', 'Sassari', 'Paris', 'Bordeaux', 'Nice', 'Marseille', 'Corsica', 'French-Riviera', 'Monaco', 'Stockholm', 'Helsingborg', 'Gothenburg', 'Malmo', 'Kiruna', 'Visby', 'Oslo', 'Bergen', 'Trondheim', 'Stavanger', 'Tromso', 'Berlin', 'Munchen', 'Hamborg', 'Bremen', 'Stuttgart', 'Mannheim', 'Dresden', 'Athens', 'Mykonos', 'Thera', 'Thessaloniki', 'Chania', 'Corfu', 'Crete', 'Rhodes', 'Volos', 'London', 'Manchester', 'Edinburgh', 'Glasgow', 'Aberdeen', 'Liverpool', 'Southampton', 'Oxford', 'Cardiff', 'Swansea', 'Wrexham', 'Leicester', 'Belfast', 'Lisburn', 'Northern-Ireland', 'Wales', 'Scotland', 'Istanbul', 'Cappadocia', 'Antalya', 'Bodrum', 'Prague', 'Cesky-Krumlov', 'Carlsbad', 'Pilsen', 'Zurich', 'Basel', 'Geneve', 'Bern', 'Luzern', 'Vienna', 'Salzburg', 'Innsbruck', 'Hallstatt', 'Amsterdam', 'Rotterdam', 'Maastricht', 'Eindhoven', 'Cancun', 'Warsaw', 'Krakow', 'Gdansk', 'Poznan', 'Katowice', 'Lodz', 'Wroclaw', 'Dublin', 'Limerick', 'Cork', 'Reykjavik', 'Akureyri', 'Hafnarfjordur', 'Sydney', 'Melbourne', 'Brisbane', 'Perth', 'Adelaide', 'Gold-Coast', 'Cairns', 'Bangkok', 'Chiang-Mai', 'Phuket', 'Krabi', 'Koh-Samui', 'Ayutthaya', 'Kanchanaburi', 'Tokyo', 'Kyoto', 'Osaka', 'Hiroshima', 'Nagoya', 'Sapporo', 'Yokohama', 'Los-Angeles', 'Miami', 'Boston', 'Mumbai', 'Tulum', 'Mexico-City', 'Guadalajara', 'Playa-del-Carmen', 'Los-Cabos', 'La-Paz', 'San-Miguel-de-Allende', 'Puerto-Vallarta', 'Oaxaca', 'Senglea', 'Cospicua', 'Birgu', 'Porto', 'Madeira', 'Lisbon', 'Budapest', 'Lake-Balaton', 'Eger', 'Pecs', 'Debrecen', 'Szeged', 'Szentendre', 'Vilnius', 'Kaunas', 'Klaipda', 'Trakai', 'Brasilia', 'Rio-de-Janeiro', 'Florianopolis', 'Salvador', 'Sao-Paulo', 'Foz-do-Iguacu') AND rating > 8",
+    "SELECT * FROM hotels",
+    "SELECT * FROM hotels",
+    "SELECT * FROM hotels WHERE description LIKE '%hehe%'",
+    "SELECT * FROM hotels",
+    "SELECT * FROM hotels",
+    "SELECT * FROM hotels"
+]

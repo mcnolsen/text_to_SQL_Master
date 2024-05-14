@@ -1,0 +1,568 @@
+[
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "Find hotels in Berlin with a fitness center.",
+        "sql_query": "SELECT * FROM hotels WHERE city = 'Berlin' AND fitness_center = 1;",
+        "combinations": [
+            [
+                "city = 'Berlin'"
+            ],
+            [
+                "fitness_center = 1"
+            ]
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "I'm searching for a place to stay in Paris that offers spa services and has a restaurant on site.",
+        "sql_query": "SELECT * FROM hotels WHERE city = 'Paris' AND spa = 1 AND restaurant = 1;",
+        "combinations": [
+            [
+                "city = 'Paris'"
+            ],
+            [
+                "spa = 1"
+            ],
+            [
+                "restaurant = 1"
+            ]
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "Looking for an upscale, leisure-focused stay in Rome, with access to a gym, some fine dining, and options for a relaxing sauna or steam room.",
+        "sql_query": "SELECT * FROM hotels WHERE city = 'Rome' AND fitness_center = 1 AND restaurant = 1 AND spa = 1 AND stars >= 4;",
+        "combinations": [
+            [
+                "city = 'Rome'"
+            ],
+            [
+                "fitness_center = 1"
+            ],
+            [
+                "restaurant = 1"
+            ],
+            [
+                "spa = 1"
+            ],
+            [
+                "stars >= 4"
+            ]
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "Show me hotels in Rome that have a pool.",
+        "sql_query": "SELECT * FROM hotels WHERE city = 'Rome' AND pool = 1;",
+        "combinations": [
+            [
+                "city = 'Rome'"
+            ],
+            [
+                "pool = 1"
+            ]
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "I need a hotel in Amsterdam with free wifi and a place to relax outside.",
+        "sql_query": "SELECT * FROM hotels WHERE city = 'Amsterdam' AND wifi = 'free' AND beach_access = 'beach access';",
+        "combinations": [
+            [
+                "city = 'Amsterdam'"
+            ],
+            [
+                "wifi = 'free'"
+            ],
+            [
+                "beach_access = 'beach access'"
+            ]
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "Seeking an exclusive retreat in Venice that caters to health and wellness enthusiasts, offering gym facilities, and a tranquil spa for relaxation after a bustling day exploring the city.",
+        "sql_query": "SELECT * FROM hotels WHERE city = 'Venice' AND fitness_center = 1 AND spa = 1 AND stars > 4;",
+        "combinations": [
+            [
+                "city = 'Venice'"
+            ],
+            [
+                "fitness_center = 1"
+            ],
+            [
+                "spa = 1"
+            ],
+            [
+                "stars > 4"
+            ]
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "Find hotels in Madrid with a gym.",
+        "sql_query": "SELECT * FROM hotels WHERE city = 'Madrid' AND fitness_center = 1;",
+        "combinations": [
+            [
+                "city = 'Madrid'"
+            ],
+            [
+                "fitness_center = 1"
+            ]
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "I am looking for accommodations in Paris that provide a pampering experience with spa facilities and high-speed internet.",
+        "sql_query": "SELECT * FROM hotels WHERE city = 'Paris' AND spa = 1 AND wifi = 'free';",
+        "combinations": [
+            [
+                "city = 'Paris'"
+            ],
+            [
+                "spa = 1"
+            ],
+            [
+                "wifi = 'free'"
+            ]
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "In need of a luxurious sanctuary in Prague that offers both an invigorating start to the day with a fitness suite, alongside evening relaxation options such as a bar and sauna amenities.",
+        "sql_query": "SELECT * FROM hotels WHERE city = 'Prague' AND fitness_center = 1 AND bar = 1 AND spa = 1 AND stars >= 4;",
+        "combinations": [
+            [
+                "city = 'Prague'"
+            ],
+            [
+                "fitness_center = 1"
+            ],
+            [
+                "bar = 1"
+            ],
+            [
+                "spa = 1"
+            ],
+            [
+                "stars >= 4"
+            ]
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "Find hotels in Barcelona with a restaurant.",
+        "sql_query": "SELECT * FROM hotels WHERE city = 'Barcelona' AND restaurant = 1;",
+        "combinations": [
+            [
+                "city = 'Barcelona'"
+            ],
+            [
+                "restaurant = 1"
+            ]
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "I'm looking for a place in London with a spot to park my car and access to a fitness center.",
+        "sql_query": "SELECT * FROM hotels WHERE city = 'London' AND parking != 'no' AND fitness_center = 1;",
+        "combinations": [
+            [
+                "city = 'London'"
+            ],
+            [
+                "parking != 'no'"
+            ],
+            [
+                "fitness_center = 1"
+            ]
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "Desiring a peaceful retreat in Vienna that caters to wellness enthusiasts, featuring space for yoga or similar activities, a rejuvenating spa service, alongside the convenience of dining options on-site.",
+        "sql_query": "SELECT * FROM hotels WHERE city = 'Vienna' AND spa = 1 AND restaurant = 1 AND fitness_center = 1;",
+        "combinations": [
+            [
+                "city = 'Vienna'"
+            ],
+            [
+                "spa = 1"
+            ],
+            [
+                "restaurant = 1"
+            ],
+            [
+                "fitness_center = 1"
+            ]
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "Show hotels in Lisbon with a bar.",
+        "sql_query": "SELECT * FROM hotels WHERE city = 'Lisbon' AND bar = 1;",
+        "combinations": [
+            [
+                "city = 'Lisbon'"
+            ],
+            [
+                "bar = 1"
+            ]
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "I want a hotel in Athens that offers a spa experience and has a pool.",
+        "sql_query": "SELECT * FROM hotels WHERE city = 'Athens' AND spa = 1 AND pool = 1;",
+        "combinations": [
+            [
+                "city = 'Athens'"
+            ],
+            [
+                "spa = 1"
+            ],
+            [
+                "pool = 1"
+            ]
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "Looking for a serene stay in Florence that includes options for physical wellness, such as a gym, alongside features for relaxation like massages or sauna, and enjoys the presence of a fine dining restaurant.",
+        "sql_query": "SELECT * FROM hotels WHERE city = 'Florence' AND fitness_center = 1 AND spa = 1 AND restaurant = 1;",
+        "combinations": [
+            [
+                "city = 'Florence'"
+            ],
+            [
+                "fitness_center = 1"
+            ],
+            [
+                "spa = 1"
+            ],
+            [
+                "restaurant = 1"
+            ]
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "I need a hotel in Berlin with a fitness center.",
+        "sql_query": "SELECT * FROM hotels WHERE city = 'Berlin' AND fitness_center = 1;",
+        "combinations": [
+            [
+                "city = 'Berlin'"
+            ],
+            [
+                "fitness_center = 1"
+            ]
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "Show me hotels in Prague that offer a spa and have a restaurant.",
+        "sql_query": "SELECT * FROM hotels WHERE city = 'Prague' AND spa = 1 AND restaurant = 1;",
+        "combinations": [
+            [
+                "city = 'Prague'"
+            ],
+            [
+                "spa = 1"
+            ],
+            [
+                "restaurant = 1"
+            ]
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "Seeking a luxurious stay in Rome with amenities for relaxation and fitness, including areas to unwind like a sauna or steam room, a place for gourmet dining, and modern gym facilities.",
+        "sql_query": "SELECT * FROM hotels WHERE city = 'Rome' AND spa = 1 AND restaurant = 1 AND fitness_center = 1;",
+        "combinations": [
+            [
+                "city = 'Rome'"
+            ],
+            [
+                "spa = 1"
+            ],
+            [
+                "restaurant = 1"
+            ],
+            [
+                "fitness_center = 1"
+            ]
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "Find hotels in Paris that offer free wifi.",
+        "sql_query": "SELECT * FROM hotels WHERE city = 'Paris' AND wifi = 'free';",
+        "combinations": [
+            [
+                "city = 'Paris'"
+            ],
+            [
+                "wifi = 'free'"
+            ]
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "Looking for a hotel in Venice with both a gym for morning workouts and a spa for relaxing in the evening.",
+        "sql_query": "SELECT * FROM hotels WHERE city = 'Venice' AND fitness_center = 1 AND spa = 1;",
+        "combinations": [
+            [
+                "city = 'Venice'"
+            ],
+            [
+                "fitness_center = 1"
+            ],
+            [
+                "spa = 1"
+            ]
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "Desire a retreat in Barcelona that caters to both culinary enthusiasts with on-site dining options and those seeking wellness activities like workouts and spa treatments, without being too far from the ocean view.",
+        "sql_query": "SELECT * FROM hotels WHERE city = 'Barcelona' AND restaurant = 1 AND fitness_center = 1 AND spa = 1 AND ocean_view = 1;",
+        "combinations": [
+            [
+                "city = 'Barcelona'"
+            ],
+            [
+                "restaurant = 1"
+            ],
+            [
+                "fitness_center = 1"
+            ],
+            [
+                "spa = 1"
+            ],
+            [
+                "ocean_view = 1"
+            ]
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "I'm looking for a hotel in London with a pool.",
+        "sql_query": "SELECT * FROM hotels WHERE city = 'London' AND pool = 1;",
+        "combinations": [
+            [
+                "city = 'London'"
+            ],
+            [
+                "pool = 1"
+            ]
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "Show me hotels in Rome that have a gym and offer spa services.",
+        "sql_query": "SELECT * FROM hotels WHERE city = 'Rome' AND fitness_center = 1 AND spa = 1;",
+        "combinations": [
+            [
+                "city = 'Rome'"
+            ],
+            [
+                "fitness_center = 1"
+            ],
+            [
+                "spa = 1"
+            ]
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "I'm in search of an idyllic stay in Prague that combines wellness and relaxation, targeting establishments that are equipped with modern fitness facilities, serene spa services, and a picturesque view to unwind.",
+        "sql_query": "SELECT * FROM hotels WHERE city = 'Prague' AND fitness_center = 1 AND spa = 1 AND ocean_view = 1;",
+        "combinations": [
+            [
+                "city = 'Prague'"
+            ],
+            [
+                "fitness_center = 1"
+            ],
+            [
+                "spa = 1"
+            ],
+            [
+                "ocean_view = 1"
+            ]
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "Find hotels in Amsterdam that have a gym.",
+        "sql_query": "SELECT * FROM hotels WHERE city = 'Amsterdam' AND fitness_center = 1;",
+        "combinations": [
+            [
+                "city = 'Amsterdam'"
+            ],
+            [
+                "fitness_center = 1"
+            ]
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "I need a hotel in Madrid with a spa and high-speed internet.",
+        "sql_query": "SELECT * FROM hotels WHERE city = 'Madrid' AND spa = 1 AND wifi = 'free';",
+        "combinations": [
+            [
+                "city = 'Madrid'"
+            ],
+            [
+                "spa = 1"
+            ],
+            [
+                "wifi = 'free'"
+            ]
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "Looking for a luxurious retreat in Paris that offers an immersive wellness journey with state-of-the-art fitness facilities, rejuvenating spa treatments, and a haven for gourmet lovers.",
+        "sql_query": "SELECT * FROM hotels WHERE city = 'Paris' AND fitness_center = 1 AND spa = 1 AND restaurant = 1 AND stars > 4;",
+        "combinations": [
+            [
+                "city = 'Paris'"
+            ],
+            [
+                "fitness_center = 1"
+            ],
+            [
+                "spa = 1"
+            ],
+            [
+                "restaurant = 1"
+            ],
+            [
+                "stars > 4"
+            ]
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "Show me hotels in Barcelona with free wifi.",
+        "sql_query": "SELECT * FROM hotels WHERE city = 'Barcelona' AND wifi = 'free';",
+        "combinations": [
+            [
+                "city = 'Barcelona'"
+            ],
+            [
+                "wifi = 'free'"
+            ]
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "I'm looking for a hotel in Copenhagen that has a fitness center and a restaurant.",
+        "sql_query": "SELECT * FROM hotels WHERE city = 'Copenhagen' AND fitness_center = 1 AND restaurant = 1;",
+        "combinations": [
+            [
+                "city = 'Copenhagen'"
+            ],
+            [
+                "fitness_center = 1"
+            ],
+            [
+                "restaurant = 1"
+            ]
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "I desire a luxury stay in Vienna that caters to sophisticated tastes, sought through an establishment equipped with a fitness suite, a haven for relaxation and wellness such as a spa, and topped with an exquisite culinary experience.",
+        "sql_query": "SELECT * FROM hotels WHERE city = 'Vienna' AND fitness_center = 1 AND spa = 1 AND restaurant = 1 AND stars >= 4;",
+        "combinations": [
+            [
+                "city = 'Vienna'"
+            ],
+            [
+                "fitness_center = 1"
+            ],
+            [
+                "spa = 1"
+            ],
+            [
+                "restaurant = 1"
+            ],
+            [
+                "stars >= 4"
+            ]
+        ]
+    },
+    {
+        "nl_query": "We're a couple heading to Rome for our anniversary. It's crucial for us to have an intimate and refreshingly cool stay. Ideally, a place with some view to die for and a chance to unwind with a massage.",
+        "sql_query": "SELECT * FROM hotels WHERE city = 'Rome' AND ocean_view = 1 AND spa = 1 AND aircondition = 1;",
+        "combinations": [
+            [
+                "city = 'Rome'"
+            ],
+            [
+                "ocean_view = 1"
+            ],
+            [
+                "spa = 1"
+            ],
+            [
+                "aircondition = 1"
+            ]
+        ]
+    },
+    {
+        "nl_query": "Find a hotel in Paris with free wifi.",
+        "sql_query": "SELECT * FROM hotels WHERE city = 'Paris' AND wifi = 'free';",
+        "combinations": [
+            [
+                "city = 'Paris'"
+            ],
+            [
+                "wifi = 'free'"
+            ]
+        ]
+    },
+    {
+        "nl_query": "I'm looking for a luxurious stay in Rome with a view of the ocean, including a spa and a fitness center.",
+        "sql_query": "SELECT * FROM hotels WHERE city = 'Rome' AND ocean_view = 1 AND spa = 1 AND fitness_center = 1 AND stars = 5;",
+        "combinations": [
+            [
+                "city = 'Rome'"
+            ],
+            [
+                "ocean_view = 1"
+            ],
+            [
+                "spa = 1"
+            ],
+            [
+                "fitness_center = 1"
+            ],
+            [
+                "stars = 5"
+            ]
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "We need a family-friendly hotel in Copenhagen that's easy on the wallet but doesn't skimp on the amenities for kids. Must have a space for the kids to splash around and a play area.",
+        "sql_query": "SELECT * FROM hotels WHERE city = 'Copenhagen' AND stars <= 3 AND (pool = 1 OR child_pool = 1) AND playground = 1;",
+        "combinations": [
+            [
+                "city = 'Copenhagen'"
+            ],
+            [
+                "stars <= 3"
+            ],
+            [
+                "pool = 1",
+                "child_pool = 1"
+            ],
+            [
+                "playground = 1"
+            ]
+        ]
+    }
+]

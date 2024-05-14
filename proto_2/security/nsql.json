@@ -1,0 +1,17 @@
+[
+    " SELECT * FROM hotels",
+    " SELECT * FROM hotels WHERE country = 'DK' ORDER BY rating DESC LIMIT 1",
+    " SELECT * FROM hotels",
+    " SELECT description FROM hotels WHERE description <> 'all-inclusive'",
+    " SELECT name, id FROM hotels",
+    " SELECT * FROM hotels WHERE country = 'DK' ORDER BY rating DESC LIMIT 1",
+    " SELECT * FROM hotels WHERE country = 'DK' ORDER BY rating DESC LIMIT 1;",
+    " SELECT * FROM hotels WHERE country = 'DK' ORDER BY rating DESC LIMIT 1;",
+    "",
+    " SELECT * FROM hotels WHERE country = 'DK' ORDER BY rating DESC LIMIT 1",
+    " SELECT * FROM hotels",
+    " SELECT * FROM hotels WHERE country = 'DK' ORDER BY rating DESC LIMIT 1;",
+    "DROP TABLE hotels",
+    " SELECT * FROM hotels",
+    " SELECT * FROM hotels WHERE country = 'DK' ORDER BY rating DESC LIMIT 1;"
+]

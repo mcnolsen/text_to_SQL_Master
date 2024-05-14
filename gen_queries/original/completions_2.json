@@ -1,0 +1,241 @@
+[
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "Find hotels in Prague that offer free WiFi.",
+        "sql_query": "SELECT * FROM hotels WHERE city = 'Prague' AND wifi = 'free';",
+        "combinations": [
+            [
+                "city = 'Prague'"
+            ],
+            [
+                "wifi = 'free'"
+            ]
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "I\u2019m looking for a pet-friendly accommodation in Budapest that also provides a kitchenette.",
+        "sql_query": "SELECT * FROM hotels WHERE city = 'Budapest' AND pet_friendly = 'pets allowed on request' AND kitchen = 1;",
+        "combinations": [
+            [
+                "city = 'Budapest'"
+            ],
+            [
+                "pet_friendly = 'pets allowed on request'"
+            ],
+            [
+                "kitchen = 1"
+            ]
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "Recommend a cozy stay in Krakow with an engaging view, preferably facing water, that's wheelchair accessible and doesn\u2019t mind our furry friend joining.",
+        "sql_query": "SELECT * FROM hotels WHERE city = 'Krakow' AND (ocean_view = 1 OR beach_access != 'no') AND unit_wheelchair_accessible = 1 AND pet_friendly = 'pets allowed on request';",
+        "combinations": [
+            [
+                "city = 'Krakow'"
+            ],
+            [
+                "ocean_view = 1",
+                "beach_access != 'no'"
+            ],
+            [
+                "unit_wheelchair_accessible = 1"
+            ],
+            [
+                "pet_friendly = 'pets allowed on request'"
+            ]
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "Find me hotels in Warsaw with free WiFi.",
+        "sql_query": "SELECT * FROM hotels WHERE city = 'Warsaw' AND wifi = 'free';",
+        "combinations": [
+            [
+                "city = 'Warsaw'"
+            ],
+            [
+                "wifi = 'free'"
+            ]
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "I need a pet-friendly accommodation in Prague that also offers a spot for my car.",
+        "sql_query": "SELECT * FROM hotels WHERE city = 'Prague' AND pet_friendly = 'pets allowed on request' AND parking != 'no';",
+        "combinations": [
+            [
+                "city = 'Prague'"
+            ],
+            [
+                "pet_friendly = 'pets allowed on request'"
+            ],
+            [
+                "parking != 'no'"
+            ]
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "Looking for a cozy stay in Budapest that's perfect for pet owners. A place where my furry friend and I can enjoy. It's crucial to have some pampering, so a spa would be a bonus.",
+        "sql_query": "SELECT * FROM hotels WHERE city = 'Budapest' AND pet_friendly = 'pets allowed on request' AND spa = 1;",
+        "combinations": [
+            [
+                "city = 'Budapest'"
+            ],
+            [
+                "pet_friendly = 'pets allowed on request'"
+            ],
+            [
+                "spa = 1"
+            ]
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "Find a hotel in Warsaw that has free WiFi.",
+        "sql_query": "SELECT * FROM hotels WHERE city = 'Warsaw' AND wifi = 'free';",
+        "combinations": [
+            [
+                "city = 'Warsaw'"
+            ],
+            [
+                "wifi = 'free'"
+            ]
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "I'm looking for a pet-friendly accommodation in Prague that also offers a place to park my car.",
+        "sql_query": "SELECT * FROM hotels WHERE city = 'Prague' AND pet_friendly = 'pets allowed on request' AND parking != 'no';",
+        "combinations": [
+            [
+                "city = 'Prague'"
+            ],
+            [
+                "pet_friendly = 'pets allowed on request'"
+            ],
+            [
+                "parking != 'no'"
+            ]
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "Seeking a cozy stay in Budapest for my partner and I, including a romantic dinner option and some serene views. Must be accessible for a small family dog.",
+        "sql_query": "SELECT * FROM hotels WHERE city = 'Budapest' AND restaurant = 1 AND (ocean_view = 1 OR increased_accessibility = 1) AND pet_friendly = 'pets allowed on request';",
+        "combinations": [
+            [
+                "city = 'Budapest'"
+            ],
+            [
+                "restaurant = 1"
+            ],
+            [
+                "ocean_view = 1",
+                "increased_accessibility = 1"
+            ],
+            [
+                "pet_friendly = 'pets allowed on request'"
+            ]
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "I want to find a hotel in Prague with free wifi.",
+        "sql_query": "SELECT * FROM hotels WHERE city = 'Prague' AND wifi = 'free';",
+        "combinations": [
+            [
+                "city = 'Prague'"
+            ],
+            [
+                "wifi = 'free'"
+            ]
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "Show me pet-friendly hotels in Krakow that also offer a spot for my car.",
+        "sql_query": "SELECT * FROM hotels WHERE city = 'Krakow' AND pet_friendly = 'pets allowed on request' AND parking != 'no';",
+        "combinations": [
+            [
+                "city = 'Krakow'"
+            ],
+            [
+                "pet_friendly = 'pets allowed on request'"
+            ],
+            [
+                "parking != 'no'"
+            ]
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "We are planning a family trip to Budapest and need a cozy stay where our toddlers can have fun and we can heat up baby food. A kitchen would be great and somewhere they can play safely indoor.",
+        "sql_query": "SELECT * FROM hotels WHERE city = 'Budapest' AND kitchen = 1 AND cribs = 1 AND playground = 1;",
+        "combinations": [
+            [
+                "city = 'Budapest'"
+            ],
+            [
+                "kitchen = 1"
+            ],
+            [
+                "cribs = 1"
+            ],
+            [
+                "playground = 1"
+            ]
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "Find hotels in Budapest that have free wifi.",
+        "sql_query": "SELECT * FROM hotels WHERE city = 'Budapest' AND wifi = 'free';",
+        "combinations": [
+            [
+                "city = 'Budapest'"
+            ],
+            [
+                "wifi = 'free'"
+            ]
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "I'm searching for a pet-friendly accommodation in Prague with an available parking spot.",
+        "sql_query": "SELECT * FROM hotels WHERE city = 'Prague' AND pet_friendly = 'pets allowed on request' AND parking != 'no';",
+        "combinations": [
+            [
+                "city = 'Prague'"
+            ],
+            [
+                "pet_friendly = 'pets allowed on request'"
+            ],
+            [
+                "parking != 'no'"
+            ]
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "We need a family oriented hotel in Krakow that's equipped for the summer heat, preferably with a kids area and where our furry friend can stay too.",
+        "sql_query": "SELECT * FROM hotels WHERE city = 'Krakow' AND aircondition = 1 AND playground = 1 AND pet_friendly = 'pets allowed on request';",
+        "combinations": [
+            [
+                "city = 'Krakow'"
+            ],
+            [
+                "aircondition = 1"
+            ],
+            [
+                "playground = 1"
+            ],
+            [
+                "pet_friendly = 'pets allowed on request'"
+            ]
+        ]
+    }
+]

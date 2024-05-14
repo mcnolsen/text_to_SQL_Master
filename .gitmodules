@@ -1,0 +1,3 @@
+[submodule "scoring/SQAM"]
+	path = scoring/SQAM
+	url = https://github.com/ezzini/SQAM

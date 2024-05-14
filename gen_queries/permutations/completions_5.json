@@ -1,0 +1,404 @@
+[
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "Find adult-only hotels with a casino and are handicap accessible.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE adults_only = 1 AND casino = 1 AND increased_accessibility = 1;",
+            "SELECT * FROM hotels WHERE adults_only = 1 AND casino = 1 AND increased_accessibility = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "I'm looking for hotels welcoming no children, featuring live music or a casino, that also provide facilities for the disabled.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE adults_only = 1 AND (casino = 1 OR bar = 1) AND increased_accessibility = 1;",
+            "SELECT * FROM hotels WHERE adults_only = 1 AND (casino = 1) AND increased_accessibility = 1",
+            "SELECT * FROM hotels WHERE adults_only = 1 AND (bar = 1) AND increased_accessibility = 1",
+            "SELECT * FROM hotels WHERE adults_only = 1 AND (casino = 1 OR bar = 1) AND increased_accessibility = 1",
+            "SELECT * FROM hotels WHERE adults_only = 1 AND (bar = 1 OR casino = 1) AND increased_accessibility = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "Seeking a serene retreat suitable for adults only, eager for some entertainment like casino or live shows, that caters well to those requiring wheelchair access but ensuring no toddlers disrupt the peace.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE adults_only = 1 AND (casino = 1 OR bar = 1) AND (increased_accessibility = 1 OR unit_wheelchair_accessible = 1) AND cribs = 0;",
+            "SELECT * FROM hotels WHERE adults_only = 1 AND (casino = 1) AND (increased_accessibility = 1) AND cribs = 0",
+            "SELECT * FROM hotels WHERE adults_only = 1 AND (casino = 1) AND (unit_wheelchair_accessible = 1) AND cribs = 0",
+            "SELECT * FROM hotels WHERE adults_only = 1 AND (casino = 1) AND (increased_accessibility = 1 OR unit_wheelchair_accessible = 1) AND cribs = 0",
+            "SELECT * FROM hotels WHERE adults_only = 1 AND (casino = 1) AND (unit_wheelchair_accessible = 1 OR increased_accessibility = 1) AND cribs = 0",
+            "SELECT * FROM hotels WHERE adults_only = 1 AND (bar = 1) AND (increased_accessibility = 1) AND cribs = 0",
+            "SELECT * FROM hotels WHERE adults_only = 1 AND (bar = 1) AND (unit_wheelchair_accessible = 1) AND cribs = 0",
+            "SELECT * FROM hotels WHERE adults_only = 1 AND (bar = 1) AND (increased_accessibility = 1 OR unit_wheelchair_accessible = 1) AND cribs = 0",
+            "SELECT * FROM hotels WHERE adults_only = 1 AND (bar = 1) AND (unit_wheelchair_accessible = 1 OR increased_accessibility = 1) AND cribs = 0",
+            "SELECT * FROM hotels WHERE adults_only = 1 AND (casino = 1 OR bar = 1) AND (increased_accessibility = 1) AND cribs = 0",
+            "SELECT * FROM hotels WHERE adults_only = 1 AND (casino = 1 OR bar = 1) AND (unit_wheelchair_accessible = 1) AND cribs = 0",
+            "SELECT * FROM hotels WHERE adults_only = 1 AND (casino = 1 OR bar = 1) AND (increased_accessibility = 1 OR unit_wheelchair_accessible = 1) AND cribs = 0",
+            "SELECT * FROM hotels WHERE adults_only = 1 AND (casino = 1 OR bar = 1) AND (unit_wheelchair_accessible = 1 OR increased_accessibility = 1) AND cribs = 0",
+            "SELECT * FROM hotels WHERE adults_only = 1 AND (bar = 1 OR casino = 1) AND (increased_accessibility = 1) AND cribs = 0",
+            "SELECT * FROM hotels WHERE adults_only = 1 AND (bar = 1 OR casino = 1) AND (unit_wheelchair_accessible = 1) AND cribs = 0",
+            "SELECT * FROM hotels WHERE adults_only = 1 AND (bar = 1 OR casino = 1) AND (increased_accessibility = 1 OR unit_wheelchair_accessible = 1) AND cribs = 0",
+            "SELECT * FROM hotels WHERE adults_only = 1 AND (bar = 1 OR casino = 1) AND (unit_wheelchair_accessible = 1 OR increased_accessibility = 1) AND cribs = 0"
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "Find hotels with a casino and accessible rooms.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE casino = 1 AND increased_accessibility = 1;",
+            "SELECT * FROM hotels WHERE casino = 1 AND increased_accessibility = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "I need a hotel that's equipped for guests in wheelchairs, has adult entertainment but doesn't allow kids.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE increased_accessibility = 1 AND casino = 1 AND adults_only = 1;",
+            "SELECT * FROM hotels WHERE increased_accessibility = 1 AND casino = 1 AND adults_only = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "Looking for an adult's retreat offering wheelchair-friendly amenities along with live entertainment options, and ensuring the presence of zero young children for tranquility.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE adults_only = 1 AND (casino = 1 OR bar = 1) AND (increased_accessibility = 1 OR unit_wheelchair_accessible = 1) AND cribs = 0;",
+            "SELECT * FROM hotels WHERE adults_only = 1 AND (casino = 1) AND (increased_accessibility = 1) AND cribs = 0",
+            "SELECT * FROM hotels WHERE adults_only = 1 AND (casino = 1) AND (unit_wheelchair_accessible = 1) AND cribs = 0",
+            "SELECT * FROM hotels WHERE adults_only = 1 AND (casino = 1) AND (increased_accessibility = 1 OR unit_wheelchair_accessible = 1) AND cribs = 0",
+            "SELECT * FROM hotels WHERE adults_only = 1 AND (casino = 1) AND (unit_wheelchair_accessible = 1 OR increased_accessibility = 1) AND cribs = 0",
+            "SELECT * FROM hotels WHERE adults_only = 1 AND (bar = 1) AND (increased_accessibility = 1) AND cribs = 0",
+            "SELECT * FROM hotels WHERE adults_only = 1 AND (bar = 1) AND (unit_wheelchair_accessible = 1) AND cribs = 0",
+            "SELECT * FROM hotels WHERE adults_only = 1 AND (bar = 1) AND (increased_accessibility = 1 OR unit_wheelchair_accessible = 1) AND cribs = 0",
+            "SELECT * FROM hotels WHERE adults_only = 1 AND (bar = 1) AND (unit_wheelchair_accessible = 1 OR increased_accessibility = 1) AND cribs = 0",
+            "SELECT * FROM hotels WHERE adults_only = 1 AND (casino = 1 OR bar = 1) AND (increased_accessibility = 1) AND cribs = 0",
+            "SELECT * FROM hotels WHERE adults_only = 1 AND (casino = 1 OR bar = 1) AND (unit_wheelchair_accessible = 1) AND cribs = 0",
+            "SELECT * FROM hotels WHERE adults_only = 1 AND (casino = 1 OR bar = 1) AND (increased_accessibility = 1 OR unit_wheelchair_accessible = 1) AND cribs = 0",
+            "SELECT * FROM hotels WHERE adults_only = 1 AND (casino = 1 OR bar = 1) AND (unit_wheelchair_accessible = 1 OR increased_accessibility = 1) AND cribs = 0",
+            "SELECT * FROM hotels WHERE adults_only = 1 AND (bar = 1 OR casino = 1) AND (increased_accessibility = 1) AND cribs = 0",
+            "SELECT * FROM hotels WHERE adults_only = 1 AND (bar = 1 OR casino = 1) AND (unit_wheelchair_accessible = 1) AND cribs = 0",
+            "SELECT * FROM hotels WHERE adults_only = 1 AND (bar = 1 OR casino = 1) AND (increased_accessibility = 1 OR unit_wheelchair_accessible = 1) AND cribs = 0",
+            "SELECT * FROM hotels WHERE adults_only = 1 AND (bar = 1 OR casino = 1) AND (unit_wheelchair_accessible = 1 OR increased_accessibility = 1) AND cribs = 0"
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "Find hotels with a casino and accessible for handicapped.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE casino = 1 AND increased_accessibility = 1;",
+            "SELECT * FROM hotels WHERE casino = 1 AND increased_accessibility = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "I want a hotel without kids, that has entertainment options and is wheelchair friendly.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE adults_only = 1 AND bar = 1 AND unit_wheelchair_accessible = 1;",
+            "SELECT * FROM hotels WHERE adults_only = 1 AND bar = 1 AND unit_wheelchair_accessible = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "Seeking a getaway where peace from the bustle of families is guaranteed, alongside amenities like live music or gaming tables, and thoughtful considerations for individuals requiring ramp access. A haven free from the pitter-patter of little feet is preferred.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE adults_only = 1 AND (casino = 1 OR bar = 1) AND (increased_accessibility = 1 OR unit_wheelchair_accessible = 1) AND cribs = 0;",
+            "SELECT * FROM hotels WHERE adults_only = 1 AND (casino = 1) AND (increased_accessibility = 1) AND cribs = 0",
+            "SELECT * FROM hotels WHERE adults_only = 1 AND (casino = 1) AND (unit_wheelchair_accessible = 1) AND cribs = 0",
+            "SELECT * FROM hotels WHERE adults_only = 1 AND (casino = 1) AND (increased_accessibility = 1 OR unit_wheelchair_accessible = 1) AND cribs = 0",
+            "SELECT * FROM hotels WHERE adults_only = 1 AND (casino = 1) AND (unit_wheelchair_accessible = 1 OR increased_accessibility = 1) AND cribs = 0",
+            "SELECT * FROM hotels WHERE adults_only = 1 AND (bar = 1) AND (increased_accessibility = 1) AND cribs = 0",
+            "SELECT * FROM hotels WHERE adults_only = 1 AND (bar = 1) AND (unit_wheelchair_accessible = 1) AND cribs = 0",
+            "SELECT * FROM hotels WHERE adults_only = 1 AND (bar = 1) AND (increased_accessibility = 1 OR unit_wheelchair_accessible = 1) AND cribs = 0",
+            "SELECT * FROM hotels WHERE adults_only = 1 AND (bar = 1) AND (unit_wheelchair_accessible = 1 OR increased_accessibility = 1) AND cribs = 0",
+            "SELECT * FROM hotels WHERE adults_only = 1 AND (casino = 1 OR bar = 1) AND (increased_accessibility = 1) AND cribs = 0",
+            "SELECT * FROM hotels WHERE adults_only = 1 AND (casino = 1 OR bar = 1) AND (unit_wheelchair_accessible = 1) AND cribs = 0",
+            "SELECT * FROM hotels WHERE adults_only = 1 AND (casino = 1 OR bar = 1) AND (increased_accessibility = 1 OR unit_wheelchair_accessible = 1) AND cribs = 0",
+            "SELECT * FROM hotels WHERE adults_only = 1 AND (casino = 1 OR bar = 1) AND (unit_wheelchair_accessible = 1 OR increased_accessibility = 1) AND cribs = 0",
+            "SELECT * FROM hotels WHERE adults_only = 1 AND (bar = 1 OR casino = 1) AND (increased_accessibility = 1) AND cribs = 0",
+            "SELECT * FROM hotels WHERE adults_only = 1 AND (bar = 1 OR casino = 1) AND (unit_wheelchair_accessible = 1) AND cribs = 0",
+            "SELECT * FROM hotels WHERE adults_only = 1 AND (bar = 1 OR casino = 1) AND (increased_accessibility = 1 OR unit_wheelchair_accessible = 1) AND cribs = 0",
+            "SELECT * FROM hotels WHERE adults_only = 1 AND (bar = 1 OR casino = 1) AND (unit_wheelchair_accessible = 1 OR increased_accessibility = 1) AND cribs = 0"
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "Find hotels with a casino and accessible rooms.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE casino = 1 AND increased_accessibility = 1;",
+            "SELECT * FROM hotels WHERE casino = 1 AND increased_accessibility = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "I need a hotel without children, with a place for live entertainment and wheelchair access.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE adults_only = 1 AND bar = 1 AND increased_accessibility = 1;",
+            "SELECT * FROM hotels WHERE adults_only = 1 AND bar = 1 AND increased_accessibility = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "Looking for a peaceful retreat suitable for grown-ups only, where evening activities aren't lacking. It should warmly welcome those among us who navigate the world on wheels, without the lively echoes of tiny tots.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE adults_only = 1 AND (casino = 1 OR bar = 1) AND (increased_accessibility = 1 OR unit_wheelchair_accessible = 1) AND cribs = 0;",
+            "SELECT * FROM hotels WHERE adults_only = 1 AND (casino = 1) AND (increased_accessibility = 1) AND cribs = 0",
+            "SELECT * FROM hotels WHERE adults_only = 1 AND (casino = 1) AND (unit_wheelchair_accessible = 1) AND cribs = 0",
+            "SELECT * FROM hotels WHERE adults_only = 1 AND (casino = 1) AND (increased_accessibility = 1 OR unit_wheelchair_accessible = 1) AND cribs = 0",
+            "SELECT * FROM hotels WHERE adults_only = 1 AND (casino = 1) AND (unit_wheelchair_accessible = 1 OR increased_accessibility = 1) AND cribs = 0",
+            "SELECT * FROM hotels WHERE adults_only = 1 AND (bar = 1) AND (increased_accessibility = 1) AND cribs = 0",
+            "SELECT * FROM hotels WHERE adults_only = 1 AND (bar = 1) AND (unit_wheelchair_accessible = 1) AND cribs = 0",
+            "SELECT * FROM hotels WHERE adults_only = 1 AND (bar = 1) AND (increased_accessibility = 1 OR unit_wheelchair_accessible = 1) AND cribs = 0",
+            "SELECT * FROM hotels WHERE adults_only = 1 AND (bar = 1) AND (unit_wheelchair_accessible = 1 OR increased_accessibility = 1) AND cribs = 0",
+            "SELECT * FROM hotels WHERE adults_only = 1 AND (casino = 1 OR bar = 1) AND (increased_accessibility = 1) AND cribs = 0",
+            "SELECT * FROM hotels WHERE adults_only = 1 AND (casino = 1 OR bar = 1) AND (unit_wheelchair_accessible = 1) AND cribs = 0",
+            "SELECT * FROM hotels WHERE adults_only = 1 AND (casino = 1 OR bar = 1) AND (increased_accessibility = 1 OR unit_wheelchair_accessible = 1) AND cribs = 0",
+            "SELECT * FROM hotels WHERE adults_only = 1 AND (casino = 1 OR bar = 1) AND (unit_wheelchair_accessible = 1 OR increased_accessibility = 1) AND cribs = 0",
+            "SELECT * FROM hotels WHERE adults_only = 1 AND (bar = 1 OR casino = 1) AND (increased_accessibility = 1) AND cribs = 0",
+            "SELECT * FROM hotels WHERE adults_only = 1 AND (bar = 1 OR casino = 1) AND (unit_wheelchair_accessible = 1) AND cribs = 0",
+            "SELECT * FROM hotels WHERE adults_only = 1 AND (bar = 1 OR casino = 1) AND (increased_accessibility = 1 OR unit_wheelchair_accessible = 1) AND cribs = 0",
+            "SELECT * FROM hotels WHERE adults_only = 1 AND (bar = 1 OR casino = 1) AND (unit_wheelchair_accessible = 1 OR increased_accessibility = 1) AND cribs = 0"
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "Find hotels with a casino and accessible facilities.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE casino = 1 AND increased_accessibility = 1;",
+            "SELECT * FROM hotels WHERE casino = 1 AND increased_accessibility = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "I'm looking for a place without children, that provides entertainment activities, and has amenities for handicapped.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE adults_only = 1 AND casino = 1 AND increased_accessibility = 1;",
+            "SELECT * FROM hotels WHERE adults_only = 1 AND casino = 1 AND increased_accessibility = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "In search of a child-free zone where the nights are alive with the sound of music or the thrill of games, catered towards convenience for those with mobility challenges. A sanctuary where the echoes of youthful exuberance are replaced with the serenity of adult company.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE adults_only = 1 AND (casino = 1 OR bar = 1) AND (increased_accessibility = 1 OR unit_wheelchair_accessible = 1) AND cribs = 0;",
+            "SELECT * FROM hotels WHERE adults_only = 1 AND (casino = 1) AND (increased_accessibility = 1) AND cribs = 0",
+            "SELECT * FROM hotels WHERE adults_only = 1 AND (casino = 1) AND (unit_wheelchair_accessible = 1) AND cribs = 0",
+            "SELECT * FROM hotels WHERE adults_only = 1 AND (casino = 1) AND (increased_accessibility = 1 OR unit_wheelchair_accessible = 1) AND cribs = 0",
+            "SELECT * FROM hotels WHERE adults_only = 1 AND (casino = 1) AND (unit_wheelchair_accessible = 1 OR increased_accessibility = 1) AND cribs = 0",
+            "SELECT * FROM hotels WHERE adults_only = 1 AND (bar = 1) AND (increased_accessibility = 1) AND cribs = 0",
+            "SELECT * FROM hotels WHERE adults_only = 1 AND (bar = 1) AND (unit_wheelchair_accessible = 1) AND cribs = 0",
+            "SELECT * FROM hotels WHERE adults_only = 1 AND (bar = 1) AND (increased_accessibility = 1 OR unit_wheelchair_accessible = 1) AND cribs = 0",
+            "SELECT * FROM hotels WHERE adults_only = 1 AND (bar = 1) AND (unit_wheelchair_accessible = 1 OR increased_accessibility = 1) AND cribs = 0",
+            "SELECT * FROM hotels WHERE adults_only = 1 AND (casino = 1 OR bar = 1) AND (increased_accessibility = 1) AND cribs = 0",
+            "SELECT * FROM hotels WHERE adults_only = 1 AND (casino = 1 OR bar = 1) AND (unit_wheelchair_accessible = 1) AND cribs = 0",
+            "SELECT * FROM hotels WHERE adults_only = 1 AND (casino = 1 OR bar = 1) AND (increased_accessibility = 1 OR unit_wheelchair_accessible = 1) AND cribs = 0",
+            "SELECT * FROM hotels WHERE adults_only = 1 AND (casino = 1 OR bar = 1) AND (unit_wheelchair_accessible = 1 OR increased_accessibility = 1) AND cribs = 0",
+            "SELECT * FROM hotels WHERE adults_only = 1 AND (bar = 1 OR casino = 1) AND (increased_accessibility = 1) AND cribs = 0",
+            "SELECT * FROM hotels WHERE adults_only = 1 AND (bar = 1 OR casino = 1) AND (unit_wheelchair_accessible = 1) AND cribs = 0",
+            "SELECT * FROM hotels WHERE adults_only = 1 AND (bar = 1 OR casino = 1) AND (increased_accessibility = 1 OR unit_wheelchair_accessible = 1) AND cribs = 0",
+            "SELECT * FROM hotels WHERE adults_only = 1 AND (bar = 1 OR casino = 1) AND (unit_wheelchair_accessible = 1 OR increased_accessibility = 1) AND cribs = 0"
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "Find hotels with casinos and accessible for wheelchairs.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE casino = 1 AND increased_accessibility = 1;",
+            "SELECT * FROM hotels WHERE casino = 1 AND increased_accessibility = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "I want a hotel with nightlife options that\u2019s also wheelchair friendly, but no facilities for young children.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE bar = 1 AND increased_accessibility = 1 AND cribs = 0;",
+            "SELECT * FROM hotels WHERE bar = 1 AND increased_accessibility = 1 AND cribs = 0"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "Seeking an entertainment-rich lodging option ensuring a reprieve from the pitter-patter of tiny feet, alongside unimpeded access for those on wheels, setting the stage for both spontaneous revelry and ease of movement.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE (casino = 1 OR bar = 1) AND (increased_accessibility = 1 OR unit_wheelchair_accessible = 1) AND adults_only = 1;",
+            "SELECT * FROM hotels WHERE (casino = 1) AND (increased_accessibility = 1) AND adults_only = 1",
+            "SELECT * FROM hotels WHERE (casino = 1) AND (unit_wheelchair_accessible = 1) AND adults_only = 1",
+            "SELECT * FROM hotels WHERE (casino = 1) AND (increased_accessibility = 1 OR unit_wheelchair_accessible = 1) AND adults_only = 1",
+            "SELECT * FROM hotels WHERE (casino = 1) AND (unit_wheelchair_accessible = 1 OR increased_accessibility = 1) AND adults_only = 1",
+            "SELECT * FROM hotels WHERE (bar = 1) AND (increased_accessibility = 1) AND adults_only = 1",
+            "SELECT * FROM hotels WHERE (bar = 1) AND (unit_wheelchair_accessible = 1) AND adults_only = 1",
+            "SELECT * FROM hotels WHERE (bar = 1) AND (increased_accessibility = 1 OR unit_wheelchair_accessible = 1) AND adults_only = 1",
+            "SELECT * FROM hotels WHERE (bar = 1) AND (unit_wheelchair_accessible = 1 OR increased_accessibility = 1) AND adults_only = 1",
+            "SELECT * FROM hotels WHERE (casino = 1 OR bar = 1) AND (increased_accessibility = 1) AND adults_only = 1",
+            "SELECT * FROM hotels WHERE (casino = 1 OR bar = 1) AND (unit_wheelchair_accessible = 1) AND adults_only = 1",
+            "SELECT * FROM hotels WHERE (casino = 1 OR bar = 1) AND (increased_accessibility = 1 OR unit_wheelchair_accessible = 1) AND adults_only = 1",
+            "SELECT * FROM hotels WHERE (casino = 1 OR bar = 1) AND (unit_wheelchair_accessible = 1 OR increased_accessibility = 1) AND adults_only = 1",
+            "SELECT * FROM hotels WHERE (bar = 1 OR casino = 1) AND (increased_accessibility = 1) AND adults_only = 1",
+            "SELECT * FROM hotels WHERE (bar = 1 OR casino = 1) AND (unit_wheelchair_accessible = 1) AND adults_only = 1",
+            "SELECT * FROM hotels WHERE (bar = 1 OR casino = 1) AND (increased_accessibility = 1 OR unit_wheelchair_accessible = 1) AND adults_only = 1",
+            "SELECT * FROM hotels WHERE (bar = 1 OR casino = 1) AND (unit_wheelchair_accessible = 1 OR increased_accessibility = 1) AND adults_only = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "Find hotels with a casino and accessible for handicapped.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE casino = 1 AND increased_accessibility = 1;",
+            "SELECT * FROM hotels WHERE casino = 1 AND increased_accessibility = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "I need a hotel with entertainment options like a casino or a bar, wheelchair accessible, and no facilities for kids.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE (casino = 1 OR bar = 1) AND increased_accessibility = 1 AND cribs = 0;",
+            "SELECT * FROM hotels WHERE (casino = 1) AND increased_accessibility = 1 AND cribs = 0",
+            "SELECT * FROM hotels WHERE (bar = 1) AND increased_accessibility = 1 AND cribs = 0",
+            "SELECT * FROM hotels WHERE (casino = 1 OR bar = 1) AND increased_accessibility = 1 AND cribs = 0",
+            "SELECT * FROM hotels WHERE (bar = 1 OR casino = 1) AND increased_accessibility = 1 AND cribs = 0"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "Looking for a getaway where adults can enjoy their evenings with perhaps some gambling or a drink in hand, in a place that's considerate of those who navigate the world differently on wheels, all the while ensuring a tranquil environment unsuitable for the patter of little feet.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE (casino = 1 OR bar = 1) AND (increased_accessibility = 1 OR unit_wheelchair_accessible = 1) AND adults_only = 1 AND cribs = 0;",
+            "SELECT * FROM hotels WHERE (casino = 1) AND (increased_accessibility = 1) AND adults_only = 1 AND cribs = 0",
+            "SELECT * FROM hotels WHERE (casino = 1) AND (unit_wheelchair_accessible = 1) AND adults_only = 1 AND cribs = 0",
+            "SELECT * FROM hotels WHERE (casino = 1) AND (increased_accessibility = 1 OR unit_wheelchair_accessible = 1) AND adults_only = 1 AND cribs = 0",
+            "SELECT * FROM hotels WHERE (casino = 1) AND (unit_wheelchair_accessible = 1 OR increased_accessibility = 1) AND adults_only = 1 AND cribs = 0",
+            "SELECT * FROM hotels WHERE (bar = 1) AND (increased_accessibility = 1) AND adults_only = 1 AND cribs = 0",
+            "SELECT * FROM hotels WHERE (bar = 1) AND (unit_wheelchair_accessible = 1) AND adults_only = 1 AND cribs = 0",
+            "SELECT * FROM hotels WHERE (bar = 1) AND (increased_accessibility = 1 OR unit_wheelchair_accessible = 1) AND adults_only = 1 AND cribs = 0",
+            "SELECT * FROM hotels WHERE (bar = 1) AND (unit_wheelchair_accessible = 1 OR increased_accessibility = 1) AND adults_only = 1 AND cribs = 0",
+            "SELECT * FROM hotels WHERE (casino = 1 OR bar = 1) AND (increased_accessibility = 1) AND adults_only = 1 AND cribs = 0",
+            "SELECT * FROM hotels WHERE (casino = 1 OR bar = 1) AND (unit_wheelchair_accessible = 1) AND adults_only = 1 AND cribs = 0",
+            "SELECT * FROM hotels WHERE (casino = 1 OR bar = 1) AND (increased_accessibility = 1 OR unit_wheelchair_accessible = 1) AND adults_only = 1 AND cribs = 0",
+            "SELECT * FROM hotels WHERE (casino = 1 OR bar = 1) AND (unit_wheelchair_accessible = 1 OR increased_accessibility = 1) AND adults_only = 1 AND cribs = 0",
+            "SELECT * FROM hotels WHERE (bar = 1 OR casino = 1) AND (increased_accessibility = 1) AND adults_only = 1 AND cribs = 0",
+            "SELECT * FROM hotels WHERE (bar = 1 OR casino = 1) AND (unit_wheelchair_accessible = 1) AND adults_only = 1 AND cribs = 0",
+            "SELECT * FROM hotels WHERE (bar = 1 OR casino = 1) AND (increased_accessibility = 1 OR unit_wheelchair_accessible = 1) AND adults_only = 1 AND cribs = 0",
+            "SELECT * FROM hotels WHERE (bar = 1 OR casino = 1) AND (unit_wheelchair_accessible = 1 OR increased_accessibility = 1) AND adults_only = 1 AND cribs = 0"
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "Find hotels with a casino and that are wheelchair accessible.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE casino = 1 AND increased_accessibility = 1;",
+            "SELECT * FROM hotels WHERE casino = 1 AND increased_accessibility = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "I'm looking for a hotel with entertainment like casinos or bars, that's also handicap friendly but doesn't cater to families with small children.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE (casino = 1 OR bar = 1) AND increased_accessibility = 1 AND cribs = 0;",
+            "SELECT * FROM hotels WHERE (casino = 1) AND increased_accessibility = 1 AND cribs = 0",
+            "SELECT * FROM hotels WHERE (bar = 1) AND increased_accessibility = 1 AND cribs = 0",
+            "SELECT * FROM hotels WHERE (casino = 1 OR bar = 1) AND increased_accessibility = 1 AND cribs = 0",
+            "SELECT * FROM hotels WHERE (bar = 1 OR casino = 1) AND increased_accessibility = 1 AND cribs = 0"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "Seeking an exclusive adult haven that offers nightly diversions in the form of gambling or cocktails, ensuring ease of access for those with mobility concerns, all while maintaining a serene atmosphere devoid of the energetic tumult typically brought on by young ones.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE (casino = 1 OR bar = 1) AND (increased_accessibility = 1 OR unit_wheelchair_accessible = 1) AND adults_only = 1 AND cribs = 0;",
+            "SELECT * FROM hotels WHERE (casino = 1) AND (increased_accessibility = 1) AND adults_only = 1 AND cribs = 0",
+            "SELECT * FROM hotels WHERE (casino = 1) AND (unit_wheelchair_accessible = 1) AND adults_only = 1 AND cribs = 0",
+            "SELECT * FROM hotels WHERE (casino = 1) AND (increased_accessibility = 1 OR unit_wheelchair_accessible = 1) AND adults_only = 1 AND cribs = 0",
+            "SELECT * FROM hotels WHERE (casino = 1) AND (unit_wheelchair_accessible = 1 OR increased_accessibility = 1) AND adults_only = 1 AND cribs = 0",
+            "SELECT * FROM hotels WHERE (bar = 1) AND (increased_accessibility = 1) AND adults_only = 1 AND cribs = 0",
+            "SELECT * FROM hotels WHERE (bar = 1) AND (unit_wheelchair_accessible = 1) AND adults_only = 1 AND cribs = 0",
+            "SELECT * FROM hotels WHERE (bar = 1) AND (increased_accessibility = 1 OR unit_wheelchair_accessible = 1) AND adults_only = 1 AND cribs = 0",
+            "SELECT * FROM hotels WHERE (bar = 1) AND (unit_wheelchair_accessible = 1 OR increased_accessibility = 1) AND adults_only = 1 AND cribs = 0",
+            "SELECT * FROM hotels WHERE (casino = 1 OR bar = 1) AND (increased_accessibility = 1) AND adults_only = 1 AND cribs = 0",
+            "SELECT * FROM hotels WHERE (casino = 1 OR bar = 1) AND (unit_wheelchair_accessible = 1) AND adults_only = 1 AND cribs = 0",
+            "SELECT * FROM hotels WHERE (casino = 1 OR bar = 1) AND (increased_accessibility = 1 OR unit_wheelchair_accessible = 1) AND adults_only = 1 AND cribs = 0",
+            "SELECT * FROM hotels WHERE (casino = 1 OR bar = 1) AND (unit_wheelchair_accessible = 1 OR increased_accessibility = 1) AND adults_only = 1 AND cribs = 0",
+            "SELECT * FROM hotels WHERE (bar = 1 OR casino = 1) AND (increased_accessibility = 1) AND adults_only = 1 AND cribs = 0",
+            "SELECT * FROM hotels WHERE (bar = 1 OR casino = 1) AND (unit_wheelchair_accessible = 1) AND adults_only = 1 AND cribs = 0",
+            "SELECT * FROM hotels WHERE (bar = 1 OR casino = 1) AND (increased_accessibility = 1 OR unit_wheelchair_accessible = 1) AND adults_only = 1 AND cribs = 0",
+            "SELECT * FROM hotels WHERE (bar = 1 OR casino = 1) AND (unit_wheelchair_accessible = 1 OR increased_accessibility = 1) AND adults_only = 1 AND cribs = 0"
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "Find hotels with a casino and accessible room options.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE casino = 1 AND increased_accessibility = 1;",
+            "SELECT * FROM hotels WHERE casino = 1 AND increased_accessibility = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "I want a hotel that provides entertainment options, is friendly for people with disabilities, and doesn't cater to families with young children.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE bar = 1 AND increased_accessibility = 1 AND cribs = 0;",
+            "SELECT * FROM hotels WHERE bar = 1 AND increased_accessibility = 1 AND cribs = 0"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "Looking for an adults-only retreat that caters to entertainment seekers and accommodates guests with mobility challenges, ensuring a peaceful environment away from the cheerful cacophony of little children.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE (casino = 1 OR bar = 1) AND (increased_accessibility = 1 OR unit_wheelchair_accessible = 1) AND adults_only = 1 AND cribs = 0;",
+            "SELECT * FROM hotels WHERE (casino = 1) AND (increased_accessibility = 1) AND adults_only = 1 AND cribs = 0",
+            "SELECT * FROM hotels WHERE (casino = 1) AND (unit_wheelchair_accessible = 1) AND adults_only = 1 AND cribs = 0",
+            "SELECT * FROM hotels WHERE (casino = 1) AND (increased_accessibility = 1 OR unit_wheelchair_accessible = 1) AND adults_only = 1 AND cribs = 0",
+            "SELECT * FROM hotels WHERE (casino = 1) AND (unit_wheelchair_accessible = 1 OR increased_accessibility = 1) AND adults_only = 1 AND cribs = 0",
+            "SELECT * FROM hotels WHERE (bar = 1) AND (increased_accessibility = 1) AND adults_only = 1 AND cribs = 0",
+            "SELECT * FROM hotels WHERE (bar = 1) AND (unit_wheelchair_accessible = 1) AND adults_only = 1 AND cribs = 0",
+            "SELECT * FROM hotels WHERE (bar = 1) AND (increased_accessibility = 1 OR unit_wheelchair_accessible = 1) AND adults_only = 1 AND cribs = 0",
+            "SELECT * FROM hotels WHERE (bar = 1) AND (unit_wheelchair_accessible = 1 OR increased_accessibility = 1) AND adults_only = 1 AND cribs = 0",
+            "SELECT * FROM hotels WHERE (casino = 1 OR bar = 1) AND (increased_accessibility = 1) AND adults_only = 1 AND cribs = 0",
+            "SELECT * FROM hotels WHERE (casino = 1 OR bar = 1) AND (unit_wheelchair_accessible = 1) AND adults_only = 1 AND cribs = 0",
+            "SELECT * FROM hotels WHERE (casino = 1 OR bar = 1) AND (increased_accessibility = 1 OR unit_wheelchair_accessible = 1) AND adults_only = 1 AND cribs = 0",
+            "SELECT * FROM hotels WHERE (casino = 1 OR bar = 1) AND (unit_wheelchair_accessible = 1 OR increased_accessibility = 1) AND adults_only = 1 AND cribs = 0",
+            "SELECT * FROM hotels WHERE (bar = 1 OR casino = 1) AND (increased_accessibility = 1) AND adults_only = 1 AND cribs = 0",
+            "SELECT * FROM hotels WHERE (bar = 1 OR casino = 1) AND (unit_wheelchair_accessible = 1) AND adults_only = 1 AND cribs = 0",
+            "SELECT * FROM hotels WHERE (bar = 1 OR casino = 1) AND (increased_accessibility = 1 OR unit_wheelchair_accessible = 1) AND adults_only = 1 AND cribs = 0",
+            "SELECT * FROM hotels WHERE (bar = 1 OR casino = 1) AND (unit_wheelchair_accessible = 1 OR increased_accessibility = 1) AND adults_only = 1 AND cribs = 0"
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "Find hotels with a casino and facilities for disabled guests.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE casino = 1 AND increased_accessibility = 1;",
+            "SELECT * FROM hotels WHERE casino = 1 AND increased_accessibility = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "I\u2019m looking for a hotel that offers entertainment amenities, is accessible to guests in wheelchairs, but does not accommodate small children.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE (casino = 1 OR bar = 1) AND increased_accessibility = 1 AND cribs = 0;",
+            "SELECT * FROM hotels WHERE (casino = 1) AND increased_accessibility = 1 AND cribs = 0",
+            "SELECT * FROM hotels WHERE (bar = 1) AND increased_accessibility = 1 AND cribs = 0",
+            "SELECT * FROM hotels WHERE (casino = 1 OR bar = 1) AND increased_accessibility = 1 AND cribs = 0",
+            "SELECT * FROM hotels WHERE (bar = 1 OR casino = 1) AND increased_accessibility = 1 AND cribs = 0"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "Searching for an oasis of adult tranquility that offers the allure of nightlife or gaming, treats accessibility as a priority for those navigating life on wheels, all the while safeguarding its ambiance against the lively bustle brought by young families.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE (casino = 1 OR bar = 1) AND (increased_accessibility = 1 OR unit_wheelchair_accessible = 1) AND adults_only = 1 AND cribs = 0;",
+            "SELECT * FROM hotels WHERE (casino = 1) AND (increased_accessibility = 1) AND adults_only = 1 AND cribs = 0",
+            "SELECT * FROM hotels WHERE (casino = 1) AND (unit_wheelchair_accessible = 1) AND adults_only = 1 AND cribs = 0",
+            "SELECT * FROM hotels WHERE (casino = 1) AND (increased_accessibility = 1 OR unit_wheelchair_accessible = 1) AND adults_only = 1 AND cribs = 0",
+            "SELECT * FROM hotels WHERE (casino = 1) AND (unit_wheelchair_accessible = 1 OR increased_accessibility = 1) AND adults_only = 1 AND cribs = 0",
+            "SELECT * FROM hotels WHERE (bar = 1) AND (increased_accessibility = 1) AND adults_only = 1 AND cribs = 0",
+            "SELECT * FROM hotels WHERE (bar = 1) AND (unit_wheelchair_accessible = 1) AND adults_only = 1 AND cribs = 0",
+            "SELECT * FROM hotels WHERE (bar = 1) AND (increased_accessibility = 1 OR unit_wheelchair_accessible = 1) AND adults_only = 1 AND cribs = 0",
+            "SELECT * FROM hotels WHERE (bar = 1) AND (unit_wheelchair_accessible = 1 OR increased_accessibility = 1) AND adults_only = 1 AND cribs = 0",
+            "SELECT * FROM hotels WHERE (casino = 1 OR bar = 1) AND (increased_accessibility = 1) AND adults_only = 1 AND cribs = 0",
+            "SELECT * FROM hotels WHERE (casino = 1 OR bar = 1) AND (unit_wheelchair_accessible = 1) AND adults_only = 1 AND cribs = 0",
+            "SELECT * FROM hotels WHERE (casino = 1 OR bar = 1) AND (increased_accessibility = 1 OR unit_wheelchair_accessible = 1) AND adults_only = 1 AND cribs = 0",
+            "SELECT * FROM hotels WHERE (casino = 1 OR bar = 1) AND (unit_wheelchair_accessible = 1 OR increased_accessibility = 1) AND adults_only = 1 AND cribs = 0",
+            "SELECT * FROM hotels WHERE (bar = 1 OR casino = 1) AND (increased_accessibility = 1) AND adults_only = 1 AND cribs = 0",
+            "SELECT * FROM hotels WHERE (bar = 1 OR casino = 1) AND (unit_wheelchair_accessible = 1) AND adults_only = 1 AND cribs = 0",
+            "SELECT * FROM hotels WHERE (bar = 1 OR casino = 1) AND (increased_accessibility = 1 OR unit_wheelchair_accessible = 1) AND adults_only = 1 AND cribs = 0",
+            "SELECT * FROM hotels WHERE (bar = 1 OR casino = 1) AND (unit_wheelchair_accessible = 1 OR increased_accessibility = 1) AND adults_only = 1 AND cribs = 0"
+        ]
+    }
+]

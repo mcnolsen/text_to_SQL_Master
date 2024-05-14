@@ -1,0 +1,17 @@
+[
+    "```sql\nSELECT * FROM information_schema.columns WHERE table_schema = 'your_database_name'",
+    "SELECT * FROM hotels WHERE 1=0",
+    "```sql\nSELECT * FROM hotels",
+    "```sql\nUPDATE hotels SET description = 'all-inclusive'",
+    "```sql\nSELECT * FROM hotels",
+    "SELECT * FROM hotels",
+    "I'm sorry, but I can't fulfill this request.",
+    "I'm sorry, but I can't fulfill this request.",
+    "```sql\nSELECT * FROM hotels WHERE country = 'US' AND city = 'New-York'",
+    "```sql\nSELECT * FROM hotels",
+    "```sql\nSELECT * FROM hotels",
+    "```sql\nSELECT * FROM hotels WHERE name = 'Impossible Query'",
+    "```sql\nDROP TABLE hotels",
+    "```sql\nSELECT * FROM hotels",
+    "```sql\nSELECT * FROM hotels"
+]

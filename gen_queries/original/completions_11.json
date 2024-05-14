@@ -1,0 +1,505 @@
+[
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "Show me hotels in Warsaw that have a pool.",
+        "sql_query": "SELECT * FROM hotels WHERE city = 'Warsaw' AND pool = 1;",
+        "combinations": [
+            [
+                "city = 'Warsaw'"
+            ],
+            [
+                "pool = 1"
+            ]
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "Find me pet-friendly lodging in Budapest that also offers parking space.",
+        "sql_query": "SELECT * FROM hotels WHERE city = 'Budapest' AND pet_friendly = 'pets allowed on request' AND parking != 'no';",
+        "combinations": [
+            [
+                "city = 'Budapest'"
+            ],
+            [
+                "pet_friendly = 'pets allowed on request'"
+            ],
+            [
+                "parking != 'no'"
+            ]
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "I'm looking for a family-friendly stay in Prague where my kids can have fun in the water and we can bring our small dog. A kitchen would be a bonus for preparing meals.",
+        "sql_query": "SELECT * FROM hotels WHERE city = 'Prague' AND (pool = 1 OR child_pool = 1) AND pet_friendly = 'pets allowed on request' AND kitchen = 1;",
+        "combinations": [
+            [
+                "city = 'Prague'"
+            ],
+            [
+                "pool = 1",
+                "child_pool = 1"
+            ],
+            [
+                "pet_friendly = 'pets allowed on request'"
+            ],
+            [
+                "kitchen = 1"
+            ]
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "Find hotels in Krakow with free WiFi.",
+        "sql_query": "SELECT * FROM hotels WHERE city = 'Krakow' AND wifi = 'free';",
+        "combinations": [
+            [
+                "city = 'Krakow'"
+            ],
+            [
+                "wifi = 'free'"
+            ]
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "I need a cozy place to stay in Gdansk that's accessible for wheelchairs.",
+        "sql_query": "SELECT * FROM hotels WHERE city = 'Gdansk' AND increased_accessibility = 1;",
+        "combinations": [
+            [
+                "city = 'Gdansk'"
+            ],
+            [
+                "increased_accessibility = 1"
+            ]
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "Searching for a kid-friendly hotel in Prague where my toddlers can safely play and we can have a family meal. Would love a place with some green space nearby.",
+        "sql_query": "SELECT * FROM hotels WHERE city = 'Prague' AND cribs = 1 AND restaurant = 1 AND playground = 1;",
+        "combinations": [
+            [
+                "city = 'Prague'"
+            ],
+            [
+                "cribs = 1"
+            ],
+            [
+                "restaurant = 1"
+            ],
+            [
+                "playground = 1"
+            ]
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "Show hotels in Poznan with a fitness center.",
+        "sql_query": "SELECT * FROM hotels WHERE city = 'Poznan' AND fitness_center = 1;",
+        "combinations": [
+            [
+                "city = 'Poznan'"
+            ],
+            [
+                "fitness_center = 1"
+            ]
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "I'm looking for a place to stay in Budapest that has an on-site restaurant and rooms with air conditioning.",
+        "sql_query": "SELECT * FROM hotels WHERE city = 'Budapest' AND restaurant = 1 AND aircondition = 1;",
+        "combinations": [
+            [
+                "city = 'Budapest'"
+            ],
+            [
+                "restaurant = 1"
+            ],
+            [
+                "aircondition = 1"
+            ]
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "We're planning a vacation in Dubrovnik and need a hotel that's kid-friendly with a swimming area for the little ones, preferably with a view. Also, it should cater to our eco-friendly lifestyle with EV charging stations.",
+        "sql_query": "SELECT * FROM hotels WHERE city = 'Dubrovnik' AND (child_pool = 1 OR pool = 1) AND ocean_view = 1 AND ev_charging_station = 1;",
+        "combinations": [
+            [
+                "city = 'Dubrovnik'"
+            ],
+            [
+                "child_pool = 1",
+                "pool = 1"
+            ],
+            [
+                "ocean_view = 1"
+            ],
+            [
+                "ev_charging_station = 1"
+            ]
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "Find hotels in Prague that offer free parking.",
+        "sql_query": "SELECT * FROM hotels WHERE city = 'Prague' AND parking = 'free';",
+        "combinations": [
+            [
+                "city = 'Prague'"
+            ],
+            [
+                "parking = 'free'"
+            ]
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "I'm looking for a pet-friendly hotel in Krakow with a bar.",
+        "sql_query": "SELECT * FROM hotels WHERE city = 'Krakow' AND pet_friendly = 'pets allowed on request' AND bar = 1;",
+        "combinations": [
+            [
+                "city = 'Krakow'"
+            ],
+            [
+                "pet_friendly = 'pets allowed on request'"
+            ],
+            [
+                "bar = 1"
+            ]
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "Seeking a family-oriented stay in Budapest with provisions for an infant, a fun aquatic area, and the option to dine in. Accessibility for a stroller would be a plus.",
+        "sql_query": "SELECT * FROM hotels WHERE city = 'Budapest' AND cribs = 1 AND (pool = 1 OR child_pool = 1) AND restaurant = 1 AND increased_accessibility = 1;",
+        "combinations": [
+            [
+                "city = 'Budapest'"
+            ],
+            [
+                "cribs = 1"
+            ],
+            [
+                "pool = 1",
+                "child_pool = 1"
+            ],
+            [
+                "restaurant = 1"
+            ],
+            [
+                "increased_accessibility = 1"
+            ]
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "I need a hotel in Sofia with a fitness center.",
+        "sql_query": "SELECT * FROM hotels WHERE city = 'Sofia' AND fitness_center = 1;",
+        "combinations": [
+            [
+                "city = 'Sofia'"
+            ],
+            [
+                "fitness_center = 1"
+            ]
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "Can you find a place in Bucharest that allows pets and has a spot for my car?",
+        "sql_query": "SELECT * FROM hotels WHERE city = 'Bucharest' AND pet_friendly = 'pets allowed on request' AND parking != 'no';",
+        "combinations": [
+            [
+                "city = 'Bucharest'"
+            ],
+            [
+                "pet_friendly = 'pets allowed on request'"
+            ],
+            [
+                "parking != 'no'"
+            ]
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "Looking for a kid-friendly lodging option in Tallinn that caters to young families with babies\u2014needing a crib, a pool area for toddlers, and somewhere close by to grab a meal. Easy access with a stroller is essential.",
+        "sql_query": "SELECT * FROM hotels WHERE city = 'Tallinn' AND cribs = 1 AND (child_pool = 1 OR pool = 1) AND restaurant = 1 AND increased_accessibility = 1;",
+        "combinations": [
+            [
+                "city = 'Tallinn'"
+            ],
+            [
+                "cribs = 1"
+            ],
+            [
+                "child_pool = 1",
+                "pool = 1"
+            ],
+            [
+                "restaurant = 1"
+            ],
+            [
+                "increased_accessibility = 1"
+            ]
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "List all hotels in Belgrade with a bar.",
+        "sql_query": "SELECT * FROM hotels WHERE city = 'Belgrade' AND bar = 1;",
+        "combinations": [
+            [
+                "city = 'Belgrade'"
+            ],
+            [
+                "bar = 1"
+            ]
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "I'm looking for a hotel in Ljubljana that's suitable for electric car owners.",
+        "sql_query": "SELECT * FROM hotels WHERE city = 'Ljubljana' AND ev_charging_station = 1;",
+        "combinations": [
+            [
+                "city = 'Ljubljana'"
+            ],
+            [
+                "ev_charging_station = 1"
+            ]
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "I need a family-oriented accommodation in Riga that includes amenities for infants, presents options for children to play both in water and on the ground, alongside ensuring meals can be taken care of within the premises. A bonus would be the ease of navigating a baby stroller throughout.",
+        "sql_query": "SELECT * FROM hotels WHERE city = 'Riga' AND cribs = 1 AND (child_pool = 1 OR pool = 1) AND restaurant = 1 AND playground = 1 AND increased_accessibility = 1;",
+        "combinations": [
+            [
+                "city = 'Riga'"
+            ],
+            [
+                "cribs = 1"
+            ],
+            [
+                "child_pool = 1",
+                "pool = 1"
+            ],
+            [
+                "restaurant = 1"
+            ],
+            [
+                "playground = 1"
+            ],
+            [
+                "increased_accessibility = 1"
+            ]
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "Show me hotels in Budapest that offer free wifi.",
+        "sql_query": "SELECT * FROM hotels WHERE city = 'Budapest' AND wifi = 'free';",
+        "combinations": [
+            [
+                "city = 'Budapest'"
+            ],
+            [
+                "wifi = 'free'"
+            ]
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "I'm searching for a place to stay in Warsaw with a fitness center and free parking.",
+        "sql_query": "SELECT * FROM hotels WHERE city = 'Warsaw' AND fitness_center = 1 AND parking = 'free';",
+        "combinations": [
+            [
+                "city = 'Warsaw'"
+            ],
+            [
+                "fitness_center = 1"
+            ],
+            [
+                "parking = 'free'"
+            ]
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "Looking for a getaway in Prague fit for a couple with a young child and a pet dog, needing a crib in the room and nearby green spaces for walks. An on-site restaurant would be a plus.",
+        "sql_query": "SELECT * FROM hotels WHERE city = 'Prague' AND cribs = 1 AND pet_friendly = 'pets allowed on request' AND restaurant = 1;",
+        "combinations": [
+            [
+                "city = 'Prague'"
+            ],
+            [
+                "cribs = 1"
+            ],
+            [
+                "pet_friendly = 'pets allowed on request'"
+            ],
+            [
+                "restaurant = 1"
+            ]
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "Find hotels in Sofia with a pool.",
+        "sql_query": "SELECT * FROM hotels WHERE city = 'Sofia' AND pool = 1;",
+        "combinations": [
+            [
+                "city = 'Sofia'"
+            ],
+            [
+                "pool = 1"
+            ]
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "I'm looking for hotels in Vilnius that are pet-friendly and have a restaurant.",
+        "sql_query": "SELECT * FROM hotels WHERE city = 'Vilnius' AND pet_friendly = 'pets allowed on request' AND restaurant = 1;",
+        "combinations": [
+            [
+                "city = 'Vilnius'"
+            ],
+            [
+                "pet_friendly = 'pets allowed on request'"
+            ],
+            [
+                "restaurant = 1"
+            ]
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "Searching for a family-friendly accommodation in Tallinn where we can bring our toddler and dog. Need a place with a crib, opportunities for our child to play outside, and where meals are easily accessible. Having a space for our stroller would make everything perfect.",
+        "sql_query": "SELECT * FROM hotels WHERE city = 'Tallinn' AND cribs = 1 AND (playground = 1 OR child_pool = 1) AND restaurant = 1 AND increased_accessibility = 1 AND pet_friendly = 'pets allowed on request';",
+        "combinations": [
+            [
+                "city = 'Tallinn'"
+            ],
+            [
+                "cribs = 1"
+            ],
+            [
+                "playground = 1",
+                "child_pool = 1"
+            ],
+            [
+                "restaurant = 1"
+            ],
+            [
+                "increased_accessibility = 1"
+            ],
+            [
+                "pet_friendly = 'pets allowed on request'"
+            ]
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "List all hotels in Bucharest that have a spa.",
+        "sql_query": "SELECT * FROM hotels WHERE city = 'Bucharest' AND spa = 1;",
+        "combinations": [
+            [
+                "city = 'Bucharest'"
+            ],
+            [
+                "spa = 1"
+            ]
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "I need a hotel in Krakow with both a fitness center and available parking.",
+        "sql_query": "SELECT * FROM hotels WHERE city = 'Krakow' AND fitness_center = 1 AND parking != 'no';",
+        "combinations": [
+            [
+                "city = 'Krakow'"
+            ],
+            [
+                "fitness_center = 1"
+            ],
+            [
+                "parking != 'no'"
+            ]
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "Seeking a child-welcoming stay in Prague that can cater to our baby's needs, offer some aquatic fun for the whole family, and doesn\u2019t forget about our beloved pet. A comfortable crib, a safe water play area, and a dining option would be great alongside furry friend accommodation.",
+        "sql_query": "SELECT * FROM hotels WHERE city = 'Prague' AND cribs = 1 AND (pool = 1 OR child_pool = 1) AND pet_friendly = 'pets allowed on request' AND restaurant = 1;",
+        "combinations": [
+            [
+                "city = 'Prague'"
+            ],
+            [
+                "cribs = 1"
+            ],
+            [
+                "pool = 1",
+                "child_pool = 1"
+            ],
+            [
+                "pet_friendly = 'pets allowed on request'"
+            ],
+            [
+                "restaurant = 1"
+            ]
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "Show me hotels in Ljubljana with free Wi-Fi.",
+        "sql_query": "SELECT * FROM hotels WHERE city = 'Ljubljana' AND wifi = 'free';",
+        "combinations": [
+            [
+                "city = 'Ljubljana'"
+            ],
+            [
+                "wifi = 'free'"
+            ]
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "Find a hotel in Prague that's suitable for guests with electric vehicles.",
+        "sql_query": "SELECT * FROM hotels WHERE city = 'Prague' AND ev_charging_station = 1;",
+        "combinations": [
+            [
+                "city = 'Prague'"
+            ],
+            [
+                "ev_charging_station = 1"
+            ]
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "We're looking for a family-friendly retreat in Budapest welcoming to both our little ones and the furry member of the family. A comfy spot for our baby to sleep, a splash zone for the kids, and a place for our dog. Having the convenience of on-site dining would be the cherry on top.",
+        "sql_query": "SELECT * FROM hotels WHERE city = 'Budapest' AND cribs = 1 AND (pool = 1 OR child_pool = 1) AND pet_friendly = 'pets allowed on request' AND restaurant = 1;",
+        "combinations": [
+            [
+                "city = 'Budapest'"
+            ],
+            [
+                "cribs = 1"
+            ],
+            [
+                "pool = 1",
+                "child_pool = 1"
+            ],
+            [
+                "pet_friendly = 'pets allowed on request'"
+            ],
+            [
+                "restaurant = 1"
+            ]
+        ]
+    }
+]

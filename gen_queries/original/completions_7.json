@@ -1,0 +1,717 @@
+[
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "I need a hotel in Miami with free wifi.",
+        "sql_query": "SELECT * FROM hotels WHERE city = 'Miami' AND wifi = 'free';",
+        "combinations": [
+            [
+                "city = 'Miami'"
+            ],
+            [
+                "wifi = 'free'"
+            ]
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "Find me a pet-friendly hotel in Rio-de-Janeiro that also offers free parking.",
+        "sql_query": "SELECT * FROM hotels WHERE city = 'Rio-de-Janeiro' AND pet_friendly = 'pets allowed on request' AND parking = 'free';",
+        "combinations": [
+            [
+                "city = 'Rio-de-Janeiro'"
+            ],
+            [
+                "pet_friendly = 'pets allowed on request'"
+            ],
+            [
+                "parking = 'free'"
+            ]
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "Looking for a cozy stay in Los Angeles suitable for a family with a toddler and a baby, needing a crib and a kitchenette for preparing baby food, with easy access for our stroller.",
+        "sql_query": "SELECT * FROM hotels WHERE city = 'Los-Angeles' AND cribs = 1 AND kitchen = 1 AND increased_accessibility = 1;",
+        "combinations": [
+            [
+                "city = 'Los-Angeles'"
+            ],
+            [
+                "cribs = 1"
+            ],
+            [
+                "kitchen = 1"
+            ],
+            [
+                "increased_accessibility = 1"
+            ]
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "Find hotels in Miami with free WiFi.",
+        "sql_query": "SELECT * FROM hotels WHERE city = 'Miami' AND wifi = 'free';",
+        "combinations": [
+            [
+                "city = 'Miami'"
+            ],
+            [
+                "wifi = 'free'"
+            ]
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "I need a hotel in Rio-de-Janeiro that's pet-friendly and has a spot for my car.",
+        "sql_query": "SELECT * FROM hotels WHERE city = 'Rio-de-Janeiro' AND pet_friendly = 'pets allowed on request' AND parking != 'no';",
+        "combinations": [
+            [
+                "city = 'Rio-de-Janeiro'"
+            ],
+            [
+                "pet_friendly = 'pets allowed on request'"
+            ],
+            [
+                "parking != 'no'"
+            ]
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "Looking for a cozy retreat in Los Angeles that\u2019s welcoming to our four-legged family member, offers a place to park our camper van without extra charges, and provides a chance to unwind with a cool dip.",
+        "sql_query": "SELECT * FROM hotels WHERE city = 'Los-Angeles' AND pet_friendly = 'pets allowed on request' AND parking = 'free' AND (pool = 1 OR ocean_view = 1);",
+        "combinations": [
+            [
+                "city = 'Los-Angeles'"
+            ],
+            [
+                "pet_friendly = 'pets allowed on request'"
+            ],
+            [
+                "parking = 'free'"
+            ],
+            [
+                "pool = 1",
+                "ocean_view = 1"
+            ]
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "Find hotels in Miami with free wifi.",
+        "sql_query": "SELECT * FROM hotels WHERE city = 'Miami' AND wifi = 'free';",
+        "combinations": [
+            [
+                "city = 'Miami'"
+            ],
+            [
+                "wifi = 'free'"
+            ]
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "I need a hotel in Los Angeles that's pet-friendly but I'm on a budget.",
+        "sql_query": "SELECT * FROM hotels WHERE city = 'Los-Angeles' AND pet_friendly = 'pets allowed on request' AND stars <= 3;",
+        "combinations": [
+            [
+                "city = 'Los-Angeles'"
+            ],
+            [
+                "pet_friendly = 'pets allowed on request'"
+            ],
+            [
+                "stars <= 3"
+            ]
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "Looking for a family-friendly lodging in Rio-de-Janeiro that can provide a crib for my toddler and has a designated play area, not too pricey.",
+        "sql_query": "SELECT * FROM hotels WHERE city = 'Rio-de-Janeiro' AND cribs = 1 AND playground = 1 AND stars <= 3;",
+        "combinations": [
+            [
+                "city = 'Rio-de-Janeiro'"
+            ],
+            [
+                "cribs = 1"
+            ],
+            [
+                "playground = 1"
+            ],
+            [
+                "stars <= 3"
+            ]
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "Show me all hotels in Miami that have free wifi.",
+        "sql_query": "SELECT * FROM hotels WHERE city = 'Miami' AND wifi = 'free';",
+        "combinations": [
+            [
+                "city = 'Miami'"
+            ],
+            [
+                "wifi = 'free'"
+            ]
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "I need a pet-friendly accommodation in Rio-de-Janeiro with a spot for my car.",
+        "sql_query": "SELECT * FROM hotels WHERE city = 'Rio-de-Janeiro' AND pet_friendly = 'pets allowed on request' AND parking != 'no';",
+        "combinations": [
+            [
+                "city = 'Rio-de-Janeiro'"
+            ],
+            [
+                "pet_friendly = 'pets allowed on request'"
+            ],
+            [
+                "parking != 'no'"
+            ]
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "We're planning a family vacation to Los Angeles and looking for a place that's friendly for our toddler and infant. We'd love if the hotel provides cribs and has a designated area for little kids to play.",
+        "sql_query": "SELECT * FROM hotels WHERE city = 'Los-Angeles' AND cribs = 1 AND (playground = 1 OR child_pool = 1);",
+        "combinations": [
+            [
+                "city = 'Los-Angeles'"
+            ],
+            [
+                "cribs = 1"
+            ],
+            [
+                "playground = 1",
+                "child_pool = 1"
+            ]
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "Find me a hotel in Miami with free WiFi.",
+        "sql_query": "SELECT * FROM hotels WHERE city = 'Miami' AND wifi = 'free';",
+        "combinations": [
+            [
+                "city = 'Miami'"
+            ],
+            [
+                "wifi = 'free'"
+            ]
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "I want a hotel in Rio-de-Janeiro that's dog friendly.",
+        "sql_query": "SELECT * FROM hotels WHERE city = 'Rio-de-Janeiro' AND pet_friendly = 'pets allowed on request';",
+        "combinations": [
+            [
+                "city = 'Rio-de-Janeiro'"
+            ],
+            [
+                "pet_friendly = 'pets allowed on request'"
+            ]
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "Looking for a cozy place to stay in Los Angeles that offers privacy for sunbathing and isn't too noisy. Also, I am arriving from the airport, so a ride there would be nice.",
+        "sql_query": "SELECT * FROM hotels WHERE city = 'Los-Angeles' AND beach_access = 'private beach' AND adults_only = 1 AND airport_shuttle IN ('possible', 'free');",
+        "combinations": [
+            [
+                "city = 'Los-Angeles'"
+            ],
+            [
+                "beach_access = 'private beach'"
+            ],
+            [
+                "adults_only = 1"
+            ],
+            [
+                "airport_shuttle IN ('possible', 'free')"
+            ]
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "Find me a hotel in Miami with free wifi.",
+        "sql_query": "SELECT * FROM hotels WHERE city = 'Miami' AND wifi = 'free';",
+        "combinations": [
+            [
+                "city = 'Miami'"
+            ],
+            [
+                "wifi = 'free'"
+            ]
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "I need a hotel in Rio-de-Janeiro that is pet friendly and offers a stunning view of the ocean.",
+        "sql_query": "SELECT * FROM hotels WHERE city = 'Rio-de-Janeiro' AND pet_friendly = 'pets allowed on request' AND ocean_view = 1;",
+        "combinations": [
+            [
+                "city = 'Rio-de-Janeiro'"
+            ],
+            [
+                "pet_friendly = 'pets allowed on request'"
+            ],
+            [
+                "ocean_view = 1"
+            ]
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "Looking for a place to stay in Los-Angeles where I can bring my dog and go for a swim without breaking the bank. It'd be a plus if there's a spot for my electric car.",
+        "sql_query": "SELECT * FROM hotels WHERE city = 'Los-Angeles' AND pet_friendly = 'pets allowed on request' AND (pool = 1 OR ocean_view = 1) AND stars <= 3 AND ev_charging_station = 1;",
+        "combinations": [
+            [
+                "city = 'Los-Angeles'"
+            ],
+            [
+                "pet_friendly = 'pets allowed on request'"
+            ],
+            [
+                "pool = 1",
+                "ocean_view = 1"
+            ],
+            [
+                "stars <= 3"
+            ],
+            [
+                "ev_charging_station = 1"
+            ]
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "Find hotels in Miami with free wifi.",
+        "sql_query": "SELECT * FROM hotels WHERE city = 'Miami' AND wifi = 'free';",
+        "combinations": [
+            [
+                "city = 'Miami'"
+            ],
+            [
+                "wifi = 'free'"
+            ]
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "I need a hotel in Rio-de-Janeiro that's wheelchair accessible.",
+        "sql_query": "SELECT * FROM hotels WHERE city = 'Rio-de-Janeiro' AND increased_accessibility = 1;",
+        "combinations": [
+            [
+                "city = 'Rio-de-Janeiro'"
+            ],
+            [
+                "increased_accessibility = 1"
+            ]
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "Looking for a kid-friendly place to stay in Los Angeles where my toddler can sleep safely, and we can easily park our car. Preferably, the place should also allow us to bring our dog.",
+        "sql_query": "SELECT * FROM hotels WHERE city = 'Los-Angeles' AND cribs = 1 AND parking != 'no' AND pet_friendly = 'pets allowed on request';",
+        "combinations": [
+            [
+                "city = 'Los-Angeles'"
+            ],
+            [
+                "cribs = 1"
+            ],
+            [
+                "parking != 'no'"
+            ],
+            [
+                "pet_friendly = 'pets allowed on request'"
+            ]
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "Find me a hotel in Miami with free Wi-Fi.",
+        "sql_query": "SELECT * FROM hotels WHERE city = 'Miami' AND wifi = 'free';",
+        "combinations": [
+            [
+                "city = 'Miami'"
+            ],
+            [
+                "wifi = 'free'"
+            ]
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "I'm looking for a pet-friendly lodging option in Rio-de-Janeiro that also offers a spot for my car.",
+        "sql_query": "SELECT * FROM hotels WHERE city = 'Rio-de-Janeiro' AND pet_friendly = 'pets allowed on request' AND parking != 'no';",
+        "combinations": [
+            [
+                "city = 'Rio-de-Janeiro'"
+            ],
+            [
+                "pet_friendly = 'pets allowed on request'"
+            ],
+            [
+                "parking != 'no'"
+            ]
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "We're planning a family vacation to Los Angeles and need accommodation that's child-friendly, ideally with a playground or where the young ones can splash around safely in water. Additionally, we'd prefer a place where we won't have to worry about meal times for the kids.",
+        "sql_query": "SELECT * FROM hotels WHERE city = 'Los-Angeles' AND (playground = 1 OR pool = 1 OR child_pool = 1) AND kids_friendly_buffet = 1;",
+        "combinations": [
+            [
+                "city = 'Los-Angeles'"
+            ],
+            [
+                "playground = 1",
+                "pool = 1",
+                "child_pool = 1"
+            ],
+            [
+                "kids_friendly_buffet = 1"
+            ]
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "Find hotels in Los Angeles that have free WiFi.",
+        "sql_query": "SELECT * FROM hotels WHERE city = 'Los-Angeles' AND wifi = 'free';",
+        "combinations": [
+            [
+                "city = 'Los-Angeles'"
+            ],
+            [
+                "wifi = 'free'"
+            ]
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "I need a place to stay in Miami with a fitness center and where I can bring my dog.",
+        "sql_query": "SELECT * FROM hotels WHERE city = 'Miami' AND fitness_center = 1 AND pet_friendly = 'pets allowed on request';",
+        "combinations": [
+            [
+                "city = 'Miami'"
+            ],
+            [
+                "fitness_center = 1"
+            ],
+            [
+                "pet_friendly = 'pets allowed on request'"
+            ]
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "We're looking for a vacation spot in Brazil that's suitable for a family getaway, prefer a space where our toddler can have a nice sleep, and we can recharge our electric car.",
+        "sql_query": "SELECT * FROM hotels WHERE country = 'BR' AND cribs = 1 AND ev_charging_station = 1;",
+        "combinations": [
+            [
+                "country = 'BR'"
+            ],
+            [
+                "cribs = 1"
+            ],
+            [
+                "ev_charging_station = 1"
+            ]
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "Find a hotel in Miami with free wifi.",
+        "sql_query": "SELECT * FROM hotels WHERE city = 'Miami' AND wifi = 'free';",
+        "combinations": [
+            [
+                "city = 'Miami'"
+            ],
+            [
+                "wifi = 'free'"
+            ]
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "I need a pet-friendly accommodation in Rio-de-Janeiro that also offers a spot for my car.",
+        "sql_query": "SELECT * FROM hotels WHERE city = 'Rio-de-Janeiro' AND pet_friendly = 'pets allowed on request' AND parking != 'no';",
+        "combinations": [
+            [
+                "city = 'Rio-de-Janeiro'"
+            ],
+            [
+                "pet_friendly = 'pets allowed on request'"
+            ],
+            [
+                "parking != 'no'"
+            ]
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "Looking for a cozy stay in Los Angeles for me and my partner, we enjoy beach walks and wish to bring our dog. A kitchenette would be great as we prefer cooking our meals.",
+        "sql_query": "SELECT * FROM hotels WHERE city = 'Los-Angeles' AND beach_access IN ('private beach', 'beach access') AND pet_friendly = 'pets allowed on request' AND kitchen = 1;",
+        "combinations": [
+            [
+                "city = 'Los-Angeles'"
+            ],
+            [
+                "beach_access IN ('private beach', 'beach access')"
+            ],
+            [
+                "pet_friendly = 'pets allowed on request'"
+            ],
+            [
+                "kitchen = 1"
+            ]
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "Find hotels in Miami that offer free Wi-Fi.",
+        "sql_query": "SELECT * FROM hotels WHERE city = 'Miami' AND wifi = 'free';",
+        "combinations": [
+            [
+                "city = 'Miami'"
+            ],
+            [
+                "wifi = 'free'"
+            ]
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "I'm looking for a pet-friendly accommodation in Rio-de-Janeiro with a spot to park my car.",
+        "sql_query": "SELECT * FROM hotels WHERE city = 'Rio-de-Janeiro' AND pet_friendly = 'pets allowed on request' AND parking != 'no';",
+        "combinations": [
+            [
+                "city = 'Rio-de-Janeiro'"
+            ],
+            [
+                "pet_friendly = 'pets allowed on request'"
+            ],
+            [
+                "parking != 'no'"
+            ]
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "We're planning a romantic getaway to Los Angeles and want to stay somewhere with incredible night views and possibly a spot for our electric car. A jacuzzi or hot tub would be a bonus!",
+        "sql_query": "SELECT * FROM hotels WHERE city = 'Los-Angeles' AND ocean_view = 1 AND ev_charging_station = 1 AND (spa = 1 OR increased_accessibility = 1);",
+        "combinations": [
+            [
+                "city = 'Los-Angeles'"
+            ],
+            [
+                "ocean_view = 1"
+            ],
+            [
+                "ev_charging_station = 1"
+            ],
+            [
+                "spa = 1",
+                "increased_accessibility = 1"
+            ]
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "Find hotels in Miami that offer free wifi.",
+        "sql_query": "SELECT * FROM hotels WHERE city = 'Miami' AND wifi = 'free';",
+        "combinations": [
+            [
+                "city = 'Miami'"
+            ],
+            [
+                "wifi = 'free'"
+            ]
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "I'm looking for a pet-friendly lodging in Rio-de-Janeiro with a spot to park my car, doesn't matter if it's free or has a surcharge.",
+        "sql_query": "SELECT * FROM hotels WHERE city = 'Rio-de-Janeiro' AND pet_friendly = 'pets allowed on request' AND parking != 'no';",
+        "combinations": [
+            [
+                "city = 'Rio-de-Janeiro'"
+            ],
+            [
+                "pet_friendly = 'pets allowed on request'"
+            ],
+            [
+                "parking != 'no'"
+            ]
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "For our anniversary, we're dreaming of a romantic getaway in Los Angeles that's not too hard on our pockets. It needs to have a scenic view, possibly the ocean, and a cozy spot for our two dogs. Would love if it's accessible for my wheelchair as well.",
+        "sql_query": "SELECT * FROM hotels WHERE city = 'Los-Angeles' AND ocean_view = 1 AND pet_friendly = 'pets allowed on request' AND unit_wheelchair_accessible = 1 AND rating > 7 AND stars <= 4;",
+        "combinations": [
+            [
+                "city = 'Los-Angeles'"
+            ],
+            [
+                "ocean_view = 1"
+            ],
+            [
+                "pet_friendly = 'pets allowed on request'"
+            ],
+            [
+                "unit_wheelchair_accessible = 1"
+            ],
+            [
+                "rating > 7"
+            ],
+            [
+                "stars <= 4"
+            ]
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "I need a hotel in Miami with free wifi.",
+        "sql_query": "SELECT * FROM hotels WHERE city = 'Miami' AND wifi = 'free';",
+        "combinations": [
+            [
+                "city = 'Miami'"
+            ],
+            [
+                "wifi = 'free'"
+            ]
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "Show me pet-friendly accommodations in Rio-de-Janeiro that offer an airport shuttle service.",
+        "sql_query": "SELECT * FROM hotels WHERE city = 'Rio-de-Janeiro' AND pet_friendly = 'pets allowed on request' AND airport_shuttle != 'no';",
+        "combinations": [
+            [
+                "city = 'Rio-de-Janeiro'"
+            ],
+            [
+                "pet_friendly = 'pets allowed on request'"
+            ],
+            [
+                "airport_shuttle != 'no'"
+            ]
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "Looking for a place to stay in Los Angeles that's great for families with toddlers. It should be easy to get to the city center and have options for the little ones to splash around.",
+        "sql_query": "SELECT * FROM hotels WHERE city = 'Los-Angeles' AND increased_accessibility = 1 AND (pool = 1 OR child_pool = 1) AND cribs = 1;",
+        "combinations": [
+            [
+                "city = 'Los-Angeles'"
+            ],
+            [
+                "increased_accessibility = 1"
+            ],
+            [
+                "pool = 1",
+                "child_pool = 1"
+            ],
+            [
+                "cribs = 1"
+            ]
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "Find me hotels in Miami that have a spa.",
+        "sql_query": "SELECT * FROM hotels WHERE city = 'Miami' AND spa = 1;",
+        "combinations": [
+            [
+                "city = 'Miami'"
+            ],
+            [
+                "spa = 1"
+            ]
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "I need a hotel in Rio-de-Janeiro that is pet-friendly and offers free WiFi.",
+        "sql_query": "SELECT * FROM hotels WHERE city = 'Rio-de-Janeiro' AND pet_friendly = 'pets allowed on request' AND wifi = 'free';",
+        "combinations": [
+            [
+                "city = 'Rio-de-Janeiro'"
+            ],
+            [
+                "pet_friendly = 'pets allowed on request'"
+            ],
+            [
+                "wifi = 'free'"
+            ]
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "We're planning a trip to Los Angeles, looking for a kid-friendly place to stay that's perfect for a family with toddlers, ideally with a place for the little ones to play and sleep safely.",
+        "sql_query": "SELECT * FROM hotels WHERE city = 'Los-Angeles' AND playground = 1 AND cribs = 1;",
+        "combinations": [
+            [
+                "city = 'Los-Angeles'"
+            ],
+            [
+                "playground = 1",
+                "cribs = 1"
+            ]
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "Find hotels in Miami that offer free WiFi.",
+        "sql_query": "SELECT * FROM hotels WHERE city = 'Miami' AND wifi = 'free';",
+        "combinations": [
+            [
+                "city = 'Miami'"
+            ],
+            [
+                "wifi = 'free'"
+            ]
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "Show me pet-friendly accommodations in Rio-de-Janeiro with a place to park my car.",
+        "sql_query": "SELECT * FROM hotels WHERE city = 'Rio-de-Janeiro' AND pet_friendly = 'pets allowed on request' AND parking != 'no';",
+        "combinations": [
+            [
+                "city = 'Rio-de-Janeiro'"
+            ],
+            [
+                "pet_friendly = 'pets allowed on request'"
+            ],
+            [
+                "parking != 'no'"
+            ]
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "I'm planning a family vacation to Cancun with young kids who are picky eaters and love swimming. We need a hotel that's welcoming to families, has options for children to swim, and offers a variety of food that kids will like.",
+        "sql_query": "SELECT * FROM hotels WHERE city = 'Cancun' AND (pool = 1 OR child_pool = 1 OR beach_access IN ('private beach', 'beach access')) AND kids_friendly_buffet = 1;",
+        "combinations": [
+            [
+                "city = 'Cancun'"
+            ],
+            [
+                "pool = 1",
+                "child_pool = 1",
+                "beach_access IN ('private beach', 'beach access')"
+            ],
+            [
+                "kids_friendly_buffet = 1"
+            ]
+        ]
+    }
+]

@@ -1,0 +1,77 @@
+[
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "We are a ground of friends that are searching for hotels and of us has a handicap. We are looking for hotels that are primarily for adults with a casino.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE adults_only = 1 AND casino = 1 AND increased_accessibility = 1 AND unit_wheelchair_accessible = 1;", 
+            "SELECT * FROM hotels WHERE adults_only = 1 AND casino = 1 AND (increased_accessibility = 1 OR unit_wheelchair_accessible = 1)"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "I live just outside of Copenhagen and like to play golf with my friends in my spare time. We sometimes travel together to experience new courses and enjoy delicious food and wine. We also love to sit and chat in the evening over a glass. Can you recommend hotels in Spain that meet my requirements?",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE country = 'ES' AND golf = 1 AND restaurant = 1 AND bar = 1;"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "I need a hotel that's equipped for guests in wheelchairs, has adult entertainment but doesn't allow kids.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE unit_wheelchair_accessible = 1 AND casino = 1 AND adults_only = 1;"
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "Find hotels in Hungary with a casino and water slide.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE country = 'HU' AND casino = 1 AND water_park = 1;"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "Seeking a getaway to Malaga where peace from the bustle of families is guaranteed, alongside amenities like gambling, and thoughtful considerations for individuals requiring ramp access.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Malaga' AND adults_only = 1 AND casino = 1 AND unit_wheelchair_accessible = 1;"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "I'm an active person who likes to challenge myself. I have completed several marathons, triathlons, and ironman races. Find hotels where I can pursue my active lifesyle and where I can socialize with others whenever it suits me",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE fitness_center = 1 AND beach_access IN ('beach access', 'private beach') AND bar = 1;"
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "I want a hotel in Vilnius hotel with nightlife options.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Vilnius' AND bar = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "I need a hotel in Porto with entertainment options for adults and no facilities for kids.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Porto' AND (casino = 1 OR bar = 1) AND adults_only = 1;"
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "I am 71 years old and live in a town house! I have some problems with my legs - especially my knees, but that doesn't stop me from traveling. I am looking for a five star hotel in the city of Prague.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Prague' AND stars = 5 AND increased_accessibility = 1;",
+            "SELECT * FROM hotels WHERE city = 'Prague' AND stars = 5 AND increased_accessibility = 1 AND unit_wheelchair_accessible = 1;",
+            "SELECT * FROM hotels WHERE city = 'Prague' AND stars = 5 AND (increased_accessibility = 1 OR unit_wheelchair_accessible = 1)"
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "Find hotels in Lithuania with a casino and handicap friendly rooms.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE country = 'LT' AND casino = 1 AND increased_accessibility = 1;",
+            "SELECT * FROM hotels WHERE country = 'LT' AND casino = 1 AND (increased_accessibility = 1 OR unit_wheelchair_accessible = 1",
+            "SELECT * FROM hotels WHERE country = 'LT' AND casino = 1 AND unit_wheelchair_accessible = 1;"
+        ]
+    }
+]

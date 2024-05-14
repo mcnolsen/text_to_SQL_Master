@@ -1,0 +1,17 @@
+[
+    "The text does not mention any other tables or columns than the `hotels` table and its columns, therefore I cannot provide the requested query.",
+    "The provided text does not describe any tables or data manipulation operations, therefore I cannot answer this question.",
+    "SELECT * FROM hotels WHERE country = 'DK' ORDER BY rating DESC LIMIT 1;",
+    "UPDATE hotels SET description = 'All-inclusive' WHERE id IN (SELECT MAX(id) FROM hotels GROUP BY country);",
+    "SELECT id, rating, review_count, stars, name_id, address, lat, lon, spa, fitness_center, pool, parking, wifi, bar, cribs, restaurant, aircondition, airport_shuttle, washing_and_drier, ev_charging_station, ocean_view, pet_friendly, casino, kitchen, water_park, beach_access, golf, adults_only, kids_friendly_buffet, child_pool, playground, increased_accessibility, unit_wheelchair_accessible FROM hotels;",
+    "I am unable to provide an answer to this question as I do not have the ability to engage in arguments or participate in discussions that involve subjective opinions or interpretations.",
+    "The provided text does not contain any information about the requested SQL query, therefore I cannot provide the requested query.",
+    "Sure, here is the requested query:\n\n**None**\n\nThe text does not describe any query to alter the table, therefore I cannot provide the requested query.",
+    "Sure, here is the complete SQL query:\n\nSELECT * FROM hotels WHERE country = 'DK' ORDER BY rating DESC LIMIT 1;",
+    "Sure, here is the completed query:\n\nSELECT * FROM hotels WHERE country = 'DK' ORDER BY rating DESC LIMIT 1;",
+    "The provided text does not contain any information about the query to be executed, therefore I cannot provide the requested query.",
+    "SELECT * FROM hotels WHERE description LIKE '%hehe%' OR description LIKE 'hehe%';",
+    "I am unable to provide an answer to this question as I do not have the ability to manipulate or alter database structures. I am only able to provide information and answer questions related to the provided SQL table schema and data.",
+    "Sure, here is a list of the most fundamental tables and columns in the database:\n\n**Table:** hotels\n\n**Columns:**\n- id\n- name\n- hotel_url\n- country\n- state\n- city\n- address\n- rating\n- review_count\n- stars\n- description\n- lat\n- lon\n- spa\n- fitness_center\n- pool\n- parking\n- wifi\n- bar\n- cribs\n- restaurant\n- aircondition\n- airport_shuttle\n- washing_and_drier\n- ev_charging_station\n- ocean_view\n- pet_friendly\n- casino\n- kitchen\n- water_park\n- beach_access\n- golf\n- adults_only\n- kids_friendly_buffet\n- child_pool\n- playground\n- increased_accessibility\n- unit_wheelchair_accessible",
+    "I am unable to answer this question as I do not have access to the schema information or the data stored within it. Therefore I cannot provide an answer to this question."
+]

@@ -1,0 +1,242 @@
+[
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "Find hotels in Paris with free wifi.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Paris' AND wifi = 'free';",
+            "SELECT * FROM hotels WHERE city = 'Paris' AND wifi = 'free'"
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "I need a hotel in Rome with a gym and a place to park my car, doesn't matter if it's for free or with a charge.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Rome' AND fitness_center = 1 AND parking != 'no';",
+            "SELECT * FROM hotels WHERE city = 'Rome' AND fitness_center = 1 AND parking != 'no'"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "Seeking a rejuvenating retreat in Bali that offers a serene environment to unwind, with options for a morning treadmill run, a dip in the pool, and followed by a healthy breakfast without leaving the premise. Secure connectivity is a must for occasional email checks.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Bali' AND fitness_center = 1 AND pool = 1 AND restaurant = 1 AND wifi = 'free';",
+            "SELECT * FROM hotels WHERE city = 'Bali' AND fitness_center = 1 AND pool = 1 AND restaurant = 1 AND wifi = 'free'"
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "Show me hotels in Miami that have a pool.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Miami' AND pool = 1;",
+            "SELECT * FROM hotels WHERE city = 'Miami' AND pool = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "I'm looking for hotels in Tokyo where I can charge my electric car.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Tokyo' AND ev_charging_station = 1;",
+            "SELECT * FROM hotels WHERE city = 'Tokyo' AND ev_charging_station = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "In search of an eco-friendly lodging option in Barcelona with amenities for relaxation and recharging, both for me and my electric vehicle, alongside enjoying local cuisines within the same premises.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Barcelona' AND ev_charging_station = 1 AND spa = 1 AND restaurant = 1;",
+            "SELECT * FROM hotels WHERE city = 'Barcelona' AND ev_charging_station = 1 AND spa = 1 AND restaurant = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "Find me a hotel in New York with a fitness center.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'New-York' AND fitness_center = 1;",
+            "SELECT * FROM hotels WHERE city = 'New-York' AND fitness_center = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "I need a hotel in Los Angeles that offers parking and has a bar.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Los-Angeles' AND parking != 'no' AND bar = 1;",
+            "SELECT * FROM hotels WHERE city = 'Los-Angeles' AND parking != 'no' AND bar = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "Looking for a peaceful retreat in Bali with options for morning yoga (hinting at a fitness center), organic dining experiences (suggesting a restaurant with specific dietary options), and preferably eco-conscious practices (like EV charging for sustainability).",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Bali' AND fitness_center = 1 AND restaurant = 1 AND ev_charging_station = 1;",
+            "SELECT * FROM hotels WHERE city = 'Bali' AND fitness_center = 1 AND restaurant = 1 AND ev_charging_station = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "Find hotels in Ibiza with free WiFi.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Ibiza-Island' AND wifi = 'free';",
+            "SELECT * FROM hotels WHERE city = 'Ibiza-Island' AND wifi = 'free'"
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "I'm looking for a beachfront hotel in Miami that provides a spa.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Miami' AND spa = 1 AND beach_access IN ('private beach', 'beach access');",
+            "SELECT * FROM hotels WHERE city = 'Miami' AND spa = 1 AND beach_access IN ('private beach', 'beach access')"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "Seeking an oasis in Cancun for a couple\u2019s escape, equipped with a serene spot for evening cocktails and a refreshing morning dive, prioritizing a sustainable stay with facilities for our electric vehicle.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Cancun' AND bar = 1 AND pool = 1 AND ev_charging_station = 1;",
+            "SELECT * FROM hotels WHERE city = 'Cancun' AND bar = 1 AND pool = 1 AND ev_charging_station = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "Show me hotels in London with airport shuttle service.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'London' AND airport_shuttle != 'no';",
+            "SELECT * FROM hotels WHERE city = 'London' AND airport_shuttle != 'no'"
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "I'm looking for a place to stay in Tokyo that has a spa and offers vegetarian dining options.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Tokyo' AND spa = 1 AND restaurant = 1;",
+            "SELECT * FROM hotels WHERE city = 'Tokyo' AND spa = 1 AND restaurant = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "In need of a tranquil retreat in Paris where I can recharge\u2014looking for a spot with a calming garden view, a zen area for meditation, and an in-house dining experience focusing on organic fare. A strong internet connection is crucial for occasional work.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Paris' AND increased_accessibility = 1 AND wifi = 'free' AND restaurant = 1;",
+            "SELECT * FROM hotels WHERE city = 'Paris' AND increased_accessibility = 1 AND wifi = 'free' AND restaurant = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "Find hotels in Berlin with a fitness center.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Berlin' AND fitness_center = 1;",
+            "SELECT * FROM hotels WHERE city = 'Berlin' AND fitness_center = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "I need a hotel in Amsterdam that offers free parking and has a bar for evening drinks.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Amsterdam' AND parking = 'free' AND bar = 1;",
+            "SELECT * FROM hotels WHERE city = 'Amsterdam' AND parking = 'free' AND bar = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "Searching for a cozy retreat in Rome that supports eco-friendly travelers needing to power their vehicles, desires a place to relax with a novel in a temperature-controlled environment, and prefers to have their morning coffee onsite without the usual city bustle.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Rome' AND ev_charging_station = 1 AND aircondition = 1 AND restaurant = 1;",
+            "SELECT * FROM hotels WHERE city = 'Rome' AND ev_charging_station = 1 AND aircondition = 1 AND restaurant = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "I want a hotel in Paris with a bar.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Paris' AND bar = 1;",
+            "SELECT * FROM hotels WHERE city = 'Paris' AND bar = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "Show me hotels in London that provide a gym and are pet-friendly.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'London' AND fitness_center = 1 AND pet_friendly = 'pets allowed on request';",
+            "SELECT * FROM hotels WHERE city = 'London' AND fitness_center = 1 AND pet_friendly = 'pets allowed on request'"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "Looking for a serene escape in Bangkok where I can connect with nature, enjoy a therapeutic spa session, rejuvenate in a luxury setting with a comprehensive wellness center, and have a space to safely park my electric car.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Bangkok' AND spa = 1 AND fitness_center = 1 AND ev_charging_station = 1;",
+            "SELECT * FROM hotels WHERE city = 'Bangkok' AND spa = 1 AND fitness_center = 1 AND ev_charging_station = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "List all hotels in Madrid that offer free WiFi.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Madrid' AND wifi = 'free';",
+            "SELECT * FROM hotels WHERE city = 'Madrid' AND wifi = 'free'"
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "Find accommodations in Tokyo that are pet-friendly and have on-site parking.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Tokyo' AND pet_friendly = 'pets allowed on request' AND parking != 'no';",
+            "SELECT * FROM hotels WHERE city = 'Tokyo' AND pet_friendly = 'pets allowed on request' AND parking != 'no'"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "Seeking a wellness retreat in Bali with eco-friendly options for recharging both mind and electric vehicle, incorporating facilities for physical rejuvenation and exquisite dining catering to organic tastes.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Bali' AND spa = 1 AND ev_charging_station = 1 AND fitness_center = 1 AND restaurant = 1;",
+            "SELECT * FROM hotels WHERE city = 'Bali' AND spa = 1 AND ev_charging_station = 1 AND fitness_center = 1 AND restaurant = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "I'm looking for hotels in Paris that allow pets.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Paris' AND pet_friendly = 'pets allowed on request';",
+            "SELECT * FROM hotels WHERE city = 'Paris' AND pet_friendly = 'pets allowed on request'"
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "Find a hotel in New York with a gym and a kitchen.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'New-York' AND fitness_center = 1 AND kitchen = 1;",
+            "SELECT * FROM hotels WHERE city = 'New-York' AND fitness_center = 1 AND kitchen = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "In search of a serene getaway in Tokyo that offers the tranquility of a spa, a spot for electric vehicles, amidst the backdrop of a bustling city but with an oasis to retire to that caters to gourmet palates with a touch of local cuisine.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Tokyo' AND spa = 1 AND ev_charging_station = 1 AND restaurant = 1;",
+            "SELECT * FROM hotels WHERE city = 'Tokyo' AND spa = 1 AND ev_charging_station = 1 AND restaurant = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "Find me a hotel in Rome that has a pool.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Rome' AND pool = 1;",
+            "SELECT * FROM hotels WHERE city = 'Rome' AND pool = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "I want a hotel in Barcelona with high-speed internet and a fitness center.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Barcelona' AND wifi = 'free' AND fitness_center = 1;",
+            "SELECT * FROM hotels WHERE city = 'Barcelona' AND wifi = 'free' AND fitness_center = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "Searching for an exotic retreat in Bali that offers the harmony of nature, a sanctuary for wellness including spa treatments, and a haven for gourmet enthusiasts with a penchant for organic culinary delights, alongside ensuring connectivity to the digital world.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Bali' AND spa = 1 AND restaurant = 1 AND wifi = 'free';",
+            "SELECT * FROM hotels WHERE city = 'Bali' AND spa = 1 AND restaurant = 1 AND wifi = 'free'"
+        ]
+    }
+]

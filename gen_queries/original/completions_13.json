@@ -1,0 +1,486 @@
+[
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "Find hotels in Barcelona with free Wi-Fi.",
+        "sql_query": "SELECT * FROM hotels WHERE city = 'Barcelona' AND wifi = 'free';",
+        "combinations": [
+            [
+                "city = 'Barcelona'"
+            ],
+            [
+                "wifi = 'free'"
+            ]
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "I'm looking for a place to stay in Rome that allows me to bring my dog and has a restaurant on-site.",
+        "sql_query": "SELECT * FROM hotels WHERE city = 'Rome' AND pet_friendly = 'pets allowed on request' AND restaurant = 1;",
+        "combinations": [
+            [
+                "city = 'Rome'"
+            ],
+            [
+                "pet_friendly = 'pets allowed on request'"
+            ],
+            [
+                "restaurant = 1"
+            ]
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "Seeking a serene getaway in the French Riviera where we can pamper ourselves with spa treatments, enjoy ocean gazing from our room, and not worry about parking fees.",
+        "sql_query": "SELECT * FROM hotels WHERE city IN ('Nice', 'Corsica', 'French-Riviera', 'Monaco') AND spa = 1 AND ocean_view = 1 AND parking = 'free';",
+        "combinations": [
+            [
+                "city IN ('Nice', 'Corsica', 'French-Riviera', 'Monaco')"
+            ],
+            [
+                "spa = 1"
+            ],
+            [
+                "ocean_view = 1"
+            ],
+            [
+                "parking = 'free'"
+            ]
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "List all 5-star hotels in Ibiza-Island.",
+        "sql_query": "SELECT * FROM hotels WHERE city = 'Ibiza-Island' AND stars = 5;",
+        "combinations": [
+            [
+                "city = 'Ibiza-Island'"
+            ],
+            [
+                "stars = 5"
+            ]
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "I need a hotel in Sicily with a view of the sea that also offers a place to charge my electric car.",
+        "sql_query": "SELECT * FROM hotels WHERE city IN ('Palermo', 'Catania') AND ocean_view = 1 AND ev_charging_station = 1;",
+        "combinations": [
+            [
+                "city IN ('Palermo', 'Catania')"
+            ],
+            [
+                "ocean_view = 1"
+            ],
+            [
+                "ev_charging_station = 1"
+            ]
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "Looking for a romantic retreat in Crete for our honeymoon where we can have a private dinner under the stars, indulge in a couples spa session, and not worry about meal costs or internet access.",
+        "sql_query": "SELECT * FROM hotels WHERE city = 'Crete' AND restaurant = 1 AND spa = 1 AND wifi = 'free' AND stars >= 4;",
+        "combinations": [
+            [
+                "city = 'Crete'"
+            ],
+            [
+                "restaurant = 1"
+            ],
+            [
+                "spa = 1"
+            ],
+            [
+                "wifi = 'free'"
+            ],
+            [
+                "stars >= 4"
+            ]
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "Find hotels in Athens with a pool.",
+        "sql_query": "SELECT * FROM hotels WHERE city = 'Athens' AND pool = 1;",
+        "combinations": [
+            [
+                "city = 'Athens'"
+            ],
+            [
+                "pool = 1"
+            ]
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "I want a pet-friendly accommodation in Nice with a spot for my car.",
+        "sql_query": "SELECT * FROM hotels WHERE city = 'Nice' AND pet_friendly = 'pets allowed on request' AND parking != 'no';",
+        "combinations": [
+            [
+                "city = 'Nice'"
+            ],
+            [
+                "pet_friendly = 'pets allowed on request'"
+            ],
+            [
+                "parking != 'no'"
+            ]
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "We're looking for a family-friendly stay in Mallorca that's perfect for kids who love swimming and building sandcastles, with easy access to the beach without worrying about meals.",
+        "sql_query": "SELECT * FROM hotels WHERE city = 'Mallorca' AND (pool = 1 OR beach_access IN ('beach access', 'private beach')) AND restaurant = 1;",
+        "combinations": [
+            [
+                "city = 'Mallorca'"
+            ],
+            [
+                "pool = 1",
+                "beach_access IN ('beach access', 'private beach')"
+            ],
+            [
+                "restaurant = 1"
+            ]
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "Show me hotels in Valencia with free parking.",
+        "sql_query": "SELECT * FROM hotels WHERE city = 'Valencia' AND parking = 'free';",
+        "combinations": [
+            [
+                "city = 'Valencia'"
+            ],
+            [
+                "parking = 'free'"
+            ]
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "I'm searching for a hotel in Corsica that's suitable for a romantic getaway, must have a spa.",
+        "sql_query": "SELECT * FROM hotels WHERE city = 'Corsica' AND spa = 1;",
+        "combinations": [
+            [
+                "city = 'Corsica'"
+            ],
+            [
+                "spa = 1"
+            ]
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "Our family is dreaming of a beach holiday in the Mediterranean, specifically a place where the little ones can play in a safe water area and we can have some adults-only time. A kitchenette would be a bonus to fix quick snacks. Thinking of locations like Malaga or Alicante.",
+        "sql_query": "SELECT * FROM hotels WHERE city IN ('Malaga', 'Alicante') AND child_pool = 1 AND adults_only = 0 AND kitchen = 1;",
+        "combinations": [
+            [
+                "city IN ('Malaga', 'Alicante')"
+            ],
+            [
+                "child_pool = 1"
+            ],
+            [
+                "adults_only = 0"
+            ],
+            [
+                "kitchen = 1"
+            ]
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "Find hotels in Marseille with a gym.",
+        "sql_query": "SELECT * FROM hotels WHERE city = 'Marseille' AND fitness_center = 1;",
+        "combinations": [
+            [
+                "city = 'Marseille'"
+            ],
+            [
+                "fitness_center = 1"
+            ]
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "Looking for a stay in Barcelona where I can take my pet and enjoy some good food.",
+        "sql_query": "SELECT * FROM hotels WHERE city = 'Barcelona' AND pet_friendly = 'pets allowed on request' AND restaurant = 1;",
+        "combinations": [
+            [
+                "city = 'Barcelona'"
+            ],
+            [
+                "pet_friendly = 'pets allowed on request'"
+            ],
+            [
+                "restaurant = 1"
+            ]
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "Planning a family vacation to Sicily. Need a place that's kid-friendly, ideally with spaces where toddlers can safely play, and offers the convenience of warming up baby food. A beachfront property would be a dream.",
+        "sql_query": "SELECT * FROM hotels WHERE city IN ('Palermo', 'Catania') AND playground = 1 AND kitchen = 1 AND beach_access IN ('private beach', 'beach access');",
+        "combinations": [
+            [
+                "city IN ('Palermo', 'Catania')"
+            ],
+            [
+                "playground = 1"
+            ],
+            [
+                "kitchen = 1"
+            ],
+            [
+                "beach_access IN ('private beach', 'beach access')"
+            ]
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "Show me hotels in Palma-de-Mallorca that offer free Wi-Fi.",
+        "sql_query": "SELECT * FROM hotels WHERE city = 'Palma-de-Mallorca' AND wifi = 'free';",
+        "combinations": [
+            [
+                "city = 'Palma-de-Mallorca'"
+            ],
+            [
+                "wifi = 'free'"
+            ]
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "I need a hotel in Mykonos that is pet-friendly and has a pool.",
+        "sql_query": "SELECT * FROM hotels WHERE city = 'Mykonos' AND pet_friendly = 'pets allowed on request' AND pool = 1;",
+        "combinations": [
+            [
+                "city = 'Mykonos'"
+            ],
+            [
+                "pet_friendly = 'pets allowed on request'"
+            ],
+            [
+                "pool = 1"
+            ]
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "We're dreaming of a family escapade to the Italian coast, preferably a spot that's welcoming to our furry friend, allows the kids to splash around in a kid's pool, and where we can recharge our electric car. Bonus if we can get a room with a view to the sea.",
+        "sql_query": "SELECT * FROM hotels WHERE country = 'IT' AND pet_friendly = 'pets allowed on request' AND child_pool = 1 AND ev_charging_station = 1 AND ocean_view = 1;",
+        "combinations": [
+            [
+                "country = 'IT'"
+            ],
+            [
+                "pet_friendly = 'pets allowed on request'"
+            ],
+            [
+                "child_pool = 1"
+            ],
+            [
+                "ev_charging_station = 1"
+            ],
+            [
+                "ocean_view = 1"
+            ]
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "Find hotels in Dubrovnik with parking available.",
+        "sql_query": "SELECT * FROM hotels WHERE city = 'Dubrovnik' AND parking != 'no';",
+        "combinations": [
+            [
+                "city = 'Dubrovnik'"
+            ],
+            [
+                "parking != 'no'"
+            ]
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "I'm looking for a relaxing stay in Santorini with spa facilities and an ocean view.",
+        "sql_query": "SELECT * FROM hotels WHERE city = 'Santorini' AND spa = 1 AND ocean_view = 1;",
+        "combinations": [
+            [
+                "city = 'Santorini'"
+            ],
+            [
+                "spa = 1"
+            ],
+            [
+                "ocean_view = 1"
+            ]
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "Seeking a seaside escape in the Mediterranean for our family, where the kids can have their fun in a child-friendly swimming area and we parents can enjoy some eco-friendly perks like an EV charging station. Also, having a crib in the room for our infant would be ideal.",
+        "sql_query": "SELECT * FROM hotels WHERE country IN ('GR', 'IT', 'ES', 'FR') AND child_pool = 1 AND ev_charging_station = 1 AND cribs = 1;",
+        "combinations": [
+            [
+                "country IN ('GR', 'IT', 'ES', 'FR')"
+            ],
+            [
+                "child_pool = 1"
+            ],
+            [
+                "ev_charging_station = 1"
+            ],
+            [
+                "cribs = 1"
+            ]
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "List all hotels in Athens that have a fitness center.",
+        "sql_query": "SELECT * FROM hotels WHERE city = 'Athens' AND fitness_center = 1;",
+        "combinations": [
+            [
+                "city = 'Athens'"
+            ],
+            [
+                "fitness_center = 1"
+            ]
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "I want a hotel in Nice with a beautiful sea view and where pets are welcome.",
+        "sql_query": "SELECT * FROM hotels WHERE city = 'Nice' AND ocean_view = 1 AND pet_friendly = 'pets allowed on request';",
+        "combinations": [
+            [
+                "city = 'Nice'"
+            ],
+            [
+                "ocean_view = 1"
+            ],
+            [
+                "pet_friendly = 'pets allowed on request'"
+            ]
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "Looking for a sustainable stay along the Mediterranean shores, preferably in a town with rich history like Rhodes or Dubrovnik, that caters to eco-conscious travelers with electric vehicle charging, doesn\u2019t compromise on modern comforts like internet access, and ensures the little ones have a crib to sleep in.",
+        "sql_query": "SELECT * FROM hotels WHERE city IN ('Rhodes', 'Dubrovnik') AND ev_charging_station = 1 AND wifi != 'no' AND cribs = 1;",
+        "combinations": [
+            [
+                "city IN ('Rhodes', 'Dubrovnik')"
+            ],
+            [
+                "ev_charging_station = 1"
+            ],
+            [
+                "wifi != 'no'"
+            ],
+            [
+                "cribs = 1"
+            ]
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "Show hotels in Malta with a pool.",
+        "sql_query": "SELECT * FROM hotels WHERE country = 'MT' AND pool = 1;",
+        "combinations": [
+            [
+                "country = 'MT'"
+            ],
+            [
+                "pool = 1"
+            ]
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "Find a place to stay in Cyprus that offers a luxury experience, including a spa.",
+        "sql_query": "SELECT * FROM hotels WHERE country = 'CY' AND spa = 1 AND stars = 5;",
+        "combinations": [
+            [
+                "country = 'CY'"
+            ],
+            [
+                "spa = 1"
+            ],
+            [
+                "stars = 5"
+            ]
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "Searching for a kid-friendly hotel along the coast of Ibiza that caters to young families with a safe swimming area for toddlers, offers meals suitable for children, and provides the convenience of quick meals in a kitchenette. An amazing view of the sea would be a bonus.",
+        "sql_query": "SELECT * FROM hotels WHERE city = 'Ibiza-Island' AND child_pool = 1 AND kids_friendly_buffet = 1 AND kitchen = 1 AND ocean_view = 1;",
+        "combinations": [
+            [
+                "city = 'Ibiza-Island'"
+            ],
+            [
+                "child_pool = 1"
+            ],
+            [
+                "kids_friendly_buffet = 1"
+            ],
+            [
+                "kitchen = 1"
+            ],
+            [
+                "ocean_view = 1"
+            ]
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "Find hotels in Barcelona with free WiFi.",
+        "sql_query": "SELECT * FROM hotels WHERE city = 'Barcelona' AND wifi = 'free';",
+        "combinations": [
+            [
+                "city = 'Barcelona'"
+            ],
+            [
+                "wifi = 'free'"
+            ]
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "I am looking for a hotel in Sicily that's close to the beach and offers breakfast.",
+        "sql_query": "SELECT * FROM hotels WHERE city IN ('Palermo', 'Catania') AND beach_access IN ('private beach', 'beach access') AND restaurant = 1;",
+        "combinations": [
+            [
+                "city IN ('Palermo', 'Catania')"
+            ],
+            [
+                "beach_access IN ('private beach', 'beach access')"
+            ],
+            [
+                "restaurant = 1"
+            ]
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "We're planning a family getaway to the Greek islands, looking for a child-friendly place that supports eco-tourism with amenities like bike rentals, has a space for our toddler to sleep comfortably, and maybe a cool spot for kids to play in water. Preferably in Crete or Rhodes.",
+        "sql_query": "SELECT * FROM hotels WHERE country = 'GR' AND city IN ('Crete', 'Rhodes') AND cribs = 1 AND pool = 1;",
+        "combinations": [
+            [
+                "country = 'GR'"
+            ],
+            [
+                "city IN ('Crete', 'Rhodes')"
+            ],
+            [
+                "cribs = 1"
+            ],
+            [
+                "pool = 1"
+            ]
+        ]
+    }
+]

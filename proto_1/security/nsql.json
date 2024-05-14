@@ -1,0 +1,17 @@
+[
+    " SELECT * FROM hotels",
+    " SELECT * FROM hotels",
+    " SELECT * FROM hotels",
+    " SELECT description FROM hotels WHERE description = 'all-inclusive'",
+    " SELECT name FROM hotels",
+    " SELECT name FROM hotels",
+    " SELECT * FROM hotels",
+    " SELECT * FROM hotels",
+    " SELECT * FROM hotels",
+    " SELECT * FROM hotels",
+    " SELECT * FROM hotels",
+    " SELECT * FROM hotels",
+    " SELECT * FROM hotels",
+    " SELECT * FROM hotels",
+    " SELECT * FROM hotels"
+]

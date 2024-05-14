@@ -1,0 +1,139 @@
+[
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "Find hotels in Copenhagen that are allows pets and has cribs for children",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Copenhagen' AND pet_friendly = 'pets allowed on request' AND cribs = 1;",
+            "SELECT * FROM hotels WHERE city = 'Copenhagen' AND pet_friendly = 'pets allowed on request' AND cribs = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "I'm looking for a hotel in Oslo with a view of the sea and has free parking.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Oslo' AND ocean_view = 1 AND parking = 'free';",
+            "SELECT * FROM hotels WHERE city = 'Oslo' AND ocean_view = 1 AND parking = 'free'"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "We're taking our granddaughter to Stockholm and we want a hotel with facilities for youngsters to play outside, and we need to make sure they have amenities for the summer heat.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Stockholm' AND (playground = 1 OR water_park = 1) AND aircondition = 1;",
+            "SELECT * FROM hotels WHERE city = 'Stockholm' AND (playground = 1) AND aircondition = 1",
+            "SELECT * FROM hotels WHERE city = 'Stockholm' AND (water_park = 1) AND aircondition = 1",
+            "SELECT * FROM hotels WHERE city = 'Stockholm' AND (playground = 1 OR water_park = 1) AND aircondition = 1",
+            "SELECT * FROM hotels WHERE city = 'Stockholm' AND (water_park = 1 OR playground = 1) AND aircondition = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "Find me hotels in Stockholm that are adults only.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Stockholm' AND adults_only = 1;",
+            "SELECT * FROM hotels WHERE city = 'Stockholm' AND adults_only = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "I need a list of hotels in Denmark or Sweden that offer free WiFi and have an on-site bar.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE (country = 'DK' OR country = 'SE') AND wifi = 'free' AND bar = 1;",
+            "SELECT * FROM hotels WHERE country IN ('DK', 'SE') AND wifi = 'free' AND bar = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "Seeking a cozy place in Oslo for a business trip. Would appreciate it if the hotel allows me to eat and allows me to keep in shape. I also prefer there to be quiet from children.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Oslo' AND restaurant = 1 AND fitness_center = 1 AND adults_only = 1;"
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "Find hotels in Copenhagen with spa and a bar.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Copenhagen' AND spa = 1 AND bar = 1;",
+            "SELECT * FROM hotels WHERE city = 'Copenhagen' AND spa = 1 AND bar = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "I'm looking for a hotel in Oslo that's pet-friendly and has a spot for my car.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Oslo' AND pet_friendly = 'pets allowed on request' AND parking != 'no';",
+            "SELECT * FROM hotels WHERE city = 'Oslo' AND pet_friendly = 'pets allowed on request' AND parking != 'no'"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "Planning a trip to Stockholm with my elderly parents, we need a place that's easy to access and has options to relax in the hotel itself, like a spa or a nice view.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Stockholm' AND (increased_accessibility = 1 OR unit_wheelchair_accessible = 1) AND (spa = 1 OR ocean_view = 1);",
+            "SELECT * FROM hotels WHERE city = 'Stockholm' AND (increased_accessibility = 1) AND (spa = 1)",
+            "SELECT * FROM hotels WHERE city = 'Stockholm' AND (increased_accessibility = 1) AND (ocean_view = 1)",
+            "SELECT * FROM hotels WHERE city = 'Stockholm' AND (increased_accessibility = 1) AND (spa = 1 OR ocean_view = 1)",
+            "SELECT * FROM hotels WHERE city = 'Stockholm' AND (increased_accessibility = 1) AND (ocean_view = 1 OR spa = 1)",
+            "SELECT * FROM hotels WHERE city = 'Stockholm' AND (unit_wheelchair_accessible = 1) AND (spa = 1)",
+            "SELECT * FROM hotels WHERE city = 'Stockholm' AND (unit_wheelchair_accessible = 1) AND (ocean_view = 1)",
+            "SELECT * FROM hotels WHERE city = 'Stockholm' AND (unit_wheelchair_accessible = 1) AND (spa = 1 OR ocean_view = 1)",
+            "SELECT * FROM hotels WHERE city = 'Stockholm' AND (unit_wheelchair_accessible = 1) AND (ocean_view = 1 OR spa = 1)",
+            "SELECT * FROM hotels WHERE city = 'Stockholm' AND (increased_accessibility = 1 OR unit_wheelchair_accessible = 1) AND (spa = 1)",
+            "SELECT * FROM hotels WHERE city = 'Stockholm' AND (increased_accessibility = 1 OR unit_wheelchair_accessible = 1) AND (ocean_view = 1)",
+            "SELECT * FROM hotels WHERE city = 'Stockholm' AND (increased_accessibility = 1 OR unit_wheelchair_accessible = 1) AND (spa = 1 OR ocean_view = 1)",
+            "SELECT * FROM hotels WHERE city = 'Stockholm' AND (increased_accessibility = 1 OR unit_wheelchair_accessible = 1) AND (ocean_view = 1 OR spa = 1)",
+            "SELECT * FROM hotels WHERE city = 'Stockholm' AND (unit_wheelchair_accessible = 1 OR increased_accessibility = 1) AND (spa = 1)",
+            "SELECT * FROM hotels WHERE city = 'Stockholm' AND (unit_wheelchair_accessible = 1 OR increased_accessibility = 1) AND (ocean_view = 1)",
+            "SELECT * FROM hotels WHERE city = 'Stockholm' AND (unit_wheelchair_accessible = 1 OR increased_accessibility = 1) AND (spa = 1 OR ocean_view = 1)",
+            "SELECT * FROM hotels WHERE city = 'Stockholm' AND (unit_wheelchair_accessible = 1 OR increased_accessibility = 1) AND (ocean_view = 1 OR spa = 1)"
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "Find hotels in Stockholm with free wifi.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Stockholm' AND wifi = 'free';",
+            "SELECT * FROM hotels WHERE city = 'Stockholm' AND wifi = 'free'"
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "I need a place to stay in Copenhagen that's wheelchair friendly and preferably does not have any kids.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Copenhagen' AND (increased_accessibility = 1 AND unit_wheelchair_accessible = 1) AND adults_only = 1;",
+            "SELECT * FROM hotels WHERE city = 'Copenhagen' AND unit_wheelchair_accessible = 1 AND adults_only = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "Looking for a cozy getaway in Bergen for me and my pet, preferably with a scenic view and with the possibility of enjoying a drink after a long day exploring.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Bergen' AND pet_friendly = 'pets allowed on request' AND ocean_view = 1 AND bar = 1;",
+            "SELECT * FROM hotels WHERE city = 'Bergen' AND pet_friendly = 'pets allowed on request' AND (ocean_view = 1) AND bar = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "Give me all hotels in Aarhus with a rating above 7 and a bar.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Aarhus' AND rating > 7 AND bar = 1;",
+            "SELECT * FROM hotels WHERE city = 'Aarhus' AND rating > 7 AND bar = 1 AND review_count >= 20"
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "I'm looking for a luxury stay in Oslo with a rating above 8.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Oslo' AND rating > 8 AND stars >= 4;",
+            "SELECT * FROM hotels WHERE city = 'Oslo' AND rating > 8 AND stars = 5"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "We're planning a road trip through Sweden with our family dog in our Tesla. Could you locate accommodations in Stockholm that would fit us?",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Stockholm' AND pet_friendly = 'pets allowed on request' AND ev_charging_station = 1;",
+            "SELECT * FROM hotels WHERE city = 'Stockholm' AND pet_friendly = 'pets allowed on request' AND ev_charging_station = 1"
+        ]
+    }
+]

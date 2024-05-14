@@ -1,0 +1,175 @@
+[
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "Find hotels in the biggest city in Norway with welness.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Oslo' AND spa = 1;"
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "Looking for a place to stay in Gothenburg that offers breakfast and has laundry facilities.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Gothenburg' AND restaurant = 1 AND washing_and_drier = 1;"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "Seeking a serene retreat with focus on health and wellness, including options for relaxation, and I'd love to have a view that's not just buildings.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE AND fitness_center = 1 AND spa = 1 AND pool = 1 AND ocean_view = 1;"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "Show me hotels in Stockholm with good reviews and the possibility to stay connected to friends and family without having to pay for it.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Stockholm' AND review_count >= 20 AND rating = 8 AND wifi = 'free';"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "I have a handicap and need a hotel in Norway, Sweden or Denmark where I do not need to find a place to eat outside the premises of the hotel.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE country IN ('NO' OR 'SE' OR 'DK') AND (increased_accessibility = 1 OR unit_wheelchair_accessible = 1) AND restaurant = 1;"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "In search of a getaway I have been looking in Denmark, Sweden and Norway. There are so many possibilities in these countries and I would love to experience them one day. During the search for stays me and my wife came to the conclusion that we need a stay in Copenhagen. We are a couple that priotitize facilities for exercise and relaxation, as well as we love to get a drink in the evening.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Copenhagen' AND fitness_center = 1 AND (spa = 1 OR pool = 1) AND bar = 1;",
+            "SELECT * FROM hotels WHERE city = 'Copenhagen' AND fitness_center = 1 AND spa = 1 AND pool = 1 AND bar = 1;"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "Denmark is a fantastic place to visit! I have been there many times. Sometimes I like being in the capital and other times I prefer being in the serene countryside, surrounded by the tranquil beauty of Danish nature. Right now, I'm looking for hotels in Aalborg with a place to swim.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Aalborg' AND pool = 1;"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "Find me a cozy hotel in Roskilde that offers both a place for my morning workout routine and a nutritious start to the day.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Roskilde' AND fitness_center = 1 AND restaurant = 1;"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "Looking for a tranquil haven in Oslo where we can rejuvenate with selfcare treatments, relax in a serene pool setting, and indulge in gourmet dining without leaving the comfort of our retreat.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Oslo' AND spa = 1 AND pool = 1 AND restaurant = 1;"
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "Find hotels in Copenhagen where I can continue my preparations for a bodybuilding competition.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Copenhagen' AND fitness_center = 1;"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "I need a hotel in Trondheim that can accommodate my need for late-night work and a place to relax with a drink afterwards.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Trondheim' AND wifi = 'free' AND bar = 1;",
+            "SELECT * FROM hotels WHERE city = 'Trondheim' AND wifi = 'free' AND bar = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "Seeking a secluded spot in Norway or Denmark that's a sanctuary for adults seeking peace, with an emphasis on wellness, including options for a nutritious start to the day and spaces for quiet contemplation or reading.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE country IN ('NO' OR 'DK') AND adults_only = 1 AND spa = 1 AND restaurant = 1;",
+            "SELECT * FROM hotels WHERE country = 'SE' AND adults_only = 1 AND spa = 1 AND restaurant = 1;",
+            "SELECT * FROM hotels WHERE country = 'NO' AND adults_only = 1 AND spa = 1 AND restaurant = 1;"
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "I am looking for a hotel in Stockholm with a gym and options for a good breakfast.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Stockholm' AND fitness_center = 1 AND restaurant = 1;"
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "Searching for a place to stay in Sweden with a stunning view and a place to enjoy a morning coffee on-site.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE country = 'SE' AND ocean_view = 1 AND restaurant = 1;"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "Aiming for a refreshing getaway in Gothenburg or Malmoe that includes opportunities for indulging in local cuisine within the hotel, spaces dedicated to wellness and training, and must have cozy spots with the possibility to browse the internet for free.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city IN ('Gothenburg' OR 'Malmo') AND restaurant = 1 AND spa = 1 AND fitness_center = 1 AND wifi = 'free';"
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "I need a hotel in Odense that offers a gym.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Odense' AND fitness_center = 1;"
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "Show me four star hotels in Malmo that offer free wifi and have good reviews.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Malmo' AND stars = 4 AND review_count >= 20 AND rating = 8 AND wifi = 'free';"
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "I'm looking for a place to stay in Copenhagen with a fitness center and a place where I can enjoy my morning coffee.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Copenhagen' AND fitness_center = 1 AND restaurant = 1;",
+            "SELECT * FROM hotels WHERE city = 'Copenhagen' AND fitness_center = 1 AND restaurant = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "Desire a soothing retreat in Sweden that comes with the possibility of leisurely swims, getting a message, and options for savoring local cuisine without stepping out, all while ensuring a room with a view to disconnect and rejuvenate.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE country = 'SE' AND pool = 1 AND spa = 1 AND restaurant = 1 AND ocean_view = 1;"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "Me and my family are driving in our Polestar to Stockholm in a couple of weeks to stay there a few days. We are bringing our dog with us and would love if we could eat at the hotel",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Stockholm' AND pet_friendly = 'pets allowed on request' AND parking != 'no' AND restaurant = 1 AND ev_charging_station = 1;"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "Seeking a serene escape in Denmark that caters to wellbeing with amenities for relaxation and fitness, ensures I can stay connected for work, and offers gourmet experiences onsite. An idyllic view would be a bonus.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE country = 'DK' AND spa = 1 AND fitness_center = 1 AND wifi = 'free' AND restaurant = 1 AND ocean_view = 1;"
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "Find me a hotel in the third largest city in Norway with a pool.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Trondheim' AND pool = 1;"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "I'm looking for a hotel in Stuttgart where I can workout and enjoy welness facilities.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Stuttgart' AND fitness_center = 1 AND spa = 1;"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "Searching for an eco-friendly retreat in Sweden that offers the possibility of staying fit and pampered, requires internet for occasional emails, and provides qualuty dining options to indulge in local flavors, all complemented by captivating views.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE country = 'SE' AND fitness_center = 1 AND spa = 1 AND wifi = 'free' AND restaurant = 1 AND ocean_view = 1;"
+        ]
+    }
+]

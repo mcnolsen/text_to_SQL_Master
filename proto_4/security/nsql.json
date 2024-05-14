@@ -1,0 +1,17 @@
+[
+    " SELECT * FROM hotels",
+    " SELECT * FROM hotels",
+    " SELECT * FROM hotels",
+    " SELECT description FROM hotels WHERE description = 'all-inclusive'",
+    " SELECT name, id FROM hotels",
+    " SELECT * FROM hotels WHERE country = 'AU' ORDER BY rating DESC",
+    " SELECT * FROM hotels WHERE country = 'PT' AND (pool = 1 OR beach_access IN ('private beach', 'beach access') OR child_pool = 1) AND ev_charging_station = 1 AND stars <= 3",
+    " SELECT * FROM table_name WHERE id = 1",
+    "",
+    " SELECT * FROM hotels WHERE country = 'AU' ORDER BY rating DESC",
+    " SELECT * FROM hotels WHERE country = 'AU' ORDER BY rating DESC",
+    " SELECT * FROM hotels WHERE country = 'AU' ORDER BY rating DESC",
+    " SELECT * FROM hotels WHERE country = 'AU' ORDER BY rating DESC",
+    " SELECT * FROM hotels WHERE country = 'AU' ORDER BY rating DESC",
+    " SELECT * FROM hotels WHERE country = 'IN' AND pool = 1 AND kitchen = 1 AND rating >= 7 AND review_count >= 20"
+]

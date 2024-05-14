@@ -1,0 +1,269 @@
+[
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "Find hotels in Oslo with a spa.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Oslo' AND spa = 1;",
+            "SELECT * FROM hotels WHERE city = 'Oslo' AND spa = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "Looking for a place to stay in Gothenburg that offers breakfast and has laundry facilities.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Gothenburg' AND restaurant = 1 AND washing_and_drier = 1;",
+            "SELECT * FROM hotels WHERE city = 'Gothenburg' AND restaurant = 1 AND washing_and_drier = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "Seeking a serene retreat in Copenhagen with health and wellness amenities, including a fitness area and options for relaxation, and I'd love to have a view that's not just buildings.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Copenhagen' AND fitness_center = 1 AND (spa = 1 OR pool = 1) AND (ocean_view = 1 OR increased_accessibility = 1);",
+            "SELECT * FROM hotels WHERE city = 'Copenhagen' AND fitness_center = 1 AND (spa = 1) AND (ocean_view = 1)",
+            "SELECT * FROM hotels WHERE city = 'Copenhagen' AND fitness_center = 1 AND (spa = 1) AND (increased_accessibility = 1)",
+            "SELECT * FROM hotels WHERE city = 'Copenhagen' AND fitness_center = 1 AND (spa = 1) AND (ocean_view = 1 OR increased_accessibility = 1)",
+            "SELECT * FROM hotels WHERE city = 'Copenhagen' AND fitness_center = 1 AND (spa = 1) AND (increased_accessibility = 1 OR ocean_view = 1)",
+            "SELECT * FROM hotels WHERE city = 'Copenhagen' AND fitness_center = 1 AND (pool = 1) AND (ocean_view = 1)",
+            "SELECT * FROM hotels WHERE city = 'Copenhagen' AND fitness_center = 1 AND (pool = 1) AND (increased_accessibility = 1)",
+            "SELECT * FROM hotels WHERE city = 'Copenhagen' AND fitness_center = 1 AND (pool = 1) AND (ocean_view = 1 OR increased_accessibility = 1)",
+            "SELECT * FROM hotels WHERE city = 'Copenhagen' AND fitness_center = 1 AND (pool = 1) AND (increased_accessibility = 1 OR ocean_view = 1)",
+            "SELECT * FROM hotels WHERE city = 'Copenhagen' AND fitness_center = 1 AND (spa = 1 OR pool = 1) AND (ocean_view = 1)",
+            "SELECT * FROM hotels WHERE city = 'Copenhagen' AND fitness_center = 1 AND (spa = 1 OR pool = 1) AND (increased_accessibility = 1)",
+            "SELECT * FROM hotels WHERE city = 'Copenhagen' AND fitness_center = 1 AND (spa = 1 OR pool = 1) AND (ocean_view = 1 OR increased_accessibility = 1)",
+            "SELECT * FROM hotels WHERE city = 'Copenhagen' AND fitness_center = 1 AND (spa = 1 OR pool = 1) AND (increased_accessibility = 1 OR ocean_view = 1)",
+            "SELECT * FROM hotels WHERE city = 'Copenhagen' AND fitness_center = 1 AND (pool = 1 OR spa = 1) AND (ocean_view = 1)",
+            "SELECT * FROM hotels WHERE city = 'Copenhagen' AND fitness_center = 1 AND (pool = 1 OR spa = 1) AND (increased_accessibility = 1)",
+            "SELECT * FROM hotels WHERE city = 'Copenhagen' AND fitness_center = 1 AND (pool = 1 OR spa = 1) AND (ocean_view = 1 OR increased_accessibility = 1)",
+            "SELECT * FROM hotels WHERE city = 'Copenhagen' AND fitness_center = 1 AND (pool = 1 OR spa = 1) AND (increased_accessibility = 1 OR ocean_view = 1)"
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "Show me hotels in Stockholm with free WiFi.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Stockholm' AND wifi = 'free';",
+            "SELECT * FROM hotels WHERE city = 'Stockholm' AND wifi = 'free'"
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "I need a hotel in Bergen that's accessible for my wheelchair and has a restaurant on site.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Bergen' AND increased_accessibility = 1 AND restaurant = 1;",
+            "SELECT * FROM hotels WHERE city = 'Bergen' AND increased_accessibility = 1 AND restaurant = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "In search of a getaway in Copenhagen for a health-conscious couple, prioritizing facilities for exercise and relaxation, including a swimming area and a space to unwind outdoors with nature views.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Copenhagen' AND fitness_center = 1 AND (spa = 1 OR pool = 1) AND ocean_view = 1;",
+            "SELECT * FROM hotels WHERE city = 'Copenhagen' AND fitness_center = 1 AND (spa = 1) AND ocean_view = 1",
+            "SELECT * FROM hotels WHERE city = 'Copenhagen' AND fitness_center = 1 AND (pool = 1) AND ocean_view = 1",
+            "SELECT * FROM hotels WHERE city = 'Copenhagen' AND fitness_center = 1 AND (spa = 1 OR pool = 1) AND ocean_view = 1",
+            "SELECT * FROM hotels WHERE city = 'Copenhagen' AND fitness_center = 1 AND (pool = 1 OR spa = 1) AND ocean_view = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "I'm looking for hotels in Helsinki with a pool.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Helsinki' AND pool = 1;",
+            "SELECT * FROM hotels WHERE city = 'Helsinki' AND pool = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "Find me a cozy hotel in Copenhagen that offers both a place for my morning jog and a nutritious start to the day.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Copenhagen' AND fitness_center = 1 AND restaurant = 1;",
+            "SELECT * FROM hotels WHERE city = 'Copenhagen' AND fitness_center = 1 AND restaurant = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "Looking for a tranquil haven in Oslo where we can rejuvenate with spa treatments, relax in a serene pool setting, and indulge in gourmet dining without leaving the comfort of our retreat.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Oslo' AND spa = 1 AND pool = 1 AND restaurant = 1;",
+            "SELECT * FROM hotels WHERE city = 'Oslo' AND spa = 1 AND pool = 1 AND restaurant = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "Find hotels in Copenhagen that have a fitness center.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Copenhagen' AND fitness_center = 1;",
+            "SELECT * FROM hotels WHERE city = 'Copenhagen' AND fitness_center = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "I need a hotel in Stockholm that can accommodate my need for late-night work with high-speed internet and a place to relax with a drink afterwards.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Stockholm' AND wifi = 'free' AND bar = 1;",
+            "SELECT * FROM hotels WHERE city = 'Stockholm' AND wifi = 'free' AND bar = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "Seeking a secluded spot in Oslo that's a sanctuary for adults seeking peace, with an emphasis on wellness, including options for a nutritious start to the day and spaces for quiet contemplation or reading.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Oslo' AND adults_only = 1 AND spa = 1 AND restaurant = 1;",
+            "SELECT * FROM hotels WHERE city = 'Oslo' AND adults_only = 1 AND spa = 1 AND restaurant = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "Show me hotels in Oslo that offer free parking.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Oslo' AND parking = 'free';",
+            "SELECT * FROM hotels WHERE city = 'Oslo' AND parking = 'free'"
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "I am looking for a hotel in Stockholm with a gym and options for a healthy breakfast.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Stockholm' AND fitness_center = 1 AND restaurant = 1;",
+            "SELECT * FROM hotels WHERE city = 'Stockholm' AND fitness_center = 1 AND restaurant = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "In need of a serene retreat in Copenhagen that caters to holistic well-being, including facilities for physical activity, stress release through spa treatments, and nourishment from a gourmet dining experience, preferably with a scenic view that isn\u2019t just urban sprawl.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Copenhagen' AND fitness_center = 1 AND spa = 1 AND restaurant = 1 AND (ocean_view = 1 OR increased_accessibility = 1);",
+            "SELECT * FROM hotels WHERE city = 'Copenhagen' AND fitness_center = 1 AND spa = 1 AND restaurant = 1 AND (ocean_view = 1)",
+            "SELECT * FROM hotels WHERE city = 'Copenhagen' AND fitness_center = 1 AND spa = 1 AND restaurant = 1 AND (increased_accessibility = 1)",
+            "SELECT * FROM hotels WHERE city = 'Copenhagen' AND fitness_center = 1 AND spa = 1 AND restaurant = 1 AND (ocean_view = 1 OR increased_accessibility = 1)",
+            "SELECT * FROM hotels WHERE city = 'Copenhagen' AND fitness_center = 1 AND spa = 1 AND restaurant = 1 AND (increased_accessibility = 1 OR ocean_view = 1)"
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "I'm looking for a hotel in Oslo that has a bar.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Oslo' AND bar = 1;",
+            "SELECT * FROM hotels WHERE city = 'Oslo' AND bar = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "Searching for a place to stay in Stockholm with a stunning view and a place to enjoy a morning coffee on-site.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Stockholm' AND (ocean_view = 1 OR city = 'Stockholm') AND restaurant = 1;",
+            "SELECT * FROM hotels WHERE city = 'Stockholm' AND ocean_view = 1 AND restaurant = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "Aiming for a refreshing getaway in Gothenburg that includes opportunities for indulging in local cuisine within the hotel, spaces dedicated to wellness such as a spa or a fitness center, and must have cozy spots with access to the internet for serene reading or browsing.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Gothenburg' AND restaurant = 1 AND (spa = 1 OR fitness_center = 1) AND wifi = 'free';",
+            "SELECT * FROM hotels WHERE city = 'Gothenburg' AND restaurant = 1 AND (spa = 1) AND wifi = 'free'",
+            "SELECT * FROM hotels WHERE city = 'Gothenburg' AND restaurant = 1 AND (fitness_center = 1) AND wifi = 'free'",
+            "SELECT * FROM hotels WHERE city = 'Gothenburg' AND restaurant = 1 AND (spa = 1 OR fitness_center = 1) AND wifi = 'free'",
+            "SELECT * FROM hotels WHERE city = 'Gothenburg' AND restaurant = 1 AND (fitness_center = 1 OR spa = 1) AND wifi = 'free'"
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "I need a hotel in Copenhagen that offers a gym.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Copenhagen' AND fitness_center = 1;",
+            "SELECT * FROM hotels WHERE city = 'Copenhagen' AND fitness_center = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "Looking for a cozy stay in Helsinki with access to high-speed internet and a fitness area.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Helsinki' AND wifi = 'free' AND fitness_center = 1;",
+            "SELECT * FROM hotels WHERE city = 'Helsinki' AND wifi = 'free' AND fitness_center = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "In search of a tranquil escape in Oslo that caters to wellness enthusiasts with features like heated relaxation areas, options for healthy dining, and serene surroundings to unwind, ideally with a picturesque view.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Oslo' AND spa = 1 AND restaurant = 1 AND (ocean_view = 1 OR increased_accessibility = 1);",
+            "SELECT * FROM hotels WHERE city = 'Oslo' AND spa = 1 AND restaurant = 1 AND (ocean_view = 1)",
+            "SELECT * FROM hotels WHERE city = 'Oslo' AND spa = 1 AND restaurant = 1 AND (increased_accessibility = 1)",
+            "SELECT * FROM hotels WHERE city = 'Oslo' AND spa = 1 AND restaurant = 1 AND (ocean_view = 1 OR increased_accessibility = 1)",
+            "SELECT * FROM hotels WHERE city = 'Oslo' AND spa = 1 AND restaurant = 1 AND (increased_accessibility = 1 OR ocean_view = 1)"
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "Show me hotels in Stockholm that offer free wifi.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Stockholm' AND wifi = 'free';",
+            "SELECT * FROM hotels WHERE city = 'Stockholm' AND wifi = 'free'"
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "I'm looking for a place to stay in Copenhagen with a fitness center and a place for my morning coffee.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Copenhagen' AND fitness_center = 1 AND restaurant = 1;",
+            "SELECT * FROM hotels WHERE city = 'Copenhagen' AND fitness_center = 1 AND restaurant = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "Desire a soothing retreat in Oslo that comes with a pool for leisurely swims, a spa for unwinding, and options for savoring local cuisine without stepping out, all while ensuring a room with a view to disconnect and rejuvenate.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Oslo' AND pool = 1 AND spa = 1 AND restaurant = 1 AND ocean_view = 1;",
+            "SELECT * FROM hotels WHERE city = 'Oslo' AND pool = 1 AND spa = 1 AND restaurant = 1 AND ocean_view = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "Find hotels in Copenhagen with free WiFi.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Copenhagen' AND wifi = 'free';",
+            "SELECT * FROM hotels WHERE city = 'Copenhagen' AND wifi = 'free'"
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "I'm looking for a pet-friendly hotel in Stockholm that also offers parking.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Stockholm' AND pet_friendly = 'pets allowed on request' AND parking != 'no';",
+            "SELECT * FROM hotels WHERE city = 'Stockholm' AND pet_friendly = 'pets allowed on request' AND parking != 'no'"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "Seeking a serene escape in Helsinki that caters to wellbeing with amenities for relaxation and fitness, ensures I can stay connected for work, and offers gourmet experiences onsite. An idyllic view would be a bonus.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Helsinki' AND spa = 1 AND fitness_center = 1 AND wifi = 'free' AND restaurant = 1 AND ocean_view = 1;",
+            "SELECT * FROM hotels WHERE city = 'Helsinki' AND spa = 1 AND fitness_center = 1 AND wifi = 'free' AND restaurant = 1 AND ocean_view = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "low",
+        "nl_query": "Find me a hotel in Oslo with a pool.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Oslo' AND pool = 1;",
+            "SELECT * FROM hotels WHERE city = 'Oslo' AND pool = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "medium",
+        "nl_query": "I'm looking for a hotel in Gothenburg that has both a gym for workouts and a place where I can relax with a spa.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Gothenburg' AND fitness_center = 1 AND spa = 1;",
+            "SELECT * FROM hotels WHERE city = 'Gothenburg' AND fitness_center = 1 AND spa = 1"
+        ]
+    },
+    {
+        "level_of_difficulty": "high",
+        "nl_query": "Searching for an eco-friendly retreat in Helsinki that offers modern amenities for staying fit and pampered, requires high-speed internet for occasional emails, and provides gourmet dining options to indulge in local flavors, all complemented by captivating views to reconnect with nature.",
+        "sql_queries": [
+            "SELECT * FROM hotels WHERE city = 'Helsinki' AND fitness_center = 1 AND spa = 1 AND wifi = 'free' AND restaurant = 1 AND ocean_view = 1;",
+            "SELECT * FROM hotels WHERE city = 'Helsinki' AND fitness_center = 1 AND spa = 1 AND wifi = 'free' AND restaurant = 1 AND ocean_view = 1"
+        ]
+    }
+]

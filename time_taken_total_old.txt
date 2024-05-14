@@ -1,0 +1,23 @@
+
+Mistral: compute: RTX A6000, VRAM usage: 22%, Time taken: 455.09949707984924 seconds, 403.27850103378296 seconds, Time taken: 986.2611999511719 seconds, Time taken: 1009.8537125587463 seconds, Time taken: 2370.6910877227783 seconds
+NSQL: compute: RTX A6000, VRAM usage: 24%, Time taken: 331.26759219169617 seconds, Time taken: 356.1132011413574 seconds, Time taken: 594.0579915046692 seconds, Time taken: 601.4986243247986 seconds, Time taken: 1626.611005783081 seconds
+Gemma: compute: RTX A6000, VRAM usage: 28%, Time taken: 571.9261894226074 seconds, Time taken: 436.4183301925659 seconds, Time taken: 946.2136092185974 seconds, Time taken: 940.1540405750275 seconds, 3656.6157886981964 seconds
+Solar: compute: RTX A6000, VRAM usage: 30%, Time taken: 689.0762715339661 seconds, Time taken: 586.2260417938232 seconds, 1425.2845833301544 seconds, Time taken: 1418.7715606689453 seconds, Time taken: 3478.612343788147 seconds
+Orca-mini-v3: compute: RTX A6000, VRAM usage: 40% , Time taken: 641.7553327083588 seconds, Time taken: 601.8360712528229 seconds, Time taken: 1768.1645119190216 seconds, Time taken: 1841.5124938488007 seconds, Time taken: 3878.5231320858 seconds
+Llama 2 13b chat: compute: RTX A6000, VRAM usage: 40%, Time taken: 1053.8533430099487 seconds, Time taken: 1600.1359674930573 seconds, Time taken: 4714.048368215561 seconds, Time taken: 4089.4956018924713 seconds, Time taken: 9370.287712812424 seconds
+Llama 3 8b: compute: RTX A6000, VRAM usage: 23%, Time taken: 442.5351183414459 seconds, Time taken: 382.2343409061432 seconds, Time taken: 1020.2818677425385 seconds, Time taken: 1083.1990387439728 seconds, Time taken: 2652.2359392642975 seconds
+Llama 3 70b: compute: 2 x RTX A6000, VRAM usage: 80%, Time taken: 1598.6276314258575 seconds, Time taken: 1747.0465881824493 seconds + Time taken: 256.81475949287415 seconds,Time taken: 5581.131057024002 seconds, 5047.757911205292 seconds, Time taken: 16363.813800811768 seconds + Time taken: 1058.4550313949585 seconds 
+Yi, compute: 2 x RTX A6000, VRAM usage: 41% avg., Time taken: 3137.6315047740936 seconds, Time taken: 1410.9333853721619 seconds,Time taken: 3572.504772424698 seconds,Time taken: 3883.4219233989716 seconds, Time taken: 7413.582740545273 seconds
+Qwen: compute: 2 x RTX A6000, VRAM usage: 90% , Time taken: 1841.6564936637878 seconds, Time taken: 2092.304195165634 seconds, Time taken: 5818.351682186127 seconds, Time taken: 5841.987954616547 seconds, Time taken: 14648.282913684845 seconds
+Mixtral: compute: 2 x RTX A6000, VRAM usage: 57%, Time taken: 640.4865860939026 seconds, Time taken: 688.7148487567902 seconds,  Time taken: 1868.3469808101654 seconds, Time taken: 1888.8714690208435 seconds, Time taken: 17778.31743001938 seconds
+DBRX: compute: 8 x RTX A6000, VRAM usage: 95% on all, Time taken: 750.1055800914764 seconds, Time taken: 796.6059248447418 seconds, Time taken: 1720.345097064972 seconds, Time taken: 1729.7001898288727 seconds, Time taken: 2532.59416818618772 seconds 
+GPT-3.5_0125: Time taken: Time taken: 682.652726650238 seconds, Time taken: 780.2222154140472 seconds, Time taken: 951.7816028594971 seconds, Time taken: 876.6666927337646 seconds, Time taken: 1719.0711569786072 seconds
+GPT4: Time taken: Time taken: 706.4277400970459 seconds, Time taken: 766.0462453365326 seconds, Time taken: 720.4005811214447 seconds, Time taken: 726.4316883087158 seconds, Time taken: 1552.0305490493774 seconds
+
+LLama 3 70b 4bit: Compute: RTX A6000, VRAM usage: 92%, iteration 3: Time taken: 3285.0330748558044 seconds , iteration 5: Time taken: 11407.155664205551 seconds
+Qwen 4bit: Compute: 2 x RTX A6000, VRAM usage: 59%, iteration 3: Time taken: 3771.6315400600433 seconds, iteration 5: Time taken: 11156.611250400543 seconds
+
+
+
+
+Time taken: 1696.88396692276 seconds

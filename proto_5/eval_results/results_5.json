@@ -1,0 +1,178 @@
+[
+    {
+        "file": "../proto_5/cleaned/dbrx_cleaned.json",
+        "bleu": 0.8489851763024752,
+        "sqam": 82.97748800267604,
+        "bleuLow": 0.9614117616356795,
+        "sqamLow": 96.75979717066303,
+        "bleuMedium": 0.8867222018174026,
+        "sqamMedium": 85.62010588084574,
+        "bleuHigh": 0.7479725350530719,
+        "sqamHigh": 71.96106011200115
+    },
+    {
+        "file": "../proto_5/cleaned/gemma_cleaned.json",
+        "bleu": 0.7724849273848823,
+        "sqam": 72.73377605122897,
+        "bleuLow": 0.8704891023432275,
+        "sqamLow": 85.71725580969395,
+        "bleuMedium": 0.7975216708279423,
+        "sqamMedium": 73.88441537817523,
+        "bleuHigh": 0.6892396655459337,
+        "sqamHigh": 63.20546652898381
+    },
+    {
+        "file": "../proto_5/cleaned/gpt-3-5_cleaned.json",
+        "bleu": 0.8649399693630115,
+        "sqam": 84.2623015514454,
+        "bleuLow": 0.9724995305279994,
+        "sqamLow": 97.42592968908758,
+        "bleuMedium": 0.915284325930285,
+        "sqamMedium": 90.60601027469288,
+        "bleuHigh": 0.7586079912368994,
+        "sqamHigh": 71.12880795084857
+    },
+    {
+        "file": "../proto_5/cleaned/gpt-4_cleaned.json",
+        "bleu": 0.9042908032216734,
+        "sqam": 87.66392774553069,
+        "bleuLow": 0.9802225782628543,
+        "sqamLow": 98.41442057231532,
+        "bleuMedium": 0.9328100892075575,
+        "sqamMedium": 90.85938607439626,
+        "bleuHigh": 0.8340297668244936,
+        "sqamHigh": 78.30012724644077
+    },
+    {
+        "file": "../proto_5/cleaned/llama-3-70b-4bit_cleaned.json",
+        "bleu": 0.8402405442303224,
+        "sqam": 81.73179380555294,
+        "bleuLow": 0.9413283340972529,
+        "sqamLow": 94.55827159071319,
+        "bleuMedium": 0.8211843279405188,
+        "sqamMedium": 79.29972755392949,
+        "bleuHigh": 0.7855438819822761,
+        "sqamHigh": 74.8132246304904
+    },
+    {
+        "file": "../proto_5/cleaned/llama-3-70b_cleaned.json",
+        "bleu": 0.8699855193020979,
+        "sqam": 84.7861644991471,
+        "bleuLow": 0.9693949181821996,
+        "sqamLow": 97.14897193844561,
+        "bleuMedium": 0.8924145656915862,
+        "sqamMedium": 86.67462941000791,
+        "bleuHigh": 0.7881771973307856,
+        "sqamHigh": 75.23462327288553
+    },
+    {
+        "file": "../proto_5/cleaned/llama-3_cleaned.json",
+        "bleu": 0.7810267544628055,
+        "sqam": 74.03538374322483,
+        "bleuLow": 0.893093581611112,
+        "sqamLow": 89.61687931347372,
+        "bleuMedium": 0.8029350789491617,
+        "sqamMedium": 76.60321264022897,
+        "bleuHigh": 0.6922215479198303,
+        "sqamHigh": 61.92216068354845
+    },
+    {
+        "file": "../proto_5/cleaned/llama_cleaned.json",
+        "bleu": 0.29587072309793844,
+        "sqam": 31.10841396189513,
+        "bleuLow": 0.41702101257198176,
+        "sqamLow": 40.62805430998521,
+        "bleuMedium": 0.32805470035867873,
+        "sqamMedium": 32.81355351995389,
+        "bleuHigh": 0.1944362331686239,
+        "sqamHigh": 23.64721815432953
+    },
+    {
+        "file": "../proto_5/cleaned/mistral_cleaned.json",
+        "bleu": 0.7328941550303129,
+        "sqam": 70.21754537798932,
+        "bleuLow": 0.8189500908156746,
+        "sqamLow": 83.72905411335447,
+        "bleuMedium": 0.7469804798499025,
+        "sqamMedium": 72.22408893805202,
+        "bleuHigh": 0.6663425574369337,
+        "sqamHigh": 59.833480140069426
+    },
+    {
+        "file": "../proto_5/cleaned/mixtral_cleaned.json",
+        "bleu": 0.7347730241454099,
+        "sqam": 70.24680962106574,
+        "bleuLow": 0.8440279953773734,
+        "sqamLow": 86.65468832252009,
+        "bleuMedium": 0.7449348114810734,
+        "sqamMedium": 69.3976466817625,
+        "bleuHigh": 0.6555704439767285,
+        "sqamHigh": 59.90404465358792
+    },
+    {
+        "file": "../proto_5/cleaned/nsql_cleaned.json",
+        "bleu": 0.5877153192914434,
+        "sqam": 51.866654598697515,
+        "bleuLow": 0.7014981385967276,
+        "sqamLow": 64.8108955915912,
+        "bleuMedium": 0.5522661848408176,
+        "sqamMedium": 50.56857541409145,
+        "bleuHigh": 0.5371051801220971,
+        "sqamHigh": 44.24364870951413
+    },
+    {
+        "file": "../proto_5/cleaned/orca_cleaned.json",
+        "bleu": 0.7079659854745083,
+        "sqam": 69.54481621337158,
+        "bleuLow": 0.7552615472179103,
+        "sqamLow": 79.31769125529729,
+        "bleuMedium": 0.7394420490933921,
+        "sqamMedium": 71.13631375655063,
+        "bleuHigh": 0.6549718485191248,
+        "sqamHigh": 61.9110242060991
+    },
+    {
+        "file": "../proto_5/cleaned/qwen-4bit_cleaned.json",
+        "bleu": 0.8787674519382371,
+        "sqam": 86.29803586467217,
+        "bleuLow": 0.9543501731841182,
+        "sqamLow": 96.38672643935803,
+        "bleuMedium": 0.8878471494246621,
+        "sqamMedium": 86.88581505098928,
+        "bleuHigh": 0.8218919768352994,
+        "sqamHigh": 79.14838571972038
+    },
+    {
+        "file": "../proto_5/cleaned/qwen_cleaned.json",
+        "bleu": 0.8802265500548206,
+        "sqam": 85.87865935211263,
+        "bleuLow": 0.9558746683252484,
+        "sqamLow": 95.877990430622,
+        "bleuMedium": 0.8941443125596286,
+        "sqamMedium": 86.81433001428684,
+        "bleuHigh": 0.8200047806142504,
+        "sqamHigh": 78.54741401572906
+    },
+    {
+        "file": "../proto_5/cleaned/solar_cleaned.json",
+        "bleu": 0.7312598655109503,
+        "sqam": 66.90138611721902,
+        "bleuLow": 0.8236617938643799,
+        "sqamLow": 81.67706756955188,
+        "bleuMedium": 0.7330138762578597,
+        "sqamMedium": 67.21711359245776,
+        "bleuHigh": 0.6674082856441976,
+        "sqamHigh": 56.725743767551215
+    },
+    {
+        "file": "../proto_5/cleaned/yi_cleaned.json",
+        "bleu": 0.7300537827051232,
+        "sqam": 70.36641990633315,
+        "bleuLow": 0.7889558828459484,
+        "sqamLow": 79.9800990548019,
+        "bleuMedium": 0.7824672696661278,
+        "sqamMedium": 73.42302653326297,
+        "bleuHigh": 0.65365122119654,
+        "sqamHigh": 61.74581438448426
+    }
+]

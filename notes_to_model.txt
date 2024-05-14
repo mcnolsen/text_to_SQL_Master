@@ -1,0 +1,31 @@
+Max input length: 3000
+Max batch prefill tokens: 3000
+Max number of tokens per query: 4000
+Task: text to text generation
+
+
+
+Models:
+mistral-7b-instruct-v0-2 https://huggingface.co/TheBloke/Mistral-7B-Instruct-v0.2-GGUF/resolve/main/mistral-7b-instruct-v0.2.Q8_0.gguf  model: mistralai/Mistral-7B-Instruct-v0.2 +
+nsql-llama-2-7b https://huggingface.co/TheBloke/nsql-llama-2-7B-GGUF/resolve/main/nsql-llama-2-7b.Q8_0.gguf  model: NumbersStation/nsql-llama-2-7B 
+gemma-7b-it https://huggingface.co/MaziyarPanahi/gemma-7b-it-GGUF/resolve/main/gemma-7b-it.Q8_0.gguf  model: google/gemma-7b-it 
+SOLAR-10.7B-Instruct-v1.0 https://huggingface.co/TheBloke/SOLAR-10.7B-Instruct-v1.0-GGUF/resolve/main/solar-10.7b-instruct-v1.0.Q8_0.gguf  model: upstage/SOLAR-10.7B-Instruct-v1.0  
+orca-mini 13b https://huggingface.co/TheBloke/orca_mini_v3_13B-GGUF/resolve/main/orca_mini_v3_13b.Q8_0.gguf  model: pankajmathur/orca_mini_v3_13b 
+llama-13b-chat https://huggingface.co/TheBloke/Llama-2-13B-chat-GGUF/resolve/main/llama-2-13b-chat.Q8_0.gguf  model: meta-llama/Llama-2-13b-chat-hf 
+llama-3-8b  https://huggingface.co/QuantFactory/Meta-Llama-3-8B-Instruct-GGUF/resolve/main/Meta-Llama-3-8B-Instruct.Q8_0.gguf?download=true  model: meta-llama/Meta-Llama-3-8B-Instruct
+llama-3-70b https://huggingface.co/MaziyarPanahi/Meta-Llama-3-70B-Instruct-GGUF/resolve/main/Meta-Llama-3-70B-Instruct.Q8_0-00001-of-00002.gguf?download=true, https://huggingface.co/MaziyarPanahi/Meta-Llama-3-70B-Instruct-GGUF/resolve/main/Meta-Llama-3-70B-Instruct.Q8_0-00002-of-00002.gguf?download=true model: meta-llama/Meta-Llama-3-70B-Instruct
+yi-34b-chat https://huggingface.co/TheBloke/Yi-34B-Chat-GGUF/resolve/main/yi-34b-chat.Q8_0.gguf  model: 01-ai/Yi-34B-Chat  
+Qwen 72b chat 8 bit: 
+- Separate them by comma in the model designation:
+https://huggingface.co/Qwen/Qwen1.5-72B-Chat-GGUF/resolve/main/qwen1_5-72b-chat-q8_0.gguf.a?download=true, https://huggingface.co/Qwen/Qwen1.5-72B-Chat-GGUF/resolve/main/qwen1_5-72b-chat-q8_0.gguf.b?download=true, https://huggingface.co/Qwen/Qwen1.5-72B-Chat-GGUF/resolve/main/qwen1_5-72b-chat-q8_0.gguf.c?download=true  model: Qwen/Qwen1.5-72B-Chat 
+
+mixtral-8x7b-instruct-v0-1 https://huggingface.co/TheBloke/Mixtral-8x7B-Instruct-v0.1-GGUF/resolve/main/mixtral-8x7b-instruct-v0.1.Q8_0.gguf  model: mistralai/Mixtral-8x7B-Instruct-v0.1 
+
+dbrx fp16 vllm: --model databricks/dbrx-instruct --max-model-len 4096 --tensor-parallel-size 8 --trust-remote-code --dtype half     model: databricks/dbrx-instruct  
+
+gpt-3.5-turbo-0125 
+gpt-4-turbo-preview (based on gpt-4-0125-preview) 
+
+Experiments
+llama 3 70b 4 bit https://huggingface.co/MaziyarPanahi/Meta-Llama-3-70B-Instruct-GGUF/resolve/main/Meta-Llama-3-70B-Instruct.Q4_K_M.gguf?download=true  model: 
+qwen 4 bit https://huggingface.co/Qwen/Qwen1.5-72B-Chat-GGUF/resolve/main/qwen1_5-72b-chat-q4_k_m.gguf.a?download=true, https://huggingface.co/Qwen/Qwen1.5-72B-Chat-GGUF/resolve/main/qwen1_5-72b-chat-q4_k_m.gguf.b?download=true  model: Qwen/Qwen1.5-72B-Chat
